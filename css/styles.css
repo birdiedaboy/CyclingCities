@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'itcFranklinGregular';
+    font-weight: normal;
+    src: url('fonts/ITCFranklinGothicLTBookRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'itcFranklinGdemi';
+    font-weight: bold;
+    src: url('fonts/ITCFranklinGothicLTDemiRegular.woff2') format('woff2');
+}
+
+:root {
+    --bgColor: #ffffff;
+    --midGray: #d5d5d5;
+    --accentBlue: #2179ff;
+    --accentOrange: #ff8d00;
+    --accentPink: #ff3d89;
+    --accentGreen: #00ae42;
+    --txtDark: #262626;
+    --txtBody: 'itcFranklinGregular', sans-serif;
+    --txtNav: 'itcFranklinGdemi', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    background: #333;
+    font-family: var(--txtBody);
+}
+
+    /* ------------ ESTILO NAV BAR -------------- */
+
+    header {
+        
+        background: var(--bgColor); 
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 666;
+    }
+
+    .logo {
+        margin: 1.5em 0;
+
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: var(--txtDark);
+        height: 3px;
+        width: 2em;
+        position: relative;
+
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }
+
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
+
+    nav {
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        left: 0;
+        background: var(--bgColor);
+        width: 100%;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    nav a {
+        font-family: var(--txtNav);
+        color: var(--txtDark);
+        text-decoration: none;
+        font-size: 1.2 rem;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+
+    nav a:hover {
+        color: var(--accentGreen);
+    }
+
+    .nav-toggle:checked ~ nav {
+        transform: scale(1, 1);
+    }
+
+    .nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+
+    .nav-toggle:checked nav-toggle-label span {
+        opacity: 0;
+    }
+
+    .nav-toggle:checked span::before {
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle:checked span::after {
+        transform: rotate(-45deg);
+    }
+
+
+
+
+
+ @media screen and (min-width: 850px) {
+	.nav-toggle-label{
+		display: none;
+	}
+	header{
+		display: grid;
+		grid-template-columns: .5fr auto minmax(600px, 3fr) .5fr;
+	}
+	.logo{
+		grid-column: 2 / span 1;
+	}
+	nav{
+		all: unset;
+		grid-column: 3 / 4;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	nav ul{ 
+		display: flex;
+	}
+	nav li{
+		margin-left: 3em;
+		margin-bottom: 0;
+	}
+	nav a{
+		opacity: 1;
+		position: relative;
+        font-size: 1.2rem;
+	}
+	nav a::before {
+		content:'';
+		display: block;
+		height: 4px;
+		background: var(--accentGreen);
+		width: 100%;
+		position: absolute;
+		bottom: -.75em;
+		left: 0;
+		right: 0;
+		transform: scale(0, 1);
+		transform-origin: right;
+		transition: transform ease-in-out 250ms;
+
+	}
+	nav a:hover::before{
+		transform: scale(1,1);
+	}
+	
+} 
