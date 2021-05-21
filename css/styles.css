@@ -48,7 +48,11 @@ a {
     text-decoration: none;
     color: var(--accentGreen);
 }
-
+article{
+    width: 100%;
+    background-color: var(--accentOrange);
+    max-width: 80rem;
+}
 
 /* ------------ ESTILO NAV BAR -------------- */
 
@@ -174,11 +178,19 @@ main {
     justify-content: center;
     align-items: center;
 }
-
+.hero{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.heroVideo{
+    width: 100%;
+    max-width: 80rem;
+}
 .container {
     padding: 5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 80rem;
     z-index: 1;
@@ -186,12 +198,10 @@ main {
 }
 
 .containerTxt {
-    max-width: 30%;
     z-index: 30;
 }
 
 .containerIMG {
-    min-width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,6 +217,7 @@ h2 {
 p {
     font-size: 1.3rem;
     padding-bottom: 1rem;
+    line-height: 1.5;
     color: var(--bgColor);
 }
 
@@ -220,6 +231,7 @@ p {
 }
 
 .whyCycling {
+    flex-direction: column;
     background-color: var(--accentGreen);
     background-image:
         linear-gradient(rgba(0, 174, 66, 0.45),
@@ -257,6 +269,7 @@ p {
     width: 609px;
     height: 304px;
 }
+
 
 @media screen and (min-width: 850px) {
     .nav-toggle-label {
@@ -314,5 +327,24 @@ p {
     nav a:hover::before {
         transform: scale(1, 1);
     }
+    
+    .container{
+        flex-direction: row-reverse;
+    }
+    .whyCycling{
+        flex-direction: row;
+    }
+    .containerTxt{
+        max-width: 40%;
+    }
+    .containerIMG{
+        max-width: 60%;
+    }
+    .ccPledge{
+    flex-direction: row;
+}
+    .ccDashboard{
+    flex-direction: row-reverse;
+}
 
 }
