@@ -1,4 +1,4 @@
-/* -------BDB88 RESET -------*/
+/* -------BDB88 CSS RESET -------*/
 *,
 *::before,
 *::after {
@@ -12,7 +12,7 @@ a {
     display: block;
 }
 
-/* -------ESTILO GENERAL -------*/
+/* -------TYPOGRAPHY -------*/
 @font-face {
     font-family: 'itcFranklinGregular';
     font-weight: normal;
@@ -24,6 +24,7 @@ a {
     font-weight: bold;
     src: url('fonts/ITCFranklinGothicLTDemiRegular.woff2') format('woff2');
 }
+/* -------ROOT STYLES -------*/
 
 :root {
     --bgColor: #ffffff;
@@ -37,7 +38,13 @@ a {
     --txtNav: 'itcFranklinGdemi', sans-serif;
 
 }
-
+@media (prefers-color-scheme: dark) {
+  
+}
+@media (prefers-color-scheme: light) {
+  
+}
+/*----------MOBILE VERSION STYLES------------*/
 body {
     margin: 0;
     background: #333;
@@ -54,7 +61,7 @@ article{
     max-width: 80rem;
 }
 
-/* ------------ ESTILO NAV BAR -------------- */
+/* ------------ TOP NAV BAR -------------- */
 
 header {
 
@@ -69,7 +76,9 @@ header {
     margin: 1.5em 0;
 
 }
-
+section a{
+    color: var(--txtDark);
+}
 .nav-toggle {
     display: none;
 }
@@ -167,7 +176,7 @@ nav a:hover {
     transform: rotate(-45deg);
 }
 
-/*       -------------EMPIEZA CUERPO PRINCIPAL -------------    */
+/*       ------------- MAIN BODY -------------    */
 main {
     padding-top: 6rem;
     padding-bottom: 5rem;
@@ -225,6 +234,7 @@ p {
     padding: .75rem 2rem;
     width: 10rem;
     background-color: var(--txtDark);
+    font-family: var(--txtNav);
     color: var(--bgColor);
     border-radius: 100px;
     text-align: center;
@@ -270,6 +280,7 @@ p {
     height: 304px;
 }
 
+/*------- DESKTOP VERSION --------*/
 
 @media screen and (min-width: 850px) {
     .nav-toggle-label {
@@ -279,15 +290,32 @@ p {
     header {
         display: grid;
         grid-template-columns: .5fr auto minmax(600px, 3fr) .5fr;
+        grid-template-rows: .5fr 1fr;
+        padding-top: 1rem;
     }
 
     .logo {
         grid-column: 2 / span 1;
+        grid-row: 2/3
+    }
+    .itdpLogoH{
+        grid-column: 2 / span 1;
+        grid-row: 1/2
+    }
+    .hIcon{
+        grid-column: 3 / 4;
+        grid-row: 1/2;
+/*        display:flex;*/
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
     }
 
     nav {
         all: unset;
         grid-column: 3 / 4;
+        grid-row: 2/3;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -348,3 +376,15 @@ p {
 }
 
 }
+
+/*------- ANIMATION RESET --------*/
+@media (prefers-reduced-motion) {
+  *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+  }
