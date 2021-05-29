@@ -6,10 +6,13 @@
     margin: 0;
     padding: 0;
 }
+ul, li{
+    list-style: none;
+}
 
 iframe,
 svg,
-a {
+a, {
     display: block;
 }
 
@@ -130,7 +133,7 @@ section a {
     top: 7px;
 }
 
-nav {
+header nav {
     position: absolute;
     text-align: left;
     top: 100%;
@@ -143,18 +146,18 @@ nav {
 
 }
 
-nav ul {
+header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li {
+header nav li {
     margin-bottom: 1em;
     margin-left: 1em;
 }
 
-nav a {
+header nav a {
     font-family: var(--txtNav);
     color: var(--cWhite);
     text-decoration: none;
@@ -163,7 +166,7 @@ nav a {
     transition: opacity 150ms ease-in-out;
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--accentGreen);
 }
 
@@ -191,7 +194,6 @@ nav a:hover {
 /*       ------------- MAIN BODY -------------    */
 main {
     padding-top: 11rem;
-    padding-bottom: 5rem;
     background: var(--cWhite);
     height: 100%;
     display: flex;
@@ -276,12 +278,28 @@ article section h2 {
 }
 
 .ccDashboard {
-    background-color: var(--accentBlue)
-}
-.growCycle{
-    background-color: var(--accentPink)
+    background-color: var(--accentBlue);
 }
 
+.growCycle {
+    background-color: var(--accentPink);
+}
+
+footer {
+    background-color: var(--cDark);
+    display: grid;
+    grid-template-columns: .5fr auto minmax(600px, 3fr) .5fr;
+    grid-template-rows: 1fr .5fr;
+}
+
+footer adress {
+    color: var(--cWhite);
+
+}
+footer figure {
+    color: var(--cWhite);
+
+}
 /*------- DESKTOP VERSION --------*/
 
 @media screen and (min-width: 850px) {
@@ -316,7 +334,7 @@ article section h2 {
         gap: 2rem;
     }
 
-    nav {
+    header nav {
         all: unset;
         grid-column: 3 / 4;
         grid-row: 2/3;
@@ -325,22 +343,22 @@ article section h2 {
         align-items: center;
     }
 
-    nav ul {
+    header nav ul {
         display: flex;
     }
 
-    nav li {
+    header nav li {
         margin-left: 3em;
         margin-bottom: 0;
     }
 
-    nav a {
+    header nav a {
         opacity: 1;
         position: relative;
         font-size: 1.2rem;
     }
 
-    nav a::before {
+    header nav a::before {
         content: '';
         display: block;
         height: 4px;
@@ -356,7 +374,7 @@ article section h2 {
 
     }
 
-    nav a:hover::before {
+    header nav a:hover::before {
         transform: scale(1, 1);
     }
 
@@ -377,11 +395,61 @@ article section h2 {
     }
 
     .ccPledge {
-                flex-direction: row;
+        flex-direction: row;
     }
 
     .ccDashboard {
         flex-direction: row-reverse;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: .5fr auto minmax(400px, 3fr) .5fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 1rem;
+    }
+
+    .logoFooter {
+        grid-column: 2 / span 1;
+        grid-row: 1/2;
+        display: flex;
+        
+        
+        
+    }
+    .logoFooter > *+*{
+        margin-left: 4rem;
+        align-self: flex-start;
+    }
+
+    footer adress {
+        grid-column: 3 / span 1;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+    }
+
+    .iconsFooter {
+        grid-column: 3 / span 1;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1em;
+
+    }
+
+    
+
+    footer nav {
+        grid-column: 2 / span 1;
+        grid-row: 2/3;
+        align-self: center;
+        color: var(--cWhite)
+    }
+    footer nav ul{
+        display: flex;
+        gap: 1em;
     }
 
 }
