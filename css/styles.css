@@ -4,6 +4,7 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 iframe,
@@ -21,29 +22,37 @@ a {
 
 @font-face {
     font-family: 'itcFranklinGdemi';
-    font-weight: bold;
+    font-weight: normal;
     src: url('fonts/ITCFranklinGothicLTDemiRegular.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'MegaByteBold';
+    font-weight: bold;
+    src: url('fonts/MegabyteBold.otf') format('opentype');
+}
+
 /* -------ROOT STYLES -------*/
 
 :root {
-    --bgColor: #ffffff;
+    --cWhite: #ffffff;
     --midGray: #d5d5d5;
     --accentBlue: #2179ff;
     --accentOrange: #ff8d00;
     --accentPink: #ff3d89;
     --accentGreen: #00ae42;
-    --txtDark: #262626;
+    --cDark: #262626;
     --txtBody: 'itcFranklinGregular', sans-serif;
     --txtNav: 'itcFranklinGdemi', sans-serif;
+    --txtHeadings: 'MegaByteBold', sans-serif;
+    --txtSizeBody: 1.0625rem;
 
 }
-@media (prefers-color-scheme: dark) {
-  
-}
-@media (prefers-color-scheme: light) {
-  
-}
+
+@media (prefers-color-scheme: dark) {}
+
+@media (prefers-color-scheme: light) {}
+
 /*----------MOBILE VERSION STYLES------------*/
 body {
     margin: 0;
@@ -55,17 +64,18 @@ a {
     text-decoration: none;
     color: var(--accentGreen);
 }
-article{
+
+article {
     width: 100%;
     background-color: var(--accentOrange);
-    max-width: 80rem;
+    /*    max-width: 80rem;*/
 }
 
 /* ------------ TOP NAV BAR -------------- */
 
 header {
 
-    background: var(--bgColor);
+    background: var(--cDark);
     text-align: center;
     position: fixed;
     width: 100%;
@@ -76,9 +86,11 @@ header {
     margin: 1.5em 0;
 
 }
-section a{
-    color: var(--txtDark);
+
+section a {
+    color: var(--cWhite);
 }
+
 .nav-toggle {
     display: none;
 }
@@ -97,7 +109,7 @@ section a{
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: var(--txtDark);
+    background: var(--cDark);
     height: 3px;
     width: 2em;
     position: relative;
@@ -123,7 +135,7 @@ nav {
     text-align: left;
     top: 100%;
     left: 0;
-    background: var(--bgColor);
+    background: var(--cWhite);
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -144,9 +156,9 @@ nav li {
 
 nav a {
     font-family: var(--txtNav);
-    color: var(--txtDark);
+    color: var(--cWhite);
     text-decoration: none;
-    font-size: 1.2 rem;
+    font-size: 1.25 rem;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
@@ -178,32 +190,32 @@ nav a:hover {
 
 /*       ------------- MAIN BODY -------------    */
 main {
-    padding-top: 6rem;
+    padding-top: 11rem;
     padding-bottom: 5rem;
-    background: var(--bgColor);
+    background: var(--cWhite);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.hero{
+
+.hero {
     display: flex;
     justify-content: center;
     align-content: center;
 }
-.heroVideo{
+
+.heroVideo {
     width: 100%;
     max-width: 80rem;
 }
+
 .container {
-    padding: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    max-width: 80rem;
-    z-index: 1;
-    position: relative;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .containerTxt {
@@ -216,68 +228,58 @@ main {
     align-items: center;
 }
 
-h2 {
-    font-family: var(--txtNav);
-    font-size: 2.2rem;
-    padding-bottom: 2rem;
-    color: var(--bgColor);
+.containrIMG img {
+    width: 40rem;
 }
 
+
 p {
-    font-size: 1.3rem;
+    font-size: var(--txtSizeBody);
     padding-bottom: 1rem;
     line-height: 1.5;
-    color: var(--bgColor);
+    color: var(--cWhite);
+    margin-bottom: 5rem;
 }
 
 .button {
-    padding: .75rem 2rem;
+    padding: .75em 2em;
     width: 10rem;
-    background-color: var(--txtDark);
+    background-color: var(--cWhite);
     font-family: var(--txtNav);
-    color: var(--bgColor);
+    color: var(--cDark);
     border-radius: 100px;
     text-align: center;
+}
+
+article section h2 {
+    font-family: var(--txtHeadings);
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    color: var(--cWhite);
 }
 
 .whyCycling {
     flex-direction: column;
     background-color: var(--accentGreen);
-    background-image:
-        linear-gradient(rgba(0, 174, 66, 0.45),
-            rgba(0, 174, 66, 0.45)),
-        url("../img/bgIMGwc.jpg");
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
-    min-height: 40rem;
+    justify-content: space-around;
+    align-items: center;
+    /*    min-height: 40rem;*/
 }
 
 .wCimg {
-    z-index: 3;
-    width: 30%;
+    /*    z-index: 3;*/
+    /*    width: 30%;*/
 }
 
-/* ------ HALF CIRCLES ---------*/
-.hCwhite {
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-    width: 50%;
-    height: auto;
-    fill: var(--bgColor);
+.ccPledge {
+    /*        flex-direction: row;*/
 }
 
-.hCblue {
-    position: absolute;
-    top: 0;
-    fill: var(--accentBlue);
-    z-index: 3;
-    width: 609px;
-    height: 304px;
+.ccDashboard {
+    background-color: var(--accentBlue)
+}
+.growCycle{
+    background-color: var(--accentPink)
 }
 
 /*------- DESKTOP VERSION --------*/
@@ -298,14 +300,16 @@ p {
         grid-column: 2 / span 1;
         grid-row: 2/3
     }
-    .itdpLogoH{
+
+    .itdpLogoH {
         grid-column: 2 / span 1;
         grid-row: 1/2
     }
-    .hIcon{
+
+    .hIcon {
         grid-column: 3 / 4;
         grid-row: 1/2;
-/*        display:flex;*/
+        /*        display:flex;*/
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -355,31 +359,37 @@ p {
     nav a:hover::before {
         transform: scale(1, 1);
     }
-    
-    .container{
+
+    .container {
         flex-direction: row-reverse;
     }
-    .whyCycling{
+
+    .whyCycling {
         flex-direction: row;
     }
-    .containerTxt{
-        max-width: 40%;
+
+    .containerTxt {
+        max-width: 45ch;
     }
-    .containerIMG{
-        max-width: 60%;
+
+    .containerIMG {
+        /*        max-width: 60%;*/
     }
-    .ccPledge{
-    flex-direction: row;
-}
-    .ccDashboard{
-    flex-direction: row-reverse;
-}
+
+    .ccPledge {
+                flex-direction: row;
+    }
+
+    .ccDashboard {
+        flex-direction: row-reverse;
+    }
 
 }
 
 /*------- ANIMATION RESET --------*/
 @media (prefers-reduced-motion) {
-  *,
+
+    *,
     *::before,
     *::after {
         animation-duration: 0.01ms !important;
@@ -387,4 +397,4 @@ p {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-  }
+}
