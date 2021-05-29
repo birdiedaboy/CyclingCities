@@ -6,13 +6,16 @@
     margin: 0;
     padding: 0;
 }
-ul, li{
+
+ul,
+li {
     list-style: none;
 }
 
 iframe,
 svg,
-a, {
+a,
+    {
     display: block;
 }
 
@@ -296,10 +299,12 @@ footer adress {
     color: var(--cWhite);
 
 }
+
 footer figure {
     color: var(--cWhite);
 
 }
+
 /*------- DESKTOP VERSION --------*/
 
 @media screen and (min-width: 850px) {
@@ -401,6 +406,7 @@ footer figure {
     .ccDashboard {
         flex-direction: row-reverse;
     }
+
     footer {
         display: grid;
         grid-template-columns: .5fr auto minmax(400px, 3fr) .5fr;
@@ -412,11 +418,12 @@ footer figure {
         grid-column: 2 / span 1;
         grid-row: 1/2;
         display: flex;
-        
-        
-        
+
+
+
     }
-    .logoFooter > *+*{
+
+    .logoFooter > * + * {
         margin-left: 4rem;
         align-self: flex-start;
     }
@@ -439,7 +446,7 @@ footer figure {
 
     }
 
-    
+
 
     footer nav {
         grid-column: 2 / span 1;
@@ -447,7 +454,8 @@ footer figure {
         align-self: center;
         color: var(--cWhite)
     }
-    footer nav ul{
+
+    footer nav ul {
         display: flex;
         gap: 1em;
     }
