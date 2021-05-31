@@ -73,13 +73,13 @@ a {
 
 article {
     width: 100%;
-    background-color: var(--accentOrange);
+    /*    background-color: var(--accentOrange);*/
     /*    max-width: 80rem;*/
 }
 
 /* ------------ TOP NAV BAR -------------- */
 
-header {
+.topnav {
 
     background: var(--cDark);
     text-align: center;
@@ -136,7 +136,7 @@ section a {
     top: 7px;
 }
 
-header nav {
+.topnav nav {
     position: absolute;
     text-align: left;
     top: 100%;
@@ -149,18 +149,18 @@ header nav {
 
 }
 
-header nav ul {
+.topnav nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-header nav li {
+.topnav nav li {
     margin-bottom: 1em;
     margin-left: 1em;
 }
 
-header nav a {
+.topnav nav a {
     font-family: var(--txtNav);
     color: var(--cWhite);
     text-decoration: none;
@@ -169,7 +169,7 @@ header nav a {
     transition: opacity 150ms ease-in-out;
 }
 
-header nav a:hover {
+.topnav nav a:hover {
     color: var(--accentGreen);
 }
 
@@ -196,7 +196,7 @@ header nav a:hover {
 
 /*       ------------- MAIN BODY -------------    */
 main {
-    padding-top: 11rem;
+    padding-top: 11.2rem;
     background: var(--cWhite);
     height: 100%;
     display: flex;
@@ -256,7 +256,8 @@ p {
     text-align: center;
 }
 
-article section h2 {
+article section h2,
+h2 {
     font-family: var(--txtHeadings);
     font-size: 2.2rem;
     padding-bottom: 2rem;
@@ -308,11 +309,13 @@ footer figure {
 /*------- DESKTOP VERSION --------*/
 
 @media screen and (min-width: 850px) {
+
+    /*   --------- NAV -----*/
     .nav-toggle-label {
         display: none;
     }
 
-    header {
+    .topnav {
         display: grid;
         grid-template-columns: .5fr auto minmax(600px, 3fr) .5fr;
         grid-template-rows: .5fr 1fr;
@@ -339,7 +342,7 @@ footer figure {
         gap: 2rem;
     }
 
-    header nav {
+    .topnav nav {
         all: unset;
         grid-column: 3 / 4;
         grid-row: 2/3;
@@ -348,22 +351,22 @@ footer figure {
         align-items: center;
     }
 
-    header nav ul {
+    .topnav nav ul {
         display: flex;
     }
 
-    header nav li {
+    .topnav nav li {
         margin-left: 3em;
         margin-bottom: 0;
     }
 
-    header nav a {
+    .topnav nav a {
         opacity: 1;
         position: relative;
         font-size: 1.2rem;
     }
 
-    header nav a::before {
+    .topnav nav a::before {
         content: '';
         display: block;
         height: 4px;
@@ -379,9 +382,11 @@ footer figure {
 
     }
 
-    header nav a:hover::before {
+    .topnav nav a:hover::before {
         transform: scale(1, 1);
     }
+
+    /*---------Main Page Body-----------*/
 
     .container {
         flex-direction: row-reverse;
@@ -406,6 +411,46 @@ footer figure {
     .ccDashboard {
         flex-direction: row-reverse;
     }
+
+    /*    -----------Why Cycling Page Styles---------*/
+    .articleContentWC{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .introHeader {
+        background-color: var(--accentGreen);
+        margin-left: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 427px;
+        padding-right: 4rem;
+        padding-left: 10rem;
+
+    }
+
+    .wCimg {
+        position: absolute;
+        left: -215px;
+    }
+
+    .subTitleWC {
+        padding: 8rem;
+        display: block;
+        font-family: var(--txtHeadings);
+        font-size: 2rem;
+        color: var(--accentGreen);
+        max-width: 100rem;
+        margin: 0 auto;
+
+    }
+
+
+
+
+    /*    ------------FOOTER STUFF----------- */
 
     footer {
         display: grid;
