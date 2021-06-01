@@ -4,7 +4,6 @@
 *::after {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 ul,
@@ -42,12 +41,12 @@ a,
 
 :root {
     --cWhite: #ffffff;
+    --cDark: #262626;
     --midGray: #d5d5d5;
     --accentBlue: #2179ff;
     --accentOrange: #ff8d00;
     --accentPink: #ff3d89;
     --accentGreen: #00ae42;
-    --cDark: #262626;
     --txtBody: 'itcFranklinGregular', sans-serif;
     --txtNav: 'itcFranklinGdemi', sans-serif;
     --txtHeadings: 'MegaByteBold', sans-serif;
@@ -416,6 +415,7 @@ footer figure {
     .articleContentWC{
         display: flex;
         flex-direction: column;
+        margin: 0;
         
     }
     .introHeader {
@@ -446,7 +446,47 @@ footer figure {
         margin: 0 auto;
 
     }
+/*------- Accordions --------*/
+    summary{
+	padding: 1em;
+	background-color: var(--cWhite);
+	cursor: pointer;
+	font-size: 1.5rem;
+    font-family: var(--txtNav);
+	color: var(--cDark);
+	display: flex;
+	justify-content: space-between;
+}
+summary:hover{
+	text-shadow: 0px 5px 10px black;
+}
+summary::marker{
+display: none;
+}
 
+details{
+	width: 85rem;
+	background-color: var(--cGold);
+    margin: 0 auto;
+    border-top: 3px solid black
+	
+}
+    details:last-child{
+        border-bottom: 3px solid black;
+    }
+details[open]{
+/*change styles for detailes when it opens */
+}
+details > summary::after {
+	content: '\f067';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+	font-size:2rem;
+	transition: transform 300ms ease;
+}
+details[open] > summary::after {
+	transform: rotate(45deg);
+}
 
 
 
