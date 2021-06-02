@@ -733,3 +733,130 @@ footer figure {
     background-color: #ffc782;
     pointer-events: none;
 }
+
+
+.modalShared{
+    position: fixed;
+    z-index: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.modalShared .modalSharedBack {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 700;
+}
+
+.modalShared article {
+    background-color: #FF8000;
+    position: relative;
+    z-index: 701;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.modalShared .firstBox {
+    width: 50%;
+    padding: 25px 20px;
+}
+
+.modalShared .firstBox p {
+    color: white;   
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 500 !important;
+    letter-spacing:  0.8px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.modalShared .firstBox h2 {
+    margin: 0;
+    padding-bottom: 15px;
+    color: white;   
+    font-size: 22px;
+    font-family: 'MegaByteBold';
+    letter-spacing:  0.8px;
+    line-height: 1.3;
+}
+
+.modalShared .firstBox div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.modalShared .firstBox div img {
+    width: 140px;
+}
+
+.modalShared .firstBox .sharedText {
+    margin-top: 10px;
+}
+
+.modalShared .firstBox .sharedIcons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.modalShared .firstBox .sharedIcons img {
+    width: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.modalShared .lastBox {
+    width: 50%;
+}
+
+.modalShared img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modalShared .iconClose {
+    position: absolute;
+    right: 23px;
+    top: 27px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.modalShared .iconClose::after {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 16px;
+    left: -5px;
+    content: '';
+    width: 48px;
+    height: 5px;
+    background-color: #FF8000;
+    z-index: 703;
+}
+
+.modalShared .iconClose::before {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 16px;
+    left: -5px;
+    content: '';
+    width: 48px;
+    height: 5px;
+    background-color: #FF8000;
+    z-index: 703;
+}
