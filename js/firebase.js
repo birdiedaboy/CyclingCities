@@ -16,6 +16,14 @@ let firestore = firebase.firestore();
 
 let auth = firebase.auth();
 
+let ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+ui.start('#firebaseui-auth-container', {
+  signInOptions: [
+    firebase.auth.EmailAuthProvider.PROVIDER_ID
+  ],
+});
+
 const nuevaFirma = async () => {
   console.log("Nueva Firma");
 
@@ -55,6 +63,7 @@ const obtenerFirmas = async () => {
 
 const login = async () => {
   console.log('hola');
+  auth.sendSignInLinkToEmail()
 }
 
 const initExport = async () => {
