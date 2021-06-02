@@ -94,8 +94,7 @@
             </details>
             <h3 class="pledgeIntroTxt">
                 As a signatory to the Cycling Cities campaign, <br>
-                <span id="cityLabel">
-                    span
+                <span id="cityLabel" class="sectorHolder">
                 </span>
                 <br>supports cycling as a critical public health, access, and climate solution, and stands with the coalition working to increase access for 25 million more people to safe and connected cycle lanes in their cities by 2025.
 
@@ -103,56 +102,70 @@
             <form action="" class="pledgeForm" onsubmit="nuevaFirma(); return false" id="form">
                 <div class="formSector">
                     <p class="formLabels">Sector (Check only 1)</p>
-
-                    <div>
-                        <input type="radio" id="huey" name="drone" value="Government" checked>
-                        <label  for="huey">Government</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="dewey" name="drone" value="NGO/Civil Society">
-                        <label for="dewey">NGO/Civil Society
-                        </label>
-                    </div>
-                    <div>
-                        <input type="radio" id="louie" name="drone" value="Private sector">
-                        <label for="louie">Private sector </label>
+                    <div class="sectorCheckbox">
+                        <div>
+                            <input type="radio" id="huey" name="drone" value="Government" checked>
+                            <label for="huey">Government</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="dewey" name="drone" value="NGO/Civil Society">
+                            <label for="dewey">NGO/Civil Society
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="louie" name="drone" value="Private sector">
+                            <label for="louie">Private sector </label>
+                        </div>
                     </div>
                 </div>
                 <div class="formName">
                     <label class="formLabels" for="name">Your name:</label>
                     <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
                 </div>
-                <div>
+                <div class="formCityONG">
                     <label class="formLabels" for="name">Your city or organization:</label>
                     <input type="text" id="cityOrganization" name="name" required minlength="4" maxlength="8" size="10" onchange="changeCityInput()">
                 </div>
-                <div>
+                <div class="formYT">
                     <label class="formLabels" for="name">Your title:</label>
                     <input type="text" id="title" name="name" required minlength="4" maxlength="8" size="10">
                 </div>
-                <div>
-                    <label class="formLabels" for="name">City:</label>
+                <div class="formCityCountry">
+                   <div>
+                       <label class="formLabels" for="name">City:</label>
                     <input type="text" id="city" name="name" required minlength="4" maxlength="8" size="10">
-                    <label class="formLabels" for="name">Country:</label>
+                   </div>
+                   <div>
+                       <label class="formLabels" for="name">Country:</label>
                     <input type="text" id="country" name="name" required minlength="4" maxlength="8" size="10">
+                   </div>
+                    
+                    
                 </div>
-                <div>
-                    <label class="formLabels" for="email">Email:</label>
+                <div class="formEmail">
+                    <label class="formLabels" for="email">Email:*</label>
                     <input type="email" id="email" pattern=".+@globex.com" size="30" required>
                 </div>
-                <div>
+                <div class="formDisclaimer">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam, eaque. Corporis non, aperiam reprehenderit numquam modi quibusdam temporibus, cumque mollitia vero eveniet possimus delectus ducimus, dolorum ut sunt, accusantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam, eaque. Corporis non, aperiam reprehenderit numquam modi quibusdam temporibus, cumque mollitia vero eveniet possimus delectus ducimus, dolorum ut sunt, accusantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam, eaque. Corporis non, aperiam reprehenderit numquam modi quibusdam temporibus, cumque mollitia vero eveniet possimus delectus ducimus, dolorum ut sunt, accusantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, veniam, eaque. Corporis non, aperiam reprehenderit numquam modi quibusdam temporibus, cumque mollitia vero eveniet possimus delectus ducimus, dolorum ut sunt, accusantium.
+                        *We respect your privacy and do not share your information with third parties. ITDP will use the information you provide on this form to share information and updates about the Cycling Cities campaign and other news from ITDP. You can unsubscribe at any time by clicking the link in the footer of any email you receive, or by contacting us at mobility@itdp.org. By clicking below, you agree that we may process your information in accordance with these terms.
                     </p>
                 </div>
-                <div>
+                <div class="formPrivacy">
                     <input type="checkbox" id="scales" name="scales">
                     <label for="scales">Check if you do NOT want your organization or city listed publicly as a member of the Cycling Cities campaign.
                     </label>
                 </div>
-                <button type="submit">Submit</button>
-
+                <div class="formButton">
+                    <button class="buttonForm" type="submit">Sign the pledge</button>
+                </div>
             </form>
+            <figure class="pledgeClosing">
+                <img src="img/PLEDGE_footer.png" class="closingImg" alt="">
+                <figcaption class="closingTxt">
+                    Join us for<br>the ride!
+                </figcaption>
+            </figure>
         </article>
 
     </main>
