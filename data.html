@@ -8,8 +8,11 @@
     <meta name="author" content="ITDP">
     <link rel="icon" type="image/png" href="https://i2.wp.com/mexico.itdp.org/wp-content/uploads/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/data.css">
     <link rel="stylesheet" href="https://gist.githubusercontent.com/birdiedaboy/25068c693b9f6a533105d5e156f51f8e/raw/2a9b2c8c56fb25559ab0a6924086290d1150cf8a/cssReset.css" target="_blank">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
 </head>
 
 <body>
@@ -39,10 +42,10 @@
         <nav>
             <ul>
                 <li><a href="whycycling.html">¿Why Cycling?</a></li>
-                <li><a href="#">Sign the pledge</a></li>
-                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Data Dashboard</a></li>
+                <li><a href="#">Pledge</a></li>
                 <li><a href="https://growcycling.itdp.org/" target="_blank">Grow Cycling</a></li>
-<!--                <li><a href="#">FAQs</a></li>-->
+                <li><a href="#">FAQs</a></li>
                 <!--                <li><a href="#">News</a></li>-->
             </ul>
         </nav>
@@ -51,62 +54,9 @@
         </label>
     </header>
     <main>
-        <article class="hero">
-            <iframe width="1280px" height="720px" src="https://www.youtube.com/embed/ma2WabtR_tU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="heroVideo"></iframe>
-        </article>
-        <article class="container whyCycling">
-            <section class="containerIMG">
-
-                <img src="img/WC_circleimg.png" class="" alt="">
-
-            </section>
-            <section class="containerTxt">
-                <h2>Why Cycling</h2>
-                <p>
-                    The COVID-19 pandemic showed us just how inequitable and unsustainable moving around our cities can be.
-                    <br>
-                    Learn more about how cycling can act as a catalyst for redesigning streets to be more people-centered, accessible, and climate-friendly.
-                </p>
-                <a href="#" class="button">Read More</a>
-            </section>
-        </article>
-        <article class="container ccDashboard">
-            <section class="containerIMG">
-                <img src="img/DASHBOARD_circleimg.png" alt="">
-            </section>
-            <section class="containerTxt">
-                <h2>Cycling Cities Dashboard</h2>
-                <p>
-                    Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                </p>
-
-                <a href="#" class="button">Get Started</a>
-            </section>
-        </article>
-        <article class="container ccPledge">
-            <section class="containerIMG">
-                <img src="img/PLEDGE_circleimg.png" alt="">
-            </section>
-            <section class="containerTxt">
-                <h2>Pledge</h2>
-                <p>
-                    Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                </p>
-                <a href="#" class="button">Get Started</a>
-            </section>
-        </article>
-        <article class="container growCycle">
-            <section class="containerIMG">
-                <img src="img/WC_circleimg.png" alt="">
-            </section>
-            <section class="containerTxt">
-                <h2>Grow Cycling</h2>
-                <p>
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur.
-                </p>
-                <a href="#" class="button">Learn More</a>
-            </section>
-        </article>
+        <section>
+            <button onclick="initExport()">Exportar informacion</button>
+        </section>
     </main>
     <footer>
         <figure class="logoFooter">
