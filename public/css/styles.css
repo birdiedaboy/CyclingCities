@@ -36,6 +36,11 @@ a,
     font-weight: bold;
     src: url('fonts/MegabyteBold.otf') format('opentype');
 }
+@font-face {
+    font-family: 'MegaByteMedium';
+    font-weight: normal;
+    src: url('fonts/MegabyteMedium') format('opentype');
+}
 
 /* -------ROOT STYLES -------*/
 
@@ -50,6 +55,7 @@ a,
     --txtBody: 'itcFranklinGregular', sans-serif;
     --txtNav: 'itcFranklinGdemi', sans-serif;
     --txtHeadings: 'MegaByteBold', sans-serif;
+    --txtMM: 'MegaByteMedium, sans-serif'
     --txtSizeBody: 1.0625rem;
 
 }
