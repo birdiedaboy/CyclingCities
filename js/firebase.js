@@ -24,7 +24,7 @@ ui.start('#firebaseui-auth-container', {
   ],
 }); */
 
-async function nuevaFirma(event) {
+async function nuevaFirma() {
   const drone = document.querySelector(
     'input[name="drone"][type="radio"]:checked'
   ).value;
