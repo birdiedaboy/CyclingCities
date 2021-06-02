@@ -13,7 +13,6 @@ window.addEventListener("click", function (e) {
 function changeCityInput() {
   const cityOrganization = document.getElementById("cityOrganization").value;
   const cityLabel = document.getElementById("cityLabel");
-  console.log(cityLabel);
   cityLabel.innerHTML = cityOrganization;
 }
 
@@ -29,7 +28,7 @@ function showLanguages() {
 }
 
 function showModalShared() {
-  const element = document.getElementById("languages");
+  const element = document.getElementById("modalShared");
   const classes = element.classList.value;
   const isShowElement = classes.includes("showModalShared");
   if (isShowElement) {
@@ -40,7 +39,15 @@ function showModalShared() {
 }
 
 function sharedPost(redSocial) {
-  
+  let message = `${firma.cityOrganization} just signed the #CyclingCities pledge! We are now part of a global coalition working to increase access for 25 million more people to safe and connected cycle lanes by 2025. #CyclingCities25`
+  const redesSociales = {
+    whatsapp: `https://api.whatsapp.com/send?text=${message}`,
+    facebook: '',
+    twitter: '',
+    email: '',
+  }
+  let ruta = redesSociales[redesSociales];
+  window.open(ruta);
 }
 
 function openPage(ruta) {
