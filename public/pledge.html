@@ -101,12 +101,12 @@
 
             </h3>
             <form action="" class="pledgeForm" onsubmit="nuevaFirma(); return false" id="form">
-                <div>
-                    <p>Select a maintenance drone:</p>
+                <div class="formSector">
+                    <p class="formLabels">Sector (Check only 1)</p>
 
                     <div>
                         <input type="radio" id="huey" name="drone" value="Government" checked>
-                        <label for="huey">Government</label>
+                        <label  for="huey">Government</label>
                     </div>
                     <div>
                         <input type="radio" id="dewey" name="drone" value="NGO/Civil Society">
@@ -118,24 +118,26 @@
                         <label for="louie">Private sector </label>
                     </div>
                 </div>
-                <div>
-                    <label for="name">Your name:</label>
+                <div class="formName">
+                    <label class="formLabels" for="name">Your name:</label>
                     <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
                 </div>
                 <div>
-                    <label for="name">Your city or organization:</label>
+                    <label class="formLabels" for="name">Your city or organization:</label>
                     <input type="text" id="cityOrganization" name="name" required minlength="4" maxlength="8" size="10" onchange="changeCityInput()">
                 </div>
                 <div>
-                    <label for="name">Your title:</label>
+                    <label class="formLabels" for="name">Your title:</label>
                     <input type="text" id="title" name="name" required minlength="4" maxlength="8" size="10">
                 </div>
                 <div>
-                    <label for="name">City:</label>
+                    <label class="formLabels" for="name">City:</label>
                     <input type="text" id="city" name="name" required minlength="4" maxlength="8" size="10">
+                    <label class="formLabels" for="name">Country:</label>
+                    <input type="text" id="country" name="name" required minlength="4" maxlength="8" size="10">
                 </div>
                 <div>
-                    <label for="email">Email:</label>
+                    <label class="formLabels" for="email">Email:</label>
                     <input type="email" id="email" pattern=".+@globex.com" size="30" required>
                 </div>
                 <div>

@@ -574,10 +574,38 @@ footer figure {
         width: 80rem;
         background-color: var(--midGray);
         margin: 0 auto;
-
-
+        padding: 4em 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        
+    }
+    .pledgeForm input[type=text],
+    .pledgeForm input[type=email]{
+        height: 2rem;
     }
 
+    .formLabels{
+        font-family: var(--txtBody);
+        font-size: 1.5rem;
+    }
+   
+    .formSector{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5em;
+        
+    }
+     .formName{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .formName input{
+        width: 50%;
+        margin-top: 1rem;
+    }
     /*    ------------FOOTER STUFF----------- */
 
     footer {
