@@ -48,7 +48,7 @@ async function nuevaFirma() {
   try {
     let data = await ref.add(firma);
     document.getElementById("form").reset();
-    alert("Formulario enviado");
+    showModalShared();
     console.log("data: ", data);
   } catch (error) {
     console.log("error: ", error);

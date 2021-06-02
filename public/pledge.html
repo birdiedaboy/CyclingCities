@@ -210,7 +210,7 @@
 
 
     </footer>
-    <section class="modalShared" id="modalShared">
+    <section class="modalShared hideModalShared" id="modalShared">
         <div class="modalSharedBack"></div>
         <article>
             <div class="firstBox">
@@ -219,16 +219,16 @@
                 <div><img src="./img/cylingicon.png" alt="icon cycling"></div>
                 <p class="sharedText">Shared</p>
                 <div class="sharedIcons">
-                    <img src="./img/whatsapp.svg" alt="icon whatsapp">
-                    <img src="./img/facebook.svg" alt="icon facebook">
-                    <img src="./img/twitter.svg" alt="icon twitter">
-                    <img src="./img/email.svg" alt="icon email">
+                    <img onclick="sharedPost('whatsapp')" src="./img/whatsapp.svg" alt="icon whatsapp">
+                    <img onclick="sharedPost('facebook')" src="./img/facebook.svg" alt="icon facebook">
+                    <img onclick="sharedPost('twitter')" src="./img/twitter.svg" alt="icon twitter">
+                    <img onclick="sharedPost('email')" src="./img/email.svg" alt="icon email">
                 </div>
             </div>
             <div class="lastBox">
                 <img src="./img/photoModal.png" alt="photo cycling">
             </div>
-            <div class="iconClose"></div>
+            <div class="iconClose" onclick="showModalShared()"></div>
         </article>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.2.1/i18next.min.js" integrity="sha512-nPE90D+Al1Ek2PO6AojEXBDuoWgoH6h0XlFoWVjYq4Bj/Bvo0N2dyi464/rQl4FR37PWSaAVNDaa59UZVYjbMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

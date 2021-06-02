@@ -28,6 +28,21 @@ function showLanguages() {
   element.classList.add("showModalLanguage");
 }
 
+function showModalShared() {
+  const element = document.getElementById("languages");
+  const classes = element.classList.value;
+  const isShowElement = classes.includes("showModalShared");
+  if (isShowElement) {
+    element.classList.remove("showModalShared");
+    return;
+  }
+  element.classList.add("showModalShared");
+}
+
+function sharedPost(redSocial) {
+  
+}
+
 function openPage(ruta) {
   window.open(ruta, "_self");
 }
