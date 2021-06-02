@@ -16,23 +16,44 @@ let firestore = firebase.firestore();
 
 let auth = firebase.auth();
 
-const nuevaFirma = async () => {
-  console.log("Nueva Firma");
+/* let ui = new firebaseui.auth.AuthUI(firebase.auth());
 
+ui.start('#firebaseui-auth-container', {
+  signInOptions: [
+    firebase.auth.EmailAuthProvider.PROVIDER_ID
+  ],
+}); */
+
+async function nuevaFirma() {
+  const drone = document.querySelector(
+    'input[name="drone"][type="radio"]:checked'
+  ).value;
+  const name = document.getElementById("name").value;
+  const cityOrganization = document.getElementById("cityOrganization").value;
+  const title = document.getElementById("title").value;
+  const city = document.getElementById("city").value;
+  const email = document.getElementById("email").value;
+  const scales = document.getElementById("scales").checked;
   let firma = {
-    check: true,
-    email: "example@example.com",
+    date: new Date(),
+    drone,
+    name,
+    cityOrganization,
+    title,
+    city,
+    email,
+    scales,
   };
-
   let ref = firestore.collection("firmas");
-
   try {
     let data = await ref.add(firma);
+    document.getElementById("form").reset();
+    alert("Formulario enviado");
     console.log("data: ", data);
   } catch (error) {
     console.log("error: ", error);
   }
-};
+}
 
 const obtenerFirmas = async () => {
   console.log("obtener Firmas");
@@ -53,8 +74,9 @@ const obtenerFirmas = async () => {
   }
 };
 
-const login = async () => {
+/* const login = async () => {
   console.log('hola');
+  auth.sendSignInLinkToEmail()
 }
 
 const initExport = async () => {
@@ -64,7 +86,7 @@ const initExport = async () => {
   } catch (error) {
     alert("error: ", error);
   }
-}
+} */
 
 /* nuevaFirma();
 obtenerFirmas(); */

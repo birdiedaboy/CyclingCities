@@ -647,3 +647,61 @@ footer figure {
         scroll-behavior: auto !important;
     }
 }
+
+
+.position-relative {
+    position: relative;
+}
+
+/* Modal language */
+
+.hideModalLanguage{
+    display: none;
+}
+
+.showModalLanguage{
+    display: inline-block;
+}
+
+.ModalLanguage {
+    position: absolute;
+    top: 25px;
+    left: -145px;
+    background-color: white;
+    border-radius: 5px;
+    width: 150px;
+    z-index: 10;
+    padding: 10px 10px;
+}
+
+.ModalLanguage p {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px 10px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.ModalLanguage p:hover {
+    background-color: #FF8D00;
+}
+
+.ModalLanguage img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.iconLanguage {
+    width: 30px;
+    margin-bottom: -6px;
+    cursor: pointer;
+}
+
+.languageSelected {
+    background-color: #ffc782;
+    pointer-events: none;
+}
