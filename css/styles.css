@@ -8,7 +8,7 @@
 
 ul,
 li {
-    list-style: none;
+/*    list-style: none;*/
 }
 
 iframe,
@@ -237,7 +237,7 @@ main {
 }
 
 
-p {
+.containerTxt p {
     font-size: var(--txtSizeBody);
     padding-bottom: 1rem;
     line-height: 1.5;
@@ -412,13 +412,14 @@ footer figure {
     }
 
     /*    -----------Why Cycling Page Styles---------*/
-    .articleContentWC{
+    .articleContentWC {
         display: flex;
         flex-direction: column;
         margin: 0;
-        
+
     }
-    .introHeader {
+
+    .articleContentWC .introHeader {
         background-color: var(--accentGreen);
         margin-left: 30rem;
         display: flex;
@@ -442,53 +443,132 @@ footer figure {
         font-family: var(--txtHeadings);
         font-size: 2rem;
         color: var(--accentGreen);
-        max-width: 100rem;
+        max-width: 90rem;
         margin: 0 auto;
 
     }
-/*------- Accordions --------*/
-    summary{
-	padding: 1em;
-	background-color: var(--cWhite);
-	cursor: pointer;
-	font-size: 1.5rem;
-    font-family: var(--txtNav);
-	color: var(--cDark);
-	display: flex;
-	justify-content: space-between;
-}
-summary:hover{
-	text-shadow: 0px 5px 10px black;
-}
-summary::marker{
-display: none;
-}
 
-details{
-	width: 85rem;
-	background-color: var(--cGold);
-    margin: 0 auto;
-    border-top: 3px solid black
-	
-}
-    details:last-child{
-        border-bottom: 3px solid black;
+    /*------- Accordions --------*/
+    summary {
+        padding: .6em;
+        background-color: var(--cWhite);
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-family: var(--txtNav);
+        color: var(--cDark);
+        display: flex;
+        justify-content: space-between;
     }
-details[open]{
-/*change styles for detailes when it opens */
-}
-details > summary::after {
-	content: '\f067';
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 700;
-	font-size:2rem;
-	transition: transform 300ms ease;
-}
-details[open] > summary::after {
-	transform: rotate(45deg);
-}
 
+    summary:hover {
+/*        text-shadow: 0px 5px 10px black;*/
+    }
 
+    summary::marker {
+        display: none;
+    }
+
+    details {
+        width: 80rem;
+        background-color: var(--cGold);
+        margin: 0 auto;
+        border-top: 3px solid black
+    }
+
+    .lastAccordion {
+        border-bottom: 3px solid black;
+        margin-bottom: 5rem;
+    }
+
+    details[open] {
+        /*change styles for detailes when it opens */
+    }
+
+    details > summary::after {
+        content: '\f067';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        font-size: 1.5rem;
+        transition: transform 300ms ease;
+    }
+
+    details[open] > summary::after {
+        transform: rotate(45deg);
+    }
+
+    .bigBodyTxt {
+        width: 80rem;
+        margin: 0 auto;
+        font-family: var(--txtBody);
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .txt {
+        width: 80rem;
+        margin: 0 auto;
+        font-family: var(--txtBody);
+        font-size: 1.0625rem;
+        color: black;
+        margin-bottom: 5rem;
+    }
+/*------------Seccion de PLEDGE---------*/
+    
+    .articleContentPL .introHeader{
+        background-color: var(--accentOrange);
+        margin-left: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 427px;
+        padding-right: 4rem;
+        padding-left: 10rem;
+    }
+    .subTitlePL {
+        padding: 8rem 0 4rem 0;
+        display: block;
+        font-family: var(--txtHeadings);
+        font-size: 2rem;
+        color: var(--accentOrange);
+        max-width: 80rem;
+        margin: 0 auto;
+
+    }
+    .pledgeIntroTxt{
+        margin: 0 auto;
+        font-size: 2rem;
+        max-width: 80rem;
+        margin-bottom: 2rem;
+    }
+    .pledgeGoals{
+        margin: 0 auto;
+        font-size: 1.5rem;
+        max-width: 80rem;
+        list-style: circle;
+        margin-bottom: 2rem;
+    }
+    .pledgeGoals li::marker{
+        content: '';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        font-size: .5rem; 
+        color: var(--cDark);
+    }
+    .pledgeGoals li{
+        padding-left: 1rem;
+        margin-bottom: 3rem;
+    }
+    .pledgeForm{
+        height: 50rem;
+        width: 80rem;
+        background-color: var(--midGray);
+        margin: 0 auto;
+        
+        
+    }
 
     /*    ------------FOOTER STUFF----------- */
 
