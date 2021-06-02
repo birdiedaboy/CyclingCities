@@ -42,7 +42,7 @@ a,
 :root {
     --cWhite: #ffffff;
     --cDark: #262626;
-    --midGray: #d5d5d5;
+    --midGray: #D2D2D2;
     --accentBlue: #2179ff;
     --accentOrange: #ff8d00;
     --accentPink: #ff3d89;
@@ -211,8 +211,8 @@ main {
 }
 
 .heroVideo {
-    width: 100%;
-    max-width: 80rem;
+    width: 100vw;
+    height: 55.6vw;
 }
 
 .container {
@@ -277,6 +277,7 @@ h2 {
 }
 
 .ccPledge {
+    background-color: var(--accentOrange)
     /*        flex-direction: row;*/
 }
 
@@ -447,6 +448,15 @@ footer figure {
         margin: 0 auto;
 
     }
+    .subTitleWCpink{
+        padding: 8rem;
+        display: block;
+        font-family: var(--txtHeadings);
+        font-size: 2rem;
+        color: var(--accentPink);
+        max-width: 90rem;
+        margin: 0 auto;
+    }
 
     /*------- Accordions --------*/
     summary {
@@ -469,7 +479,7 @@ footer figure {
     }
 
     details {
-        width: 80rem;
+        max-width: 80rem;
         background-color: var(--cGold);
         margin: 0 auto;
         border-top: 3px solid black
@@ -514,6 +524,23 @@ footer figure {
         color: black;
         margin-bottom: 5rem;
     }
+    .dividerPink{
+        max-width: 70VW;
+        position: relative;
+    }
+    .dpImg{
+        width: 100%
+    }
+    .dividerPink figcaption{
+        height: clamp(5rem, 29vw - 1rem, 30vw);
+        width: clamp(5rem, 29vw - 1rem, 30vw);
+/*        padding: 4em;*/
+        border-radius: 10000px;
+        position: absolute;
+        top:0;
+        right:-11vw;
+        background-color: var(--accentPink);
+    }
 
     /*------------Seccion de PLEDGE---------*/
 
@@ -546,6 +573,11 @@ footer figure {
         max-width: 80rem;
         margin-bottom: 2rem;
     }
+    .sectorHolder{
+        border-bottom: 1px solid black;
+        width: 10em;
+        background-color: red;
+    }
 
     .pledgeGoals {
         margin: 0 auto;
@@ -569,43 +601,165 @@ footer figure {
     }
 
     /*    ---------PLEDGE FORM ----------*/
+
     .pledgeForm {
         height: 50rem;
-        width: 80rem;
+        max-width: 80rem;
         background-color: var(--midGray);
         margin: 0 auto;
         padding: 4em 1.5em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2em;
-        
-    }
-    .pledgeForm input[type=text],
-    .pledgeForm input[type=email]{
-        height: 2rem;
+
     }
 
-    .formLabels{
+    .pledgeForm input[type=text],
+    .pledgeForm input[type=email] {
+        height: 2.5rem;
+        border: none;
+    }
+
+    .formLabels {
         font-family: var(--txtBody);
         font-size: 1.5rem;
     }
-   
-    .formSector{
+
+    .formSector {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 5em;
-        
+
     }
-     .formName{
+
+    .sectorCheckbox {
+        display: flex;
+        margin-top: 2em;
+        gap: 1em;
+    }
+
+    .formName {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .formName input{
+
+    .formName input {
         width: 50%;
         margin-top: 1rem;
     }
+
+    .formCityONG {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .formCityONG input {
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    .formYT {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formYT input {
+        width: 20%;
+        margin-top: 1em;
+    }
+
+    .formCityCountry {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .formCityCountry div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .formCityCountry input {
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    .formEmail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formEmail input {
+        width: 70%;
+        margin-top: 1rem;
+    }
+
+    .formDisclaimer {
+        grid-column: 1 / 3;
+    }
+
+    .formPrivacy {
+        grid-column: 1 / 3;
+    }
+
+    .formButton {
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonForm {
+        padding: .5em 1em;
+        border-radius: 100px;
+        border: none;
+        background-color: var(--accentOrange);
+        color: var(--cWhite);
+        font-family: var(--txtHeadings);
+        font-size: 1.4375rem;
+
+
+    }
+
+    /*    --------Pledge Footy--------*/
+
+    .pledgeClosing {
+        display: flex;
+        align-items: center;
+        margin: 6em 0em;
+        max-width: 70vw;
+        position: relative;
+        background-image: url(../img/PLEDGE_footer.png);
+    }
+
+    .closingTxt {        
+        height: clamp(5rem, 29vw - 1rem, 30vw);
+        width: clamp(5rem, 29vw - 1rem, 30vw);
+/*        padding: 4em;*/
+        border-radius: 10000px;
+        position: absolute;
+        right: -13vw;
+        background-color: var(--accentOrange);
+        font-family: var(--txtHeadings);
+        font-size: 2.5rem;
+        color: var(--cWhite);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .closingImg{
+        width: 100%;
+    }
+
     /*    ------------FOOTER STUFF----------- */
 
     footer {
@@ -683,11 +837,11 @@ footer figure {
 
 /* Modal language */
 
-.hideModalLanguage{
+.hideModalLanguage {
     display: none;
 }
 
-.showModalLanguage{
+.showModalLanguage {
     display: inline-block;
 }
 
