@@ -1,0 +1,15 @@
+main {
+    height: 70vh;
+    overflow-y: auto;
+}
+
+button {
+    background-color: #262626;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+}

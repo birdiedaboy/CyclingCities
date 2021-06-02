@@ -14,6 +14,8 @@ firebase.analytics();
 
 let firestore = firebase.firestore();
 
+let auth = firebase.auth();
+
 const nuevaFirma = async () => {
   console.log("Nueva Firma");
 
@@ -50,6 +52,19 @@ const obtenerFirmas = async () => {
     console.log("error: ", error);
   }
 };
+
+const login = async () => {
+  console.log('hola');
+}
+
+const initExport = async () => {
+  try {
+    let user = await login();
+    console.log("user: ", user);
+  } catch (error) {
+    alert("error: ", error);
+  }
+}
 
 /* nuevaFirma();
 obtenerFirmas(); */

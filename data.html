@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ITDP’s Cycling Cities</title>
+    <meta name="description" content="Cycling Cities">
+    <meta name="author" content="ITDP">
+    <link rel="icon" type="image/png" href="https://i2.wp.com/mexico.itdp.org/wp-content/uploads/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/data.css">
+    <link rel="stylesheet" href="https://gist.githubusercontent.com/birdiedaboy/25068c693b9f6a533105d5e156f51f8e/raw/2a9b2c8c56fb25559ab0a6924086290d1150cf8a/cssReset.css" target="_blank">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
+</head>
+
+<body>
+    <header class="topnav">
+        <!--  Upper part    -->
+        <img src="img/ITDP_logoW.svg" alt="ITDP Logo" class="itdpLogoH">
+        <section class="hIcon">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 21.95 21.95">
+                    <defs>
+                        <style>
+                            .a {
+                                fill: #fff;
+                            }
+
+                        </style>
+                    </defs>
+                    <path class="a" d="M13.964,3A10.975,10.975,0,1,0,24.95,13.975,10.97,10.97,0,0,0,13.964,3ZM21.57,9.585H18.332a17.175,17.175,0,0,0-1.515-3.907A8.813,8.813,0,0,1,21.57,9.585ZM13.975,5.239a15.46,15.46,0,0,1,2.1,4.346H11.879A15.46,15.46,0,0,1,13.975,5.239ZM5.48,16.17a8.585,8.585,0,0,1,0-4.39H9.19a18.126,18.126,0,0,0-.154,2.195A18.126,18.126,0,0,0,9.19,16.17Zm.9,2.2H9.618a17.175,17.175,0,0,0,1.515,3.907A8.766,8.766,0,0,1,6.38,18.365Zm3.238-8.78H6.38a8.766,8.766,0,0,1,4.752-3.907A17.175,17.175,0,0,0,9.618,9.585Zm4.357,13.126a15.46,15.46,0,0,1-2.1-4.346h4.192A15.46,15.46,0,0,1,13.975,22.711Zm2.568-6.541H11.407a16.147,16.147,0,0,1-.176-2.195,16.007,16.007,0,0,1,.176-2.195h5.136a16.007,16.007,0,0,1,.176,2.195A16.147,16.147,0,0,1,16.543,16.17Zm.274,6.1a17.175,17.175,0,0,0,1.515-3.907H21.57a8.813,8.813,0,0,1-4.752,3.907Zm1.943-6.1a18.125,18.125,0,0,0,.154-2.195,18.126,18.126,0,0,0-.154-2.195h3.71a8.585,8.585,0,0,1,0,4.39Z" transform="translate(-3 -3)" />
+                </svg>
+            </a>
+        </section>
+        <!--   Bottom part    -->
+        <img src="img/CyclingCities_logo.svg" class="logo" alt="CyclingCities Logo">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="whycycling.html">¿Why Cycling?</a></li>
+                <li><a href="#">Data Dashboard</a></li>
+                <li><a href="#">Pledge</a></li>
+                <li><a href="https://growcycling.itdp.org/" target="_blank">Grow Cycling</a></li>
+                <li><a href="#">FAQs</a></li>
+                <!--                <li><a href="#">News</a></li>-->
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <main>
+        <section>
+            <button onclick="initExport()">Exportar informacion</button>
+        </section>
+    </main>
+    <footer>
+        <figure class="logoFooter">
+            <img src="img/CyclingCities_logoVert.svg" alt="">
+            <img src="img/ITDP_logoW.svg" alt="">
+        </figure>
+        <adress>
+            9 East 19th Street, 7th Floor,<br>
+            New York, NY 10003<br>
+            phone +1-212-629-8001<br>
+            mobility@itdp.org<br>
+        </adress>
+        <nav>
+            <ul>
+                <li>Why Cycling?</li>
+                <li>Dashboard</li>
+                <li>GrowCycling</li>
+                <li>FAQS</li>
+                <li>News</li>
+            </ul>
+        </nav>
+        <figure class="iconsFooter">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 21.95 21.95">
+                    <defs>
+                        <style>
+                            .a {
+                                fill: #fff;
+                            }
+
+                        </style>
+                    </defs>
+                    <path class="a" d="M13.964,3A10.975,10.975,0,1,0,24.95,13.975,10.97,10.97,0,0,0,13.964,3ZM21.57,9.585H18.332a17.175,17.175,0,0,0-1.515-3.907A8.813,8.813,0,0,1,21.57,9.585ZM13.975,5.239a15.46,15.46,0,0,1,2.1,4.346H11.879A15.46,15.46,0,0,1,13.975,5.239ZM5.48,16.17a8.585,8.585,0,0,1,0-4.39H9.19a18.126,18.126,0,0,0-.154,2.195A18.126,18.126,0,0,0,9.19,16.17Zm.9,2.2H9.618a17.175,17.175,0,0,0,1.515,3.907A8.766,8.766,0,0,1,6.38,18.365Zm3.238-8.78H6.38a8.766,8.766,0,0,1,4.752-3.907A17.175,17.175,0,0,0,9.618,9.585Zm4.357,13.126a15.46,15.46,0,0,1-2.1-4.346h4.192A15.46,15.46,0,0,1,13.975,22.711Zm2.568-6.541H11.407a16.147,16.147,0,0,1-.176-2.195,16.007,16.007,0,0,1,.176-2.195h5.136a16.007,16.007,0,0,1,.176,2.195A16.147,16.147,0,0,1,16.543,16.17Zm.274,6.1a17.175,17.175,0,0,0,1.515-3.907H21.57a8.813,8.813,0,0,1-4.752,3.907Zm1.943-6.1a18.125,18.125,0,0,0,.154-2.195,18.126,18.126,0,0,0-.154-2.195h3.71a8.585,8.585,0,0,1,0,4.39Z" transform="translate(-3 -3)" />
+                </svg>
+            </a>
+            © 2021 ITDP
+        </figure>
+
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.2.1/i18next.min.js" integrity="sha512-nPE90D+Al1Ek2PO6AojEXBDuoWgoH6h0XlFoWVjYq4Bj/Bvo0N2dyi464/rQl4FR37PWSaAVNDaa59UZVYjbMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>
