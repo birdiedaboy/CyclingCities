@@ -30,6 +30,11 @@ a,
     font-weight: normal;
     src: url('fonts/ITCFranklinGothicLTDemiRegular.woff2') format('woff2');
 }
+@font-face {
+    font-family: 'itcFranklinGmedium';
+    font-weight: bold;
+    src: url('fonts/ITCFranklinGothicStd-Med.otf') format('opentype');
+}
 
 @font-face {
     font-family: 'MegaByteBold';
@@ -55,7 +60,8 @@ a,
     --txtBody: 'itcFranklinGregular', sans-serif;
     --txtNav: 'itcFranklinGdemi', sans-serif;
     --txtHeadings: 'MegaByteBold', sans-serif;
-    --txtMM: 'MegaByteMedium, sans-serif'
+    --txtMM: 'MegaByteMedium, sans-serif';
+    --txtFGmed: 'itcFranklinGmedium, sans-serif'
     --txtSizeBody: 1.0625rem;
 
 }
@@ -463,6 +469,10 @@ footer figure {
         max-width: 90rem;
         margin: 0 auto;
     }
+    .referenceLink{
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
 
     /*------- Accordions --------*/
     summary {
@@ -482,6 +492,7 @@ footer figure {
 
     summary::marker {
         display: none;
+        color: white;
     }
 
     details {
