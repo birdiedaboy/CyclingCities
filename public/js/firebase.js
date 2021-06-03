@@ -1,11 +1,11 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyDGCe36mjaHTurx6pjH1aY-S8WerG-HUGg",
-  authDomain: "remi-test-ac43b.firebaseapp.com",
-  projectId: "remi-test-ac43b",
-  storageBucket: "remi-test-ac43b.appspot.com",
-  messagingSenderId: "237360435510",
-  appId: "1:237360435510:web:2deb5db5b045efde33a397",
-  measurementId: "G-9Y09PL6DS8",
+  apiKey: "AIzaSyCxEYp9KAapTO4H0aIEz9CX-QVbPyjLdpY",
+  authDomain: "cyclingcities-23d59.firebaseapp.com",
+  projectId: "cyclingcities-23d59",
+  storageBucket: "cyclingcities-23d59.appspot.com",
+  messagingSenderId: "330939898842",
+  appId: "1:330939898842:web:3a2b7f90d551771ba37ee3",
+  measurementId: "G-170SY6H4EM"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -16,6 +16,8 @@ let firestore = firebase.firestore();
 
 let auth = firebase.auth();
 
+let firma;
+
 /* let ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 ui.start('#firebaseui-auth-container', {
@@ -25,6 +27,7 @@ ui.start('#firebaseui-auth-container', {
 }); */
 
 async function nuevaFirma() {
+  firma = null;
   const drone = document.querySelector(
     'input[name="drone"][type="radio"]:checked'
   ).value;
@@ -34,7 +37,7 @@ async function nuevaFirma() {
   const city = document.getElementById("city").value;
   const email = document.getElementById("email").value;
   const scales = document.getElementById("scales").checked;
-  let firma = {
+  let newFirma = {
     date: new Date(),
     drone,
     name,
@@ -44,14 +47,14 @@ async function nuevaFirma() {
     email,
     scales,
   };
+  firma = newFirma;
   let ref = firestore.collection("firmas");
   try {
-    let data = await ref.add(firma);
+    await ref.add(newFirma);
     document.getElementById("form").reset();
-    alert("Formulario enviado");
-    console.log("data: ", data);
+    showModalShared();
   } catch (error) {
-    console.log("error: ", error);
+    alert("error: ", error);
   }
 }
 

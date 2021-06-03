@@ -13,7 +13,6 @@ window.addEventListener("click", function (e) {
 function changeCityInput() {
   const cityOrganization = document.getElementById("cityOrganization").value;
   const cityLabel = document.getElementById("cityLabel");
-  console.log(cityLabel);
   cityLabel.innerHTML = cityOrganization;
 }
 
@@ -26,6 +25,29 @@ function showLanguages() {
     return;
   }
   element.classList.add("showModalLanguage");
+}
+
+function showModalShared() {
+  const element = document.getElementById("modalShared");
+  const classes = element.classList.value;
+  const isShowElement = classes.includes("showModalShared");
+  if (isShowElement) {
+    element.classList.remove("showModalShared");
+    return;
+  }
+  element.classList.add("showModalShared");
+}
+function sharedPost(redSocial) {
+  let url = 'https://cyclingcities.itdp.org/pledge.html';
+  let message = `${firma.cityOrganization} just signed the %23CyclingCities pledge! We are now part of a global coalition working to increase access for 25 million more people to safe and connected cycle lanes by 2025. %23CyclingCities25, ${url}`
+  const redesSociales = {
+    whatsapp: `https://wa.me/?text=${message}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${message}`,
+    twitter: `https://twitter.com/intent/tweet?text=${message}`,
+    email: `mailto:?body=${message}`,
+  }
+  let ruta = redesSociales[redSocial];
+  window.open(ruta);
 }
 
 function openPage(ruta) {
