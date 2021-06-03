@@ -146,6 +146,7 @@ section a {
 
 }
 
+
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     content: '';
@@ -207,16 +208,17 @@ section a {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-.nav-toggle:checked nav-toggle-label span {
-    opacity: 0;
+.nav-toggle:checked ~ .nav-toggle-label span{
+/*    opacity: 0;*/
+    transform: rotate(90deg);
 }
-
-.nav-toggle:checked span::before {
-    transform: rotate(45deg);
+.nav-toggle:checked ~ .nav-toggle-label span::before{
+    opacity: 1;
+/*    transform: rotate(-45deg);*/
 }
-
-.nav-toggle:checked span::after {
-    transform: rotate(-45deg);
+.nav-toggle:checked ~ .nav-toggle-label span::after{
+    opacity: 1;
+/*    transform: rotate(45deg);*/
 }
 
 /*------------------ |||| MAIN BODY GENERAL |||| -----------------*/
