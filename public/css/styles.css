@@ -218,7 +218,7 @@ section a {
     transform: rotate(-45deg);
 }
 
-/*       ------------- MAIN BODY -------------    */
+/*------------------ |||| MAIN BODY GENERAL |||| -----------------*/
 main {
     padding-top: 12vw;
     background: var(--cWhite);
@@ -228,6 +228,72 @@ main {
     justify-content: center;
     align-items: center;
 }
+        /*------- | ACCORDIONS | --------*/
+    summary {
+        padding: .6em;
+        background-color: var(--cWhite);
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-family: var(--txtNav);
+        color: var(--cDark);
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    summary:hover {
+        /*        text-shadow: 0px 5px 10px black;*/
+    }
+
+    summary::marker {
+        display: none;
+    }
+
+
+    details {
+        width: var(--maxContentSize);
+        background-color: var(--cGold);
+        margin: 0 auto;
+        border-top: 3px solid black
+    }
+
+    .lastAccordion {
+        border-bottom: 3px solid black;
+        margin-bottom: 2rem;
+    }
+
+    details[open] {
+        /*change styles for detailes when it opens */
+    }
+
+    details > summary::after {
+        content: '\f067';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 700;
+        font-size: 1.5rem;
+        transition: transform 300ms ease;
+    }
+
+    details[open] > summary::after {
+        transform: rotate(45deg);
+    }
+
+    details ul {
+        font-family: var(--txtBody);
+        font-size: var(--txtSizeBody);
+    }
+
+    details li {
+        margin-bottom: 1rem;
+    }
+
+    details p {
+        margin: 0 1em 2em 1em;
+        font-family: var(--txtBody);
+        font-size: var(--txtSizeBody);
+        line-height: 1.5rem;
+    }
+/*-----------HOME----------------*/
 
 .hero {
     display: flex;
@@ -330,12 +396,29 @@ h2 {
 }
 strong[class^='subTitle']{
     width: var(--maxContentSize);
-    padding: 3em 0em;
+    padding: 2em 0em;
     margin: 0 auto;
     font-size: 2rem;
     display: block;
     font-family: var(--txtHeadings);
 }
+.subTitleWC {
+        color: var(--accentGreen);
+
+    }
+
+    .subTitleWCpink {
+        color: var(--accentPink);
+    }
+
+.subTitleWCorange {
+        color: var(--accentOrange);
+    }
+.subTitleWCblue {
+        color: var(--accentBlue);
+    }
+
+
 
 .ccPledge {
     background-color: var(--accentOrange)
@@ -541,17 +624,11 @@ footer nav ul a:hover {
         position: absolute;
         left: -215px;
     }
-
-    .subTitleWC {
-        color: var(--accentGreen);
-        padding: 3em 0em;
-
-    }
-
-    .subTitleWCpink {
-        color: var(--accentPink);
-        padding: 3em 0em;
-    }
+/*    ---------- WC SUBTITLES------------*/
+    
+    strong[class^='subTitle']{
+    padding: 3em 0em;
+}
 
     .dividerPink {
         max-width: 70VW;
@@ -629,10 +706,6 @@ footer nav ul a:hover {
         background-color: var(--accentOrange);
     }
 
-    .subTitleWCorange {
-        padding: 3em 0em;
-        color: var(--accentOrange);
-    }
 
     .referenceLink .orangeLink {
         color: var(--accentOrange);
@@ -673,15 +746,6 @@ footer nav ul a:hover {
         background-color: var(--accentBlue);
     }
 
-    .subTitleWCblue {
-        padding: 8rem;
-        display: block;
-        font-family: var(--txtHeadings);
-        font-size: 2rem;
-        color: var(--accentBlue);
-        max-width: 90rem;
-        margin: 0 auto;
-    }
 
     .referenceLink .blueLink {
         color: var(--accentBlue);
@@ -705,71 +769,6 @@ footer nav ul a:hover {
         color: var(--accentBlue)
     }
 
-    /*------- Accordions --------*/
-    summary {
-        padding: .6em;
-        background-color: var(--cWhite);
-        cursor: pointer;
-        font-size: 1.5rem;
-        font-family: var(--txtNav);
-        color: var(--cDark);
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-    summary:hover {
-        /*        text-shadow: 0px 5px 10px black;*/
-    }
-
-    summary::marker {
-        display: none;
-    }
-
-
-    details {
-        width: var(--maxContentSize);
-        background-color: var(--cGold);
-        margin: 0 auto;
-        border-top: 3px solid black
-    }
-
-    .lastAccordion {
-        border-bottom: 3px solid black;
-        margin-bottom: 2rem;
-    }
-
-    details[open] {
-        /*change styles for detailes when it opens */
-    }
-
-    details > summary::after {
-        content: '\f067';
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 700;
-        font-size: 1.5rem;
-        transition: transform 300ms ease;
-    }
-
-    details[open] > summary::after {
-        transform: rotate(45deg);
-    }
-
-    details ul {
-        font-family: var(--txtBody);
-        font-size: var(--txtSizeBody);
-    }
-
-    details li {
-        margin-bottom: 1rem;
-    }
-
-    details p {
-        margin: 0 1em 2em 1em;
-        font-family: var(--txtBody);
-        font-size: var(--txtSizeBody);
-        line-height: 1.5rem;
-    }
 
     .bigBodyTxt {
         width: var(--maxContentSize);
@@ -833,7 +832,7 @@ footer nav ul a:hover {
     .pledgeIntroTxt {
         margin: 0 auto;
         font-size: 2rem;
-        max-width: 80rem;
+        width: var(--maxContentSize);
         margin-bottom: 2rem;
     }
 
@@ -846,7 +845,7 @@ footer nav ul a:hover {
     .pledgeGoals {
         margin: 0 auto;
         font-size: 1.5rem;
-        max-width: 80rem;
+        width: var(--maxContentSize);
         list-style: circle;
         margin-bottom: 2rem;
     }
@@ -868,7 +867,7 @@ footer nav ul a:hover {
 
     .pledgeForm {
         height: 50rem;
-        max-width: 80rem;
+        width: var(--maxContentSize);
         background-color: var(--midGray);
         margin: 0 auto;
         padding: 4em 1.5em;
