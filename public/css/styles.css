@@ -635,18 +635,28 @@ strong[class^='subTitle'] {
 footer {
     background-color: var(--cDark);
     display: grid;
-    grid-template-columns: .5fr 3fr .5fr;
+    grid-template-columns: .25fr 3fr .25fr;
     grid-template-rows: 1fr 1fr;
     padding-top: 3em;
     padding-bottom: 2em;
     gap:1em;
 }
 .logoFooter{
+    display: flex;
+    flex-direction: column;
  grid-row: 1/3;
     grid-column: 2/3;
 }
 .logoFooter > *+*{
-    margin-top: 1em;
+    margin-top: 3em;
+    width: 20em;
+}
+.logoFooter img{
+    object-fit: contain;
+    
+}
+.logoFooter img:first-child{
+    width: 10em;
 }
 
 footer adress {
@@ -899,8 +909,8 @@ footer nav ul a:hover {
     }
 
     .closingTxt {
-        height: clamp(5rem, 29vw - 1rem, 30vw);
-        width: clamp(5rem, 29vw - 1rem, 30vw);
+        height: clamp(8rem, 29vw + 1rem, 30vw);
+        width: clamp(8rem, 29vw + 1rem, 30vw);
         /*        padding: 4em;*/
         border-radius: 10000px;
         position: absolute;
@@ -1255,11 +1265,12 @@ footer nav ul a:hover {
         grid-column: 2 / span 1;
         grid-row: 1/2;
         display: flex;
-
-
+        flex-direction: row;
 
     }
-
+    .logoFooter img{
+/*        width: 40%;*/
+    }
     .logoFooter > * + * {
         margin-top: 0em;
         margin-left: 4rem;
