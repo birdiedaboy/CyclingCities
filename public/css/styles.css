@@ -100,9 +100,13 @@ article {
     width: 100%;
     z-index: 666;
 }
+.hIcon, .itdpLogoH{
+    display: none;
+}
 
 .logo {
-    margin: 1.5em 0;
+    margin: 1.5em .0;
+    width: 98%;
 
 }
 
@@ -342,6 +346,7 @@ footer figure {
     }
 
     .itdpLogoH {
+        display: block;
         grid-column: 2 / span 1;
         grid-row: 1/2
     }
