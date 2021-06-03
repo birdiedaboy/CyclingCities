@@ -642,15 +642,14 @@ footer figure {
         justify-content: space-between;
     }
 
-    summary p {
-        max-width: 85ch;
-    }
 
     summary:hover {
         /*        text-shadow: 0px 5px 10px black;*/
     }
 
-    summary::marker {}
+    summary::marker {
+        display: none;
+    }
 
 
     details {
@@ -680,24 +679,39 @@ footer figure {
     details[open] > summary::after {
         transform: rotate(45deg);
     }
+    details ul{
+        font-family: var(--txtBody);
+        font-size: var(--txtSizeBody);
+    }
+    details li{
+        margin-bottom: 1rem;
+    }
+    details p{
+        margin: 0 1em 2em 1em;
+        font-family: var(--txtBody);
+        font-size: var(--txtSizeBody);
+        line-height: 1.5rem;
+    }
 
     .bigBodyTxt {
-        width: 80rem;
+        max-width: 80rem;
         margin: 0 auto;
         font-family: var(--txtBody);
         font-size: 1.5rem;
         color: black;
         font-weight: bold;
         margin-bottom: 2rem;
+        
     }
 
     .txt {
-        width: 80rem;
+        max-width: 80rem;
         margin: 0 auto;
         font-family: var(--txtBody);
         font-size: 1.0625rem;
         color: black;
         margin-bottom: 5rem;
+        line-height: 1.7rem;
     }
 
     .WCgreenBox{
