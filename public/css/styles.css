@@ -97,7 +97,8 @@ article {
 
     background: var(--cDark);
     text-align: center;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 666;
 }
@@ -223,7 +224,6 @@ section a {
 
 /*------------------ |||| MAIN BODY GENERAL |||| -----------------*/
 main {
-    padding-top: 12vw;
     background: var(--cWhite);
     height: 100%;
     display: flex;
@@ -1004,7 +1004,8 @@ footer nav ul a:hover {
 
     /*---------Main Page Body-----------*/
     main {
-        padding-top: 11.2rem;
+/*        padding-top: 11vw;*/
+/*        11.5rem*/
     }
 
     .container {
