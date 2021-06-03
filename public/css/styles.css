@@ -175,8 +175,9 @@ section a {
 
 .topnav nav ul {
     margin: 0;
-    padding: 0;
+    padding: 01em 0 01em 0;
     list-style: none;
+    background: var(--cDark);
 }
 
 .topnav nav li {
