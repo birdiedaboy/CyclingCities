@@ -277,7 +277,7 @@ main {
 
 .button {
     padding: .75em 2em;
-    width: 10rem;
+    width: 12em;
     background-color: var(--cWhite);
     font-family: var(--txtNav);
     color: var(--cDark);
