@@ -63,8 +63,9 @@ a,
     --txtNav: 'itcFranklinGdemi', sans-serif;
     --txtHeadings: 'MegaByteBold', sans-serif;
     --txtMM: 'MegaByteMedium, sans-serif';
-    --txtFGmed: 'itcFranklinGmedium, sans-serif'
-        --txtSizeBody: 1.0625rem;
+    --txtFGmed: 'itcFranklinGmedium, sans-serif';
+    --txtSizeBody: 1.0625rem;
+    --maxContentSize: clamp(10rem, 90vw, 65.25rem);
 
 }
 
@@ -327,6 +328,14 @@ h2 {
     padding-left: 10rem;
 
 }
+strong[class^='subTitle']{
+    width: var(--maxContentSize);
+    padding: 3em 0em;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: block;
+    font-family: var(--txtHeadings);
+}
 
 .ccPledge {
     background-color: var(--accentOrange)
@@ -503,8 +512,11 @@ footer nav ul a:hover {
     .ccDashboard {
         flex-direction: row;
     }
+    
 
     /*    -----------Why Cycling Page Styles---------*/
+    
+    
     .articleContentWC {
         display: flex;
         flex-direction: column;
@@ -531,24 +543,14 @@ footer nav ul a:hover {
     }
 
     .subTitleWC {
-        padding: 8rem;
-        display: block;
-        font-family: var(--txtHeadings);
-        font-size: 2rem;
         color: var(--accentGreen);
-        max-width: 90rem;
-        margin: 0 auto;
+        padding: 3em 0em;
 
     }
 
     .subTitleWCpink {
-        padding: 8rem;
-        display: block;
-        font-family: var(--txtHeadings);
-        font-size: 2rem;
         color: var(--accentPink);
-        max-width: 90rem;
-        margin: 0 auto;
+        padding: 3em 0em;
     }
 
     .dividerPink {
@@ -575,7 +577,7 @@ footer nav ul a:hover {
         margin: 0 auto;
         font-size: 1.5rem;
         font-family: var(--txtFGmed);
-        max-width: 80rem;
+        width: var(--maxContentSize);
         text-align: left;
         margin-bottom: 1em;
 
@@ -628,13 +630,8 @@ footer nav ul a:hover {
     }
 
     .subTitleWCorange {
-        padding: 8rem;
-        display: block;
-        font-family: var(--txtHeadings);
-        font-size: 2rem;
+        padding: 3em 0em;
         color: var(--accentOrange);
-        max-width: 90rem;
-        margin: 0 auto;
     }
 
     .referenceLink .orangeLink {
@@ -731,7 +728,7 @@ footer nav ul a:hover {
 
 
     details {
-        max-width: 80rem;
+        width: var(--maxContentSize);
         background-color: var(--cGold);
         margin: 0 auto;
         border-top: 3px solid black
@@ -775,7 +772,7 @@ footer nav ul a:hover {
     }
 
     .bigBodyTxt {
-        max-width: 80rem;
+        width: var(--maxContentSize);
         margin: 0 auto;
         font-family: var(--txtBody);
         font-size: 1.5rem;
@@ -786,7 +783,7 @@ footer nav ul a:hover {
     }
 
     .txt {
-        max-width: 80rem;
+        width: var(--maxContentSize);
         margin: 0 auto;
         font-family: var(--txtBody);
         font-size: 1.0625rem;
