@@ -793,9 +793,9 @@ footer nav ul a:hover {
     }
 
     .sectorHolder {
-        border-bottom: 1px solid black;
+        /* border-bottom: 1px solid black;
         width: 10em;
-        background-color: red;
+        background-color: red; */
     }
 
     .pledgeGoals {
