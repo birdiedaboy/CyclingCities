@@ -100,7 +100,9 @@ article {
     width: 100%;
     z-index: 666;
 }
-.hIcon, .itdpLogoH{
+
+.hIcon,
+.itdpLogoH {
     display: none;
 }
 
@@ -108,8 +110,9 @@ article {
     margin: 1.5em .0;
 
 }
-.logo img{
-    
+
+.logo img {
+
     width: 98%;
 }
 
@@ -296,27 +299,28 @@ h2 {
 
 .wCimg {
     /*    z-index: 3;*/
-/*    width: 10rem;*/
+    /*    width: 10rem;*/
 }
- .articleContentWC {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
 
-    }
+.articleContentWC {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 
-    .articleContentWC .introHeader {
-        background-color: var(--accentGreen);
-/*        margin-left: 20vw;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        height: 427px;
-        padding-right: 4rem;
-        padding-left: 10rem;
+}
 
-    }
+.articleContentWC .introHeader {
+    background-color: var(--accentGreen);
+    /*        margin-left: 20vw;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 427px;
+    padding-right: 4rem;
+    padding-left: 10rem;
+
+}
 
 .ccPledge {
     background-color: var(--accentOrange)
@@ -734,14 +738,17 @@ footer nav ul a:hover {
     details[open] > summary::after {
         transform: rotate(45deg);
     }
-    details ul{
+
+    details ul {
         font-family: var(--txtBody);
         font-size: var(--txtSizeBody);
     }
-    details li{
+
+    details li {
         margin-bottom: 1rem;
     }
-    details p{
+
+    details p {
         margin: 0 1em 2em 1em;
         font-family: var(--txtBody);
         font-size: var(--txtSizeBody);
@@ -756,7 +763,7 @@ footer nav ul a:hover {
         color: black;
         font-weight: bold;
         margin-bottom: 2rem;
-        
+
     }
 
     .txt {
@@ -769,13 +776,14 @@ footer nav ul a:hover {
         line-height: 1.7rem;
     }
 
-    .WCgreenBox{
+    .WCgreenBox {
         margin: 0 auto;
         max-width: 80rem;
         display: flex;
         justify-content: flex-start;
     }
-    .WCgreenBox div{
+
+    .WCgreenBox div {
         background-color: var(--accentGreen);
         padding: 2rem;
         color: white;
@@ -1037,7 +1045,8 @@ footer nav ul a:hover {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 1em;;
+        gap: 1em;
+        ;
     }
 
     .iconsFooter a {
@@ -1141,7 +1150,7 @@ footer nav ul a:hover {
 }
 
 
-.modalShared{
+.modalShared {
     position: fixed;
     z-index: 700;
     justify-content: center;
@@ -1184,10 +1193,10 @@ footer nav ul a:hover {
 }
 
 .modalShared .firstBox p {
-    color: white;   
+    color: white;
     font-size: 22px;
     font-family: var(--txtMM);
-    letter-spacing:  0.8px;
+    letter-spacing: 0.8px;
     line-height: 1.3;
     margin: 0;
 }
@@ -1195,10 +1204,10 @@ footer nav ul a:hover {
 .modalShared .firstBox h2 {
     margin: 0;
     padding-bottom: 15px;
-    color: white;   
+    color: white;
     font-size: 24px;
     font-family: var(--txtHeadings);
-    letter-spacing:  0.8px;
+    letter-spacing: 0.8px;
     line-height: 1.3;
 }
 
