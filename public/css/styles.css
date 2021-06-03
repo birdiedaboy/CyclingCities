@@ -229,6 +229,7 @@ main {
     align-items: center;
 }
         /*------- | ACCORDIONS | --------*/
+
     summary {
         padding: .6em;
         background-color: var(--cWhite);
@@ -362,16 +363,23 @@ h2 {
     padding-bottom: 2rem;
     color: var(--cWhite);
 }
+.whyCycling {
+    background-color: var(--accentGreen);
+}
+.ccPledge {
+    background-color: var(--accentOrange);
+}
+.ccDashboard {
+    background-color: var(--accentBlue);
+}
+
+.growCycle {
+    background-color: var(--accentPink);
+}
 
 /*-------------Why Cycling-------------*/
 
-.whyCycling {
-    flex-direction: column;
-    background-color: var(--accentGreen);
-    justify-content: space-around;
-    align-items: center;
-    /*    min-height: 40rem;*/
-}
+
 
 .wCimg {
     /*    z-index: 3;*/
@@ -514,23 +522,91 @@ strong[class^='subTitle']{
 
     }
 
+/*------------WC DIVIDERS---------*/
+
+.dpImg {
+        width: 100%
+    }
+.dividerRight {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2em;
+    }
+
+
+    .dividerOrange {
+        max-width: 70VW;
+        position: relative;
+        align-content: flex-end;
+        margin-top: 5em;
+    }
+
+    .dividerOrange figcaption {
+        height: clamp(9rem, 29vw - 1rem, 27.5vw);
+        width: clamp(9rem, 29vw - 1rem, 27.5vw);
+        /*        padding: 4em;*/
+        border-radius: 10000px;
+        position: absolute;
+        top: -1px;
+        left: -13vw;
+        background-color: var(--accentOrange);
+    }
+.dividerPink {
+        max-width: 70VW;
+        position: relative;
+    }
+
+
+    .dividerPink figcaption {
+        height: clamp(9rem, 29vw - 1rem, 30vw);
+        width: clamp(9rem, 29vw - 1rem, 30vw);
+        /*        padding: 4em;*/
+        border-radius: 10000px;
+        position: absolute;
+        top: 0;
+        right: -11vw;
+        background-color: var(--accentPink);
+    }
+.dividerBlue {
+        max-width: 70VW;
+        position: relative;
+        margin-top: 5em;
+    }
+
+    .dividerBlue figcaption {
+        height: clamp(9rem, 29vw - 1rem, 30vw);
+        width: clamp(9rem, 29vw - 1rem, 30vw);
+        /*        padding: 4em;*/
+        border-radius: 10000px;
+        position: absolute;
+        top: -1px;
+        right: -13vw;
+        background-color: var(--accentBlue);
+    }
+
+/*-----------WC END GREEN BOX---------*/
+
+    .WCgreenBox {
+        margin: 0 auto;
+        max-width: 80rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .WCgreenBox div {
+        background-color: var(--accentGreen);
+        padding: 2rem;
+        color: white;
+    }
+
     
 
 
 
 
-.ccPledge {
-    background-color: var(--accentOrange)
-        /*        flex-direction: row;*/
-}
 
-.ccDashboard {
-    background-color: var(--accentBlue);
-}
 
-.growCycle {
-    background-color: var(--accentPink);
-}
+/*-----------||FOOTER||--------------*/
 
 footer {
     background-color: var(--cDark);
@@ -666,10 +742,12 @@ footer nav ul a:hover {
         padding: 0em;
         gap: 0em;
     }
+    .ccPledge {
+        flex-direction: row-reverse;
+    }
 
-    .whyCycling {
-        padding: 0;
-        flex-direction: row;
+    .ccDashboard {
+        flex-direction: row-reverse;
     }
 
     .containerTxt {
@@ -680,20 +758,14 @@ footer nav ul a:hover {
 }
 
     .containerIMG {
-            max-width: 100%;
+        max-width: 100%;
     }
     .containerTxt div{
     display: flex;
     justify-content: flex-start;
 }
 
-    .ccPledge {
-        flex-direction: row-reverse;
-    }
-
-    .ccDashboard {
-        flex-direction: row;
-    }
+    
     
 
     /*    -----------Why Cycling Page Styles---------*/
@@ -729,71 +801,11 @@ footer nav ul a:hover {
     padding: 3em 0em;
 }
 
-    .dividerPink {
-        max-width: 70VW;
-        position: relative;
-    }
 
-    .dpImg {
-        width: 100%
-    }
-
-    .dividerPink figcaption {
-        height: clamp(5rem, 29vw - 1rem, 30vw);
-        width: clamp(5rem, 29vw - 1rem, 30vw);
-        /*        padding: 4em;*/
-        border-radius: 10000px;
-        position: absolute;
-        top: 0;
-        right: -11vw;
-        background-color: var(--accentPink);
-    }
 
     .referenceLink {
 
     }
-
-    .dividerRight {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 2em;
-    }
-
-    .dividerOrange {
-        max-width: 70VW;
-        position: relative;
-        align-content: flex-end;
-        margin-top: 5em;
-    }
-
-    .dividerOrange figcaption {
-        height: clamp(5rem, 29vw - 1rem, 27.5vw);
-        width: clamp(5rem, 29vw - 1rem, 27.5vw);
-        /*        padding: 4em;*/
-        border-radius: 10000px;
-        position: absolute;
-        top: -1px;
-        left: -13vw;
-        background-color: var(--accentOrange);
-    }
-
-    .dividerBlue {
-        max-width: 70VW;
-        position: relative;
-        margin-top: 5em;
-    }
-
-    .dividerBlue figcaption {
-        height: clamp(5rem, 29vw - 1rem, 30vw);
-        width: clamp(5rem, 29vw - 1rem, 30vw);
-        /*        padding: 4em;*/
-        border-radius: 10000px;
-        position: absolute;
-        top: -1px;
-        right: -13vw;
-        background-color: var(--accentBlue);
-    }
-
 
     .bigBodyTxt {
 
