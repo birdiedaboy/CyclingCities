@@ -397,6 +397,7 @@ h2 {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        padding-top: 1em;
     }
 .introHeader h2{
     margin: 1em 0;
@@ -1073,6 +1074,7 @@ footer nav ul a:hover {
         height: 427px;
         padding-right: 4rem;
         padding-left: 10rem;
+        padding-top: 0;
     }
 
     .articleContentWC .introHeader {
