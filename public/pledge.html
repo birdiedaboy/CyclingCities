@@ -54,7 +54,7 @@
             <header class="introHeader">
 
                 <h2>Sign the pledge</h2>
-                <img src="img/WC_homecircle.png" class="wCimg" alt="">
+                <img src="img/WC_circleimg.png" class="wCimg" alt="">
             </header>
             <strong class="subTitlePL">
                 A global coalition of cities, NGOs, civil society organizations, and private sector partners, ITDP’s Cycling Cities campaign calls for: 25 million more people near safe cycle lanes by 2025.
@@ -124,24 +124,24 @@
                 </div>
                 <div class="formName">
                     <label class="formLabels" for="name">Your name:</label>
-                    <input type="text" id="name" name="name" required size="15">
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="formCityONG">
                     <label class="formLabels" for="name">Your city or organization:</label>
-                    <input type="text" id="cityOrganization" name="name" required size="10" onchange="changeCityInput()">
+                    <input type="text" id="cityOrganization" name="name" required onchange="changeCityInput()">
                 </div>
                 <div class="formYT">
                     <label class="formLabels" for="name">Your title:</label>
-                    <input type="text" id="title" name="name" required size="15">
+                    <input type="text" id="title" name="name">
                 </div>
                 <div class="formCityCountry">
                     <div>
                         <label class="formLabels" for="name">City:</label>
-                        <input type="text" id="city" name="name" required size="15">
+                        <input type="text" id="city" name="name" required>
                     </div>
                     <div>
                         <label class="formLabels" for="name">Country:</label>
-                        <input type="text" id="country" name="name" required size="15">
+                        <input type="text" id="country" name="name" required>
                     </div>
 
 
@@ -218,21 +218,19 @@
         <div class="modalSharedBack"></div>
         <article>
             <div class="firstBox">
-                <h2>Thank you for <br> signing the Cycling Cites pledge!</h2>
-                <p>Thank you for signing the Cycling Cites pledge! We will contact you via email soon to share more information about the campaign.</p>
-                <div><img src="./img/cylingicon.png" alt="icon cycling"></div>
-                <p class="sharedText">Share</p>
-                <div class="sharedIcons">
-                    <img onclick="sharedPost('whatsapp')" src="./img/whatsapp.svg" alt="icon whatsapp">
-                    <img onclick="sharedPost('facebook')" src="./img/facebook.svg" alt="icon facebook">
-                    <img onclick="sharedPost('twitter')" src="./img/twitter.svg" alt="icon twitter">
-                    <img onclick="sharedPost('email')" src="./img/email.svg" alt="icon email">
-                </div>
-            </div>
-            <div class="lastBox">
-                <img src="./img/photoModal.png" alt="photo cycling">
+                <img src="img/pledgePopup.png" alt="Pledge Signed">;
+                
             </div>
             <div class="iconClose" onclick="showModalShared()"></div>
+            <div class="lastBox">
+                    <div class="sharedIcons">
+                       <p class="sharedText">Share</p>
+                        <img onclick="sharedPost('whatsapp')" src="./img/whatsapp.svg" alt="icon whatsapp">
+                        <img onclick="sharedPost('facebook')" src="./img/facebook.svg" alt="icon facebook">
+                        <img onclick="sharedPost('twitter')" src="./img/twitter.svg" alt="icon twitter">
+                        <img onclick="sharedPost('email')" src="./img/email.svg" alt="icon email">
+                    </div>
+            </div>
         </article>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.2.1/i18next.min.js" integrity="sha512-nPE90D+Al1Ek2PO6AojEXBDuoWgoH6h0XlFoWVjYq4Bj/Bvo0N2dyi464/rQl4FR37PWSaAVNDaa59UZVYjbMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
