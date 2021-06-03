@@ -219,7 +219,7 @@ section a {
 
 /*       ------------- MAIN BODY -------------    */
 main {
-    padding-top: 11.2rem;
+    padding-top: 12vw;
     background: var(--cWhite);
     height: 100%;
     display: flex;
@@ -244,6 +244,8 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 3em;
+    gap: 3em;
 }
 
 .containerTxt {
@@ -256,8 +258,8 @@ main {
     align-items: center;
 }
 
-.containrIMG img {
-    width: 40rem;
+.containerIMG img {
+    width: 80%;
 }
 
 
@@ -266,7 +268,11 @@ main {
     padding-bottom: 1rem;
     line-height: 1.5;
     color: var(--cWhite);
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
+}
+.containerTxt div{
+    display: flex;
+    justify-content: center;
 }
 
 .button {
@@ -460,29 +466,42 @@ footer nav ul a:hover {
     }
 
     /*---------Main Page Body-----------*/
+    main {
+        padding-top: 11.2rem;
+    }
 
     .container {
-        flex-direction: row-reverse;
+        flex-direction: row;
+        padding: 0em;
+        gap: 0em;
     }
 
     .whyCycling {
+        padding: 0;
         flex-direction: row;
     }
 
     .containerTxt {
         max-width: 45ch;
     }
+    .containerTxt p {
+    margin-bottom: 5rem;
+}
 
     .containerIMG {
-        /*        max-width: 60%;*/
+            max-width: 100%;
     }
+    .containerTxt div{
+    display: flex;
+    justify-content: flex-start;
+}
 
     .ccPledge {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
     .ccDashboard {
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
     /*    -----------Why Cycling Page Styles---------*/
