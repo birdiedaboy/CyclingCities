@@ -293,7 +293,10 @@ main {
         font-size: var(--txtSizeBody);
         line-height: 1.5rem;
     }
-/*-----------HOME----------------*/
+
+
+    /*----------- | HOME | ----------------*/
+
 
 .hero {
     display: flex;
@@ -417,6 +420,102 @@ strong[class^='subTitle']{
 .subTitleWCblue {
         color: var(--accentBlue);
     }
+.bigBodyTxt {
+        width: var(--maxContentSize);
+        margin: 0 auto;
+        font-family: var(--txtBody);
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 2rem;
+
+    }
+
+    .txt {
+        width: var(--maxContentSize);
+        margin: 0 auto;
+        font-family: var(--txtBody);
+        font-size: 1.0625rem;
+        color: black;
+        margin-bottom: 5rem;
+        line-height: 1.7rem;
+    }
+/*-------------- WC LINKS ----------*/
+.referenceLink {
+        margin: 0 auto;
+        font-size: 1.5rem;
+        font-family: var(--txtFGmed);
+        width: var(--maxContentSize);
+        text-align: left;
+        margin-bottom: 1em;
+
+    }
+.pink {
+        color: var(--accentPink)
+    }
+.referenceLink .pinkLink {
+        color: var(--accentPink);
+        position: relative;
+
+    }
+
+    .referenceLink .pinkLink::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: var(--accentPink);
+
+
+    }
+
+    
+.orange {
+        color: var(--accentOrange)
+    }
+.referenceLink .orangeLink {
+        color: var(--accentOrange);
+        position: relative;
+
+    }
+
+    .referenceLink .orangeLink::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: var(--accentOrange);
+
+
+    }
+.blue {
+        color: var(--accentBlue)
+    }
+
+    .referenceLink .blueLink {
+        color: var(--accentBlue);
+        position: relative;
+
+    }
+
+    .referenceLink .blueLink::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: var(--accentBlue);
+
+
+    }
+
+    
+
 
 
 
@@ -476,7 +575,7 @@ footer nav ul a:hover {
     color: rgb(214, 214, 214);
 }
 
-/*------- DESKTOP VERSION --------*/
+/*-------|||||||||||----|| DESKTOP VERSION ||----||||||||||||--------*/
 
 @media screen and (min-width: 850px) {
 
@@ -651,35 +750,7 @@ footer nav ul a:hover {
     }
 
     .referenceLink {
-        margin: 0 auto;
-        font-size: 1.5rem;
-        font-family: var(--txtFGmed);
-        width: var(--maxContentSize);
-        text-align: left;
-        margin-bottom: 1em;
 
-    }
-
-    .referenceLink .pinkLink {
-        color: var(--accentPink);
-        position: relative;
-
-    }
-
-    .referenceLink .pinkLink::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        height: 4px;
-        width: 100%;
-        background-color: var(--accentPink);
-
-
-    }
-
-    .pink {
-        color: var(--accentPink)
     }
 
     .dividerRight {
@@ -706,29 +777,6 @@ footer nav ul a:hover {
         background-color: var(--accentOrange);
     }
 
-
-    .referenceLink .orangeLink {
-        color: var(--accentOrange);
-        position: relative;
-
-    }
-
-    .referenceLink .orangeLink::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        height: 4px;
-        width: 100%;
-        background-color: var(--accentOrange);
-
-
-    }
-
-    .orange {
-        color: var(--accentOrange)
-    }
-
     .dividerBlue {
         max-width: 70VW;
         position: relative;
@@ -747,48 +795,13 @@ footer nav ul a:hover {
     }
 
 
-    .referenceLink .blueLink {
-        color: var(--accentBlue);
-        position: relative;
-
-    }
-
-    .referenceLink .blueLink::after {
-        content: '';
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        height: 4px;
-        width: 100%;
-        background-color: var(--accentBlue);
-
-
-    }
-
-    .blue {
-        color: var(--accentBlue)
-    }
-
-
     .bigBodyTxt {
-        width: var(--maxContentSize);
-        margin: 0 auto;
-        font-family: var(--txtBody);
-        font-size: 1.5rem;
-        color: black;
-        font-weight: bold;
-        margin-bottom: 2rem;
+
 
     }
 
     .txt {
-        width: var(--maxContentSize);
-        margin: 0 auto;
-        font-family: var(--txtBody);
-        font-size: 1.0625rem;
-        color: black;
-        margin-bottom: 5rem;
-        line-height: 1.7rem;
+        
     }
 
     .WCgreenBox {
