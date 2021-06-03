@@ -54,7 +54,7 @@ async function nuevaFirma() {
     document.getElementById("form").reset();
     showModalShared();
   } catch (error) {
-    console.log("error: ", error);
+    alert("error: ", error);
   }
 }
 

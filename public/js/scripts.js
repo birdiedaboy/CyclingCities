@@ -37,15 +37,14 @@ function showModalShared() {
   }
   element.classList.add("showModalShared");
 }
-
 function sharedPost(redSocial) {
   let url = 'https://cyclingcities.itdp.org/pledge.html';
-  let message = `${firma.cityOrganization} just signed the #CyclingCities pledge! We are now part of a global coalition working to increase access for 25 million more people to safe and connected cycle lanes by 2025. #CyclingCities25, ${url}`
+  let message = `${firma.cityOrganization} just signed the %23CyclingCities pledge! We are now part of a global coalition working to increase access for 25 million more people to safe and connected cycle lanes by 2025. %23CyclingCities25, ${url}`
   const redesSociales = {
-    whatsapp: `https://api.whatsapp.com/send?text=${message}`,
-    facebook: `http://www.facebook.com/sharer.php?s=100&p[title]=${message}p[url]=${url}"`,
+    whatsapp: `https://wa.me/?text=${message}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${message}`,
     twitter: `https://twitter.com/intent/tweet?text=${message}`,
-    email: `mailto:?subject=${firma.cityOrganization} just signed the #CyclingCities pledge!&amp;body=${message}`,
+    email: `mailto:?body=${message}`,
   }
   let ruta = redesSociales[redSocial];
   window.open(ruta);
