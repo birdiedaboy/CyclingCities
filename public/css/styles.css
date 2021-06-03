@@ -113,8 +113,8 @@ article {
 }
 
 .logo img {
-
-    width: 98%;
+padding: 1em;
+    width: 60%;
 }
 
 section a {
@@ -139,7 +139,7 @@ section a {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: var(--cDark);
+    background: var(--cWhite);
     height: 3px;
     width: 2em;
     position: relative;
@@ -935,6 +935,10 @@ footer nav ul a:hover {
         grid-column: 2 / span 1;
         grid-row: 2/3
     }
+    .logo img {
+        padding: 0;
+    width: 100%;
+}
 
     .itdpLogoH {
         display: block;
