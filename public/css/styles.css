@@ -308,16 +308,42 @@ footer {
     display: grid;
     grid-template-columns: .5fr auto minmax(600px, 3fr) .5fr;
     grid-template-rows: 1fr .5fr;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 footer adress {
+    font-family: var(--txtBody);
     color: var(--cWhite);
-
+    font-size: 17px;
+    line-height: 1.6;
 }
 
 footer figure {
     color: var(--cWhite);
 
+}
+
+footer nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer nav ul li {
+    font-size: 17px;
+    font-family: var(--txtFGmed);
+    letter-spacing: 0.9px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: var(--cWhite);
+}
+
+footer nav ul a:hover {
+    color: rgb(214, 214, 214);
 }
 
 /*------- DESKTOP VERSION --------*/
@@ -938,7 +964,6 @@ footer figure {
         display: grid;
         grid-template-columns: .5fr auto minmax(400px, 3fr) .5fr;
         grid-template-rows: 1fr 1fr;
-        padding-top: 1rem;
     }
 
     .logoFooter {
@@ -969,8 +994,20 @@ footer figure {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 1em;
+        gap: 1em;;
+    }
 
+    .iconsFooter a {
+        margin-right: 10px;
+    }
+
+    .iconsFooter a i {
+        font-size: 30px;
+        color: white;
+    }
+
+    .iconsFooter p {
+        margin-left: 25px;
     }
 
 
