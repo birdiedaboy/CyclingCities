@@ -50,35 +50,75 @@ async function nuevaFirma() {
   }
 }
 
-const obtenerFirmas = async () => {
-  console.log("obtener Firmas");
-
-  let ref = firestore.collection("firmas");
-
+const initExport = async () => {
+  const button = document.getElementById("exportData");
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  button.innerHTML = "Loading...";
+  button.classList.add('loading');
   try {
-    let collection = await ref.get();
-    let data = collection.docs.map((doc) => {
+    await auth.signInWithEmailAndPassword(email, password);
+    let collection = await firestore.collection("firmas").orderBy("date").get();
+    let firmas = collection.docs.map((doc) => {
       return {
         ...doc.data(),
+        date: new Date(doc.data().date.seconds * 1000),
         id: doc.id,
       };
     });
-    console.log("data: ", data);
+    if (firmas.length < 1) {
+      button.innerHTML = "No hay informacion";
+      button.classList.remove('loading');
+      return;
+    }
+    const keys = [
+      "date",
+      "name",
+      "email",
+      "cityOrganization",
+      "title",
+      "city",
+      "drone",
+      "scales",
+    ];
+    const rows = [
+      [
+        "Date",
+        "Name",
+        "Email",
+        "City Organization",
+        "Title",
+        "City",
+        "Drone",
+        "Scales",
+      ],
+    ];
+    for (const element of firmas) {
+      let row = [];
+      for (const key of keys) {
+        row.push(element[key]);
+      }
+      rows.push(row);
+    }
+    let csvContent = rows.map((e) => e.join(",")).join("\n");
+    var blob = new Blob([csvContent]);
+    if (window.navigator.msSaveOrOpenBlob) {
+      window.navigator.msSaveBlob(blob, "contacts.csv");
+    } else {
+      var a = window.document.createElement("a");
+      a.href = window.URL.createObjectURL(blob, {
+        type: "text/plain",
+      });
+      a.download = "contacts.csv";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+    button.innerHTML = "Export data";
+    button.classList.remove('loading');
   } catch (error) {
-    console.log("error: ", error);
-  }
-};
-
-const login = async () => {
-  console.log("hola");
-  /* auth.signInWithEmailAndPassword(email, password) */
-};
-
-const initExport = async () => {
-  try {
-    let user = await login();
-    console.log("user: ", user);
-  } catch (error) {
-    alert("error: ", error);
+    button.innerHTML = "Volver a intentar";
+    button.classList.remove('loading');
+    alert(error.message);
   }
 };
