@@ -555,58 +555,62 @@ strong[class^='subTitle'] {
     justify-content: flex-end;
     margin-top: 2em;
 }
+figure[class^=divider] figcaption{
+    height: clamp(9rem, 29vw - 1rem, 27.5vw);
+    width: clamp(9rem, 29vw - 1rem, 27.5vw);
+    border-radius: 10000px;
+    position: absolute;
+    font-family: var(--txtHeadings);
+        font-size: clamp(10px, 1vw + 1rem, 2rem);
+        color: var(--cWhite);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+figure[class^=divider]{
+    position: relative;
+    max-width: 70vw;
+}
 
 
 .dividerOrange {
-    max-width: 70VW;
-    position: relative;
     align-content: flex-end;
     margin-top: 5em;
 }
 
 .dividerOrange figcaption {
-    height: clamp(9rem, 29vw - 1rem, 27.5vw);
-    width: clamp(9rem, 29vw - 1rem, 27.5vw);
-    /*        padding: 4em;*/
-    border-radius: 10000px;
-    position: absolute;
     top: -1px;
     left: -13vw;
     background-color: var(--accentOrange);
 }
 
 .dividerPink {
-    max-width: 70VW;
-    position: relative;
 }
 
 
 .dividerPink figcaption {
-    height: clamp(9rem, 29vw - 1rem, 30vw);
-    width: clamp(9rem, 29vw - 1rem, 30vw);
-    /*        padding: 4em;*/
-    border-radius: 10000px;
-    position: absolute;
     top: 0;
     right: -11vw;
     background-color: var(--accentPink);
 }
 
 .dividerBlue {
-    max-width: 70VW;
-    position: relative;
     margin-top: 5em;
 }
 
 .dividerBlue figcaption {
-    height: clamp(9rem, 29vw - 1rem, 30vw);
-    width: clamp(9rem, 29vw - 1rem, 30vw);
-    /*        padding: 4em;*/
-    border-radius: 10000px;
-    position: absolute;
     top: -1px;
     right: -13vw;
     background-color: var(--accentBlue);
+}
+.dividerGreen {
+    margin-top: 5em;
+}
+.dividerGreen figcaption {
+    top: -1px;
+    right: -13vw;
+    background-color: var(--accentGreen);
 }
 
 /*-----------WC END GREEN BOX---------*/
@@ -929,7 +933,15 @@ footer nav ul a:hover {
     .closingImg {
         width: 100%;
     }
-/*--------PLEDGE END----------*/
+/*---||||||||||||||||||||||||--*/
+
+/*-----------DASHBOARD-------*/
+.articleContentDash .introHeader {
+        background-color: var(--accentBlue);
+    margin-bottom: 6em;
+
+    }
+
 
 /*-------|||||||||||----|| DESKTOP VERSION ||----||||||||||||--------*/
 
