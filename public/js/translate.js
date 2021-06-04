@@ -5,22 +5,25 @@ window.onload = () => {
   }
 };
 
-let languages = {
-  en: {
-    home_section_1_title: "How are you",
-  },
-  es: {
-    home_section_1_title: "Como estas tu",
-  },
-};
-
 function changeLenguage(lang) {
   let keys = Object.keys(languages[lang]);
   let element;
+  let elementFlag;
   for (const key of keys) {
     element = document.getElementById(key);
     if (element) {
       element.innerHTML = languages[lang][key];
+    }
+  }
+  let keysLanguage = Object.keys(languages);
+  for (const key of keysLanguage) {
+    elementFlag = document.getElementById(`lang_${key}`);
+    if (elementFlag) {
+      if (key === lang) {
+        elementFlag.classList.add("languageSelected");
+      } else {
+        elementFlag.classList.remove("languageSelected");
+      }
     }
   }
 }

@@ -23,9 +23,8 @@
             <a onclick="showLanguages()" class="position-relative" id="actionLanguage">
                 <p><img src="https://www.countryflags.io/us/flat/64.png" class="iconLanguage"></p>
                 <div id="languages" class="ModalLanguage hideModalLanguage">
-                    <p onclick="changeLenguage('en')"><img src="https://www.countryflags.io/mx/flat/64.png">Espanol</p>
-                    <p onclick="changeLenguage('es')"><img src="https://www.countryflags.io/af/flat/64.png">Otro</p>
-                    <p class="languageSelected" onclick="openPage('/index.html')"><img src="https://www.countryflags.io/us/flat/64.png">English</p>
+                    <a href="?lang=en" id="lang_en" onclick="changeLenguage('en')"><img src="https://www.countryflags.io/mx/flat/64.png">Espanol</a>
+                    <a href="?lang=es" id="lang_es" onclick="changeLenguage('es')"><img src="https://www.countryflags.io/us/flat/64.png">English</a>
                 </div>
             </a>
         </section>
@@ -107,7 +106,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/firebase.js"></script>
+    <script src="js/languages.js"></script>
     <script src="js/translate.js"></script>
 </body>
 
 </html>
+

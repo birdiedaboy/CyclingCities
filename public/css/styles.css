@@ -1362,8 +1362,8 @@ footer nav ul a:hover {
 
 .ModalLanguage {
     position: absolute;
-    top: 25px;
-    left: -145px;
+    top: 58px;
+    right: 150px;
     background-color: white;
     border-radius: 5px;
     width: 150px;
@@ -1371,7 +1371,7 @@ footer nav ul a:hover {
     padding: 10px 10px;
 }
 
-.ModalLanguage p {
+.ModalLanguage a {
     text-decoration: none;
     color: black;
     text-align: left;
@@ -1383,7 +1383,7 @@ footer nav ul a:hover {
     align-items: center;
 }
 
-.ModalLanguage p:hover {
+.ModalLanguage a:hover {
     background-color: #FF8D00;
 }
 
