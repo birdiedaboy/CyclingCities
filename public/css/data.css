@@ -12,4 +12,17 @@ button {
     height: 40px;
     width: 200px;
     cursor: pointer;
+    margin-top: 20px;
+}
+
+.formAuth label{
+    width: 120px;
+    display:block;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
 }

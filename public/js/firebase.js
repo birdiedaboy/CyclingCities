@@ -5,7 +5,7 @@ var firebaseConfig = {
   storageBucket: "cyclingcities-23d59.appspot.com",
   messagingSenderId: "330939898842",
   appId: "1:330939898842:web:3a2b7f90d551771ba37ee3",
-  measurementId: "G-170SY6H4EM"
+  measurementId: "G-170SY6H4EM",
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -17,14 +17,6 @@ let firestore = firebase.firestore();
 let auth = firebase.auth();
 
 let firma;
-
-/* let ui = new firebaseui.auth.AuthUI(firebase.auth());
-
-ui.start('#firebaseui-auth-container', {
-  signInOptions: [
-    firebase.auth.EmailAuthProvider.PROVIDER_ID
-  ],
-}); */
 
 async function nuevaFirma() {
   firma = null;
@@ -77,10 +69,10 @@ const obtenerFirmas = async () => {
   }
 };
 
-/* const login = async () => {
-  console.log('hola');
-  auth.sendSignInLinkToEmail()
-}
+const login = async () => {
+  console.log("hola");
+  /* auth.signInWithEmailAndPassword(email, password) */
+};
 
 const initExport = async () => {
   try {
@@ -89,7 +81,4 @@ const initExport = async () => {
   } catch (error) {
     alert("error: ", error);
   }
-} */
-
-/* nuevaFirma();
-obtenerFirmas(); */
+};
