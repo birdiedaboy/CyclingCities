@@ -20,16 +20,13 @@
         <section class="hIcon">
             <a target="_blank" href="https://www.facebook.com/ITDP.org"><i class="fab fa-facebook-square"></i></a>
             <a target="_blank" href="https://twitter.com/ITDP_HQ/"><i class="fab fa-twitter"></i></a>
-            <!--
             <a onclick="showLanguages()" class="position-relative" id="actionLanguage">
-                <p><img src="https://www.countryflags.io/us/flat/64.png" class="iconLanguage"></p>
+                <p id=language_active>En</p>
                 <div id="languages" class="ModalLanguage hideModalLanguage">
-                    <p onclick="openPage('/index.html')"><img src="https://www.countryflags.io/mx/flat/64.png">Espanol</p>
-                    <p onclick="openPage('/index.html')"><img src="https://www.countryflags.io/af/flat/64.png">Otro</p>
-                    <p class="languageSelected" onclick="openPage('/index.html')"><img src="https://www.countryflags.io/us/flat/64.png">English</p>
+                    <a href="?lang=es" id="lang_es">Es</a>
+                    <a href="?lang=en" id="lang_en">En</a>
                 </div>
             </a>
--->
         </section>
         <!--   Bottom part    -->
         <a href="index.html" class="logo"><img src="img/CyclingCities_logo.svg" class="" alt="CyclingCities Logo"></a>
@@ -109,6 +106,8 @@
     <script src="js/scripts.js"></script>
     <script src="js/firebase.js"></script>
     <script src="js/languages.js"></script>
+    <script src="js/languages/data_en.js"></script>
+    <script src="js/languages/data_es.js"></script>
     <script src="js/translate.js"></script>
 </body>
 

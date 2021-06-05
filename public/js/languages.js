@@ -1,4 +1,16 @@
 let languages = {
+  home: {
+    en: null,
+    es: null,
+  },
+  pledge: {
+    en: null,
+    es: null,
+  },
+  data: {
+    en: null,
+    es: null,
+  },
   en: {
     home_section_1_title: "How are you",
     data_main_form_label_email: 'Email:',

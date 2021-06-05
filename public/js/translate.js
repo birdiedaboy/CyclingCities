@@ -1,23 +1,39 @@
 window.onload = () => {
-  var lang = getParameterByName("lang");
-  var page = window.location.href;
-  console.log(page);
-  if (lang) {
-    changeLenguage(lang);
+  let lang = getParameterByName("lang");
+  let url = window.location.href;
+  url = url.split('/'); 
+  let page = '';
+  for (const element of url) {
+    if(element.includes('.html')) {
+      url = element;
+      url = url.split('.html'); 
+      if(url.length > 0) {
+        page = url[0];
+      }
+    }
+  }
+  if (lang && page) {
+    changeLenguage(lang, page);
+    const element = document.getElementById('language_active');
+    if (element) {
+      element.innerHTML = lang;
+    }
   }
 };
 
-function changeLenguage(lang) {
-  let keys = Object.keys(languages[lang]);
+function changeLenguage(lang, page) {
+  console.log(lang, page);
+  console.log(languages);
+  let keys = Object.keys(languages[page][lang]);
   let element;
   let elementFlag;
   for (const key of keys) {
     element = document.getElementById(key);
     if (element) {
-      element.innerHTML = languages[lang][key];
+      element.innerHTML = languages[page][lang][key];
     }
   }
-  let keysLanguage = Object.keys(languages);
+  let keysLanguage = Object.keys(languages[page]);
   for (const key of keysLanguage) {
     elementFlag = document.getElementById(`lang_${key}`);
     if (elementFlag) {

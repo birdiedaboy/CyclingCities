@@ -1,3 +1,3 @@
-let home_es = {
+languages.home.es = {
     button: 'Enviar'
 }

@@ -1,3 +1,3 @@
-let pledge_en = {
+languages.pledge.en = {
     button: 'Enviar'
 }
