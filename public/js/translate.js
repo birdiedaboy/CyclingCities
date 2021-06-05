@@ -1,5 +1,7 @@
 window.onload = () => {
   var lang = getParameterByName("lang");
+  var page = window.location.href;
+  console.log(page);
   if (lang) {
     changeLenguage(lang);
   }
