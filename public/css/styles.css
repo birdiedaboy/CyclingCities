@@ -754,8 +754,33 @@ footer nav ul a:hover {
         font-size: 2rem;
     line-height: 1.5em;
         width: var(--maxContentSize);
-        margin-bottom: 2rem;
+        
     }
+.pledgeIntroTxt[id=pledgeFormTitle2]{
+    margin-bottom: 2rem;
+}
+.ORGname{
+    margin: 0 auto;
+    width: var(--maxContentSize);
+}
+.ORGname input{
+    height: 2em;
+    width: 100%;
+    font-size: 2rem;
+    font-family: var(--txtHeadings);
+    color: var(--accentGreen);
+    border: none;
+    border-bottom: 5px solid var(--accentGreen);
+/*    animation: orginput .5s ease infinite;*/
+}
+@keyframes orginput{
+    0%{
+        border-bottom-color: var(--cWhite)
+    }
+    100%{
+        border-bottom-color: var(--accentGreen)
+    }
+}
     .sectorHolder {
         /* border-bottom: 1px solid black;
         width: 10em;
@@ -1202,11 +1227,10 @@ section[class*=dash] div img{
     }
 
 
-    .sectorHolder {
-        /* border-bottom: 1px solid black;
-        width: 10em;
-        background-color: red; */
-    }
+    .ORGname input{
+    height: 2em;
+    width: 50%;
+}
 
 
     /*    ---------PLEDGE FORM ----------*/
