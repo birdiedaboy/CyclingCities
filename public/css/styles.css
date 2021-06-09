@@ -1475,10 +1475,10 @@ section[class*=dash] div img{
 .ModalLanguage {
     position: absolute;
     top: 58px;
-    right: 150px;
+    right: 100px;
     background-color: white;
     border-radius: 5px;
-    width: 150px;
+    width: 60px;
     z-index: 10;
     padding: 10px 10px;
 }
@@ -1626,4 +1626,8 @@ section[class*=dash] div img{
     height: 5px;
     background-color: #FF8000;
     z-index: 703;
+}
+
+#language_active{
+    text-transform: uppercase;
 }
