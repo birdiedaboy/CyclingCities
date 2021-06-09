@@ -963,8 +963,8 @@ footer nav ul a:hover {
     width: var(--maxContentSize);
     display: grid;
     justify-items: center;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: .7fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
     gap: 1em;
     row-gap: 5em;
 }
@@ -986,7 +986,9 @@ section[class*=dash] div p{
 }
 section[class*=dash] div img{
 /*    margin: 0 auto;*/
-   width: auto;
+/*    width: 50%;*/
+   
+    
 }
 
 
@@ -1317,6 +1319,41 @@ section[class*=dash] div img{
     .closingImg {
         width: 100%;
     }
+    
+/*    ------------ |||DASHBOARD |||-----------*/
+    .articleContentDash section[class*=dash]{
+     margin: 0 auto;
+    margin-top: 4em;
+    width: var(--maxContentSize);
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: .7fr 1fr 1fr;
+    gap: 1em;
+    row-gap: 5em;
+}
+section[class*=dash]:last-child{
+    margin-bottom: 4em;
+}
+
+section[class*=dash] div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section[class*=dash] div p{
+    text-align: center;
+    font-family: var(--txtHeadings);
+    font-size: 1.5rem;
+    max-width: 18ch;
+    min-height: 4em;
+}
+section[class*=dash] div img{
+/*    margin: 0 auto;*/
+    width: auto;
+   
+    
+}
 
     /*    ------------FOOTER STUFF----------- */
 
