@@ -617,19 +617,35 @@ figure[class^=divider]{
 
 .WCgreenBox {
     margin: 0 auto;
-    max-width: 80rem;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .WCgreenBox div {
     background-color: var(--accentGreen);
-    padding: 2rem;
+    padding: 2em;
     color: white;
 }
+.WCgreenBox div h3{
+    margin-bottom: 1em;
+    font-family: var(--txtHeadings);
+    font-size: 1.5rem;
+    
+}
 
+.WCgreenBox div ul li{
+    margin-bottom: .5em;
+    font-size: 1rem
+}
+.WCgreenBox div ul li:last-child{
+    margin-bottom: 1em;
+}
 
-
+.WCgreenBox a{
+    color: var(--cWhite);
+    font-family: var(--txtNav);
+    font-size: 1.3rem;
+    text-decoration: underline 3px;
+    
+}
 
 
 
@@ -941,6 +957,37 @@ footer nav ul a:hover {
     margin-bottom: 6em;
 
     }
+.articleContentDash section[class*=dash]{
+     margin: 0 auto;
+    margin-top: 4em;
+    width: var(--maxContentSize);
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: .7fr 1fr 1fr;
+    gap: 1em;
+    row-gap: 5em;
+}
+section[class*=dash]:last-child{
+    margin-bottom: 4em;
+}
+
+section[class*=dash] div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section[class*=dash] div p{
+    text-align: center;
+    font-family: var(--txtHeadings);
+    font-size: 1.5rem;
+    max-width: 18ch;
+    min-height: 4em;
+}
+section[class*=dash] div img{
+/*    margin: 0 auto;*/
+   width: auto;
+}
 
 
 /*-------|||||||||||----|| DESKTOP VERSION ||----||||||||||||--------*/
@@ -1121,6 +1168,10 @@ footer nav ul a:hover {
 
     .WCgreenBox {
         width: var(--maxContentSize);
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
 
@@ -1345,7 +1396,7 @@ footer nav ul a:hover {
     }
 }
 
-
+/*Remi's code*/
 .position-relative {
     position: relative;
 }
