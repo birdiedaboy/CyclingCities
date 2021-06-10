@@ -1,0 +1,32 @@
+languages.pledge.id = {
+    pledgeTitle: 'Penandatanganan janji kampanye',
+    pledgeHeder: 'Sebuah koalisi global yang terdiri dari kota, LSM, organisasi sipil masyarakat, dan mitra sektor swasta, Kampanye Cycling Cities ITDP menargetkan: Tambahan 25 juta orang baru tinggal dekat jalur sepeda yang aman pada 2025',
+    pledgeSectionTitle: 'Untuk mencapai tujuan ini, kami mendorong kota-kota untuk:',
+    pledgeLgoal1: 'Menyediakan ruang yang aman dan inklusif di jalan raya untuk sepeda, sehingga menjadikan bersepeda sebagai pilihan paling tepat untuk banyak perjalanan',
+    pledgeLgoal2: 'Mengadopsi kebijakan, memprioritaskan pendanaan, dan mendukung kampanye edukasi yang menjadikan sepeda sebagai moda transportasi yang dapat diandalkan, mudah, nyaman, dan hemat biay.',
+    pledgeAcc01Title: 'Bersepeda adalah sarana untuk menuju kota yang sehat dan ramah lingkungan',
+    pledgeAcc01Content: 'Secara global,jika terjadi peralihan moda transportasi dari mobil ke sepeda sebesar 5%, emisi karbondioksida akan berkurang sebesar 7%— setara dengan berkurangnya lebih dari 134 juta mobil dari jalan raya—pada 2030. Kegiatan bersepeda rutin dapat mengurangi risiko penyakit jantung, stroke, kanker, dan diabetes tipe 2 hingga 30%.',
+    pledgeAcc02Title: 'Bersepeda adalah sarana yang tangguh (resilient)',
+    pledgeAcc02Content: 'Lebih dari 100 kota membangun lebih dari 2.000 kilometer jalur sepeda temporer dalam minggu-minggu pertama pandemi COVID-19. Pembangunan jalur sepeda temporer di Avenida de los Insurgentes, Mexico City meningkatkan perjalanan sepeda hingga dua kali lipat dibandingkan dengan masa sebelum Pandemi.',
+    pledgeAcc03Title: 'Bersepeda adalah momentum yang berkembang',
+    pledgeAcc03Content: 'Sistem sepeda sewa telah berkembang dari 13 layanan di 2004 ke lebih dari 1.000 layanan hari ini. Layanan-layanan baru sepeda sewa telah dan akan diluncurkan di Addis Ababa, Jakarta, Manila, Kairo, dan kota-kota negara-negara Global Selatan lainnya.',
+    pledgeFormTitle: 'Sebagai penandatangan kampanye Cycling Cities,',
+    pledgeFormTitle2: 'mendukung kegiatan bersepeda sebagai solusi penting untuk kesehatan masyarakat, akses, dan iklim, serta berdiri bersama koalisi ini untuk meningkatkan akses untuk lebih dari 25 juta penduduk baru ke jalur sepeda aman dan terkoneksi di kota mereka masing-masing pada 2025.',
+    pfSector: 'Sektor (centang salah satu):',
+    pfGov: 'Pemerintah',
+    pfNgo: 'LSM/setara',
+    pfPrivateS: 'Swasta',
+    pfName: 'Nama Anda:',
+    pfCityORG: 'Nama organisasi:',
+    pfCity:'Kota:',
+    pfTitle: 'Jabatan Anda:',
+    pfCountry: 'Negara:',
+    pfEmail: '*Alamat surel:',
+    pfDisclaimer: '*Kami menghargai privasi Anda dan tidak akan membagikan informasi Anda dengan pihak ketiga. ITDP akan menggunakan informasi yang Anda berikan pada formulir ini untuk memberikan informasi dan update mengenai kampanye Cycling Cities dan berita-berita lainnya dari ITDP. Anda dapat berhenti berlangganan kapan saja dengan mengklik tautan pada bagian bawah badan surel apapun yang Anda terima, atau dengan mengontak kami di mobility@itdp.org. Dengan mengklik tombol di bawah, Anda telah menyetujui bahwa kami akan memproses informasi yang Anda berikan sesuai dengan isi dan ketentuan dokumen ini.',
+    pfPublic: 'Centang di sini bila Anda TIDAK INGIN organisasi atau kota Anda disebarluaskan secara publik sebagai anggota kampanye Cycling Cities.',
+    pfSubmit: 'Tandatangani Janji Kampanye di sini!',
+    pledgeClosing: 'Join us for<br>the ride! ',
+    
+    
+    
+}

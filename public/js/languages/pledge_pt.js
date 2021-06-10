@@ -1,0 +1,32 @@
+languages.pledge.pt = {
+    pledgeTitle: 'Assine o compromisso',
+    pledgeHeder: 'A campanha do ITDP Cidades Pedaláveis é uma coalizão global de cidades, ONGs, organizações da sociedade civil e parceiros do setor privado cujo objetivo é garantir que: 25 milhões de pessoas a mais vivam perto de ciclovias seguras até 2025.',
+    pledgeSectionTitle: 'Para atingir essa meta, instamos as cidades a:',
+    pledgeLgoal1: 'Oferecer espaços mais seguros e inclusivos nas ruas para pedalar, de modo que abicicleta seja a opção mais conveniente para a maioria dos deslocamentos; e',
+    pledgeLgoal2: 'Adotar políticas, alocar fundos e apoiar campanhas educacionais que tornem a bicicleta um meio de transporte confiável, conveniente e econômico.',
+    pledgeAcc01Title: 'A bicicleta é uma ferramenta para cidades saudáveis e favoráveis ao clima',
+    pledgeAcc01Content: 'Se substituirmos automóveis por bicicletas em 5% dos deslocamentos realizados pelo mundo, conseguiremos reduzir as emissões de CO 2 em 7% até 2030 – o equivalente a retirar mais de 134 milhões de carros das ruas. Além disso, o uso regular da bicicleta reduz em até 30% o risco de doenças cardíacas, acidente vascular cerebral, câncer, obesidade e diabetes tipo 2.',
+    pledgeAcc02Title: 'A bicicleta é um meio de transporte resiliente',
+    pledgeAcc02Content: 'Mais de 100 cidades construíram mais de 2.000 quilômetros de ciclovias temporárias em poucas semanas após o início da pandemia de Covid-19. A faixa temporária da Av. Insurgentes, na Cidade do México, dobrou o número de deslocamentos em bicicleta ao longo do corredor em comparação com o período anterior à pandemia.',
+    pledgeAcc03Title: 'A mobilidade por bicicleta está ganhando força',
+    pledgeAcc03Content: 'Os programas de bicicletas compartilhadas, ou bikesharing, vêm crescendo em todo o mundo – dos 13 sistemas existentes em 2004,chegamos a mais de 1.000 atualmente. Novos sistemas foram lançados recentemente, ouserão lançados em breve, em Adis Abeba, Jacarta, Manila, Cairo e outras cidades do Sul Global.',
+    pledgeFormTitle: 'Como signatário da campanha Cidades Pedaláveis,',
+    pledgeFormTitle2: 'poia o uso da bicicleta como solução importante para problemas de saúde pública, acessibilidade e clima e se une à coalizão para aumentar o acesso de outras 25 milhões de pessoas a ciclovias seguras e conectadas até 2025.',
+    pfSector: 'Setor (escolha apenas 1):',
+    pfGov: 'Governo',
+    pfNgo: 'ONG/Sociedade Civil',
+    pfPrivateS: 'Setor privado',
+    pfName: 'Seu nome:',
+    pfCityORG: 'Sua cidade organização:',
+    pfCity:'Cidade:',
+    pfTitle: 'Seu cargo:',
+    pfCountry: 'País:',
+    pfEmail: '*Seu e-mail:',
+    pfDisclaimer: '*Respeitamos sua privacidade e não compartilhamos suas informações com terceiros. O ITDP usará as informações fornecidas neste formulário para divulgar informações e atualizações sobre a campanha Cidades Pedaláveis e outras notícias do ITDP. Você pode cancelar a inscrição a qualquer momento clicando no link no rodapé de qualquer e-mail que receber ou entrando em contato conosco em mobility@itdp.org. Ao clicar abaixo, você concorda que podemos tratar suas informações de acordo com estes termos.',
+    pfPublic: 'Marque se NÃO quiser que sua organização ou cidade seja listada publicamente como membro da campanha Cidades Pedaláveis.',
+    pfSubmit: 'Assine o compromisso!',
+    pledgeClosing: 'Join us for<br>the ride! ',
+    
+    
+    
+}
