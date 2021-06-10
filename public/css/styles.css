@@ -553,7 +553,7 @@ strong[class^='subTitle'] {
 .dividerRight {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2em;
+    width: 100%;
 }
 figure[class^=divider] figcaption{
     height: clamp(9rem, 29vw - 1rem, 27.5vw);
@@ -575,13 +575,13 @@ figure[class^=divider]{
 
 
 .dividerOrange {
-    align-content: flex-end;
     margin-top: 5em;
+    margin-left: auto;
 }
 
 .dividerOrange figcaption {
     top: -1px;
-    left: -13vw;
+    left: -14vw;
     background-color: var(--accentOrange);
 }
 
@@ -590,7 +590,7 @@ figure[class^=divider]{
 
 
 .dividerPink figcaption {
-    top: 0;
+    top: -1px;
     right: -11vw;
     background-color: var(--accentPink);
 }
@@ -768,9 +768,9 @@ footer nav ul a:hover {
     width: 100%;
     font-size: 2rem;
     font-family: var(--txtHeadings);
-    color: var(--accentGreen);
+    color: var(--accentOrange);
     border: none;
-    border-bottom: 5px solid var(--accentGreen);
+    border-bottom: 5px solid var(--accentOrange);
 /*    animation: orginput .5s ease infinite;*/
 }
 @keyframes orginput{
