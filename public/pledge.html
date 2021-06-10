@@ -7,7 +7,7 @@
     <meta name="description" content="ITDP's Cycling Cities Pledge">
     <meta name="author" content="ITDP">
     <meta property="og:image" content="img/OGpledge.png" />
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="https://i2.wp.com/mexico.itdp.org/wp-content/uploads/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://gist.githubusercontent.com/birdiedaboy/25068c693b9f6a533105d5e156f51f8e/raw/2a9b2c8c56fb25559ab0a6924086290d1150cf8a/cssReset.css" target="_blank">
@@ -17,7 +17,7 @@
 <body>
     <header class="topnav">
         <!--  Upper part    -->
-        <img src="img/ITDP_logoW.svg" alt="ITDP Logo" class="itdpLogoH">
+        <a target="_blank" href="https://www.itdp.org/" class="itdpLogoH"><img src="img/ITDP_logoW.svg" alt="ITDP Logo" class=""></a>
         <section class="hIcon">
             <a target="_blank" href="https://www.facebook.com/ITDP.org"><i class="fab fa-facebook-square"></i></a>
             <a target="_blank" href="https://twitter.com/ITDP_HQ/"><i class="fab fa-twitter"></i></a>
@@ -39,7 +39,7 @@
             <ul>
                 <li><a href="whycycling.html">Why Cycling?</a></li>
                 <li><a href="./pledge.html">Sign the pledge</a></li>
-                <!--                <li><a href="./index.html">Dashboard</a></li>-->
+                <li><a href="./dashboard.html">Dashboard</a></li>
                 <li><a href="https://growcycling.itdp.org/" target="_blank">Grow Cycling</a></li>
                 <!--                <li><a href="./faqs.html">FAQs</a></li>-->
                 <!--                <li><a href="./news.html">News</a></li>-->
@@ -98,12 +98,12 @@
             </details>
             <h3 class="pledgeIntroTxt" id="pledgeFormTitle">
                 As a signatory to the Cycling Cities campaign, </h3>
-                <div class="ORGname">
-                    <input type="text" id="cityLabel">
-                </div>
-                <h3 class="pledgeIntroTxt" id="pledgeFormTitle2">
-                    supports cycling as a critical public health, access, and climate solution, and stands with the coalition working to increase access for 25 million more people to safe and connected cycle lanes in their cities by 2025.
-                </h3>
+            <div class="ORGname">
+                <input type="text" id="cityLabel">
+            </div>
+            <h3 class="pledgeIntroTxt" id="pledgeFormTitle2">
+                supports cycling as a critical public health, access, and climate solution, and stands with the coalition working to increase access for 25 million more people to safe and connected cycle lanes in their cities by 2025.
+            </h3>
             <form action="" class="pledgeForm" onsubmit="nuevaFirma(); return false" id="form">
                 <div class="formSector">
                     <p class="formLabels" id="pfSector">Sector (Check only 1)</p>
@@ -119,7 +119,7 @@
                         </div>
                         <div>
                             <input type="radio" id="louie" name="drone" value="Private sector">
-                            <label for="louie"id="pfPrivateS">Private sector </label>
+                            <label for="louie" id="pfPrivateS">Private sector </label>
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@
                     <a href="./whycycling.html">Sign the pledge</a>
                 </li>
                 <li>
-                    <!--                    <a href="./index.html">Dashboard</a>-->
+                    <a href="./dashboard.html">Dashboard</a>
                 </li>
                 <li>
                     <a href="./growcycling">GrowCycling</a>
@@ -220,17 +220,17 @@
         <article>
             <div class="firstBox">
                 <img src="img/pledgePopup.png" alt="Pledge Signed">;
-                
+
             </div>
             <div class="iconClose" onclick="showModalShared()"></div>
             <div class="lastBox">
-                    <div class="sharedIcons">
-                       <p class="sharedText">Share</p>
-                        <img onclick="sharedPost('whatsapp')" src="./img/whatsapp.svg" alt="icon whatsapp">
-                        <img onclick="sharedPost('facebook')" src="./img/facebook.svg" alt="icon facebook">
-                        <img onclick="sharedPost('twitter')" src="./img/twitter.svg" alt="icon twitter">
-                        <img onclick="sharedPost('email')" src="./img/email.svg" alt="icon email">
-                    </div>
+                <div class="sharedIcons">
+                    <p class="sharedText">Share</p>
+                    <img onclick="sharedPost('whatsapp')" src="./img/whatsapp.svg" alt="icon whatsapp">
+                    <img onclick="sharedPost('facebook')" src="./img/facebook.svg" alt="icon facebook">
+                    <img onclick="sharedPost('twitter')" src="./img/twitter.svg" alt="icon twitter">
+                    <img onclick="sharedPost('email')" src="./img/email.svg" alt="icon email">
+                </div>
             </div>
         </article>
     </section>
