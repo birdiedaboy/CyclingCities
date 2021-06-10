@@ -1,3 +1,32 @@
 languages.pledge.es = {
-    button: 'Enviar'
+    pledgeTitle: 'Firme el compromiso',
+    pledgeHeder: 'La campaña de Ciclociudades25 del ITDP, ―una coalición global de ciudades, ONGs, organizaciones de la sociedad civil y personas socias del sector privado―,demanda: 25 millones de personas más cerca de infraestructura ciclista segura para el año 2025.',
+    pledgeSectionTitle: 'Para lograr este objetivo, invitamos a las ciudades a:',
+    pledgeLgoal1: 'Proporcionar espacios en la calle más seguros e inclusivos para andar en bicicleta, de modo que usar este modo de transporte sea la opción más conveniente para la mayoría de los viajes.',
+    pledgeLgoal2: 'Adoptar políticas, dedicar recursos económicos y apoyar campañas educativas que hagan de la bicicleta un modo de transporte confiable, conveniente y rentable.',
+    pledgeAcc01Title: 'La bicicleta es una herramienta para construir ciudades saludables y respetuosas con el clima',
+    pledgeAcc01Content: 'El sustituir tan solo el 5%  de los viajes en automóvil por viajes en bicicleta, reduciría las emisiones de CO₂ en un 7% a nivel mundial; el equivalente a sacar más de 134 millones de automóviles de las calles para 2030. El uso de la bicicleta en general  reduce  hasta un 30% el riesgo de enfermedades cardíacas, accidentes cerebrovasculares, cáncer, obesidad y diabetes tipo 2.',
+    pledgeAcc02Title: 'La bicicleta es resiliente',
+    pledgeAcc02Content: 'Más de 100 ciudades construyeron más de 2,000 kilómetros de ciclovías emergentes  pocas semanas después del inicio de la pandemia por COVID-19. La ciclovía emergente de la Av. Insurgentes en la Ciudad de México duplicó el número de viajes en bicicleta a lo largo del corredor en comparación con el periodo anterior a la pandemia.',
+    pledgeAcc03Title: 'El uso de la bicicleta está ganando impulso',
+    pledgeAcc03Content: 'Las bicicletas compartidas han crecido a nivel mundial, con 13 sistemas en 2004 a más de 1,000 en la actualidad. Se han lanzado recientemente, o se lanzarán pronto, nuevos sistemas en Addis Abeba, Yakarta, Manila, El Cairo y otras ciudades del Sur Global.',
+    pledgeFormTitle: 'Como firmante de La Campaña Ciclociudades25,',
+    pledgeFormTitle2: 'apoya el uso de la bicicleta como una solución crítica para la salud pública, la accesibilidad y el clima, y apoya a la coalición que trabaja para aumentar el acceso de 25 millones de personas más a una red de movilidad en bicicleta segura y conectada en sus ciudades para 2025.',
+    pfSector: 'Sector (marque solo 1):',
+    pfGov: 'Gobierno',
+    pfNgo: 'ONG / Sociedad Civil',
+    pfPrivateS: 'Sector privado',
+    pfName: 'Nombre',
+    pfCityORG: 'Tu city o organizacion:',
+    pfCity: 'Ciudad',
+    pfTitle: 'Cargo',
+    pfCountry: 'País',
+    pfEmail: 'Correo electrónico',
+    pfDisclaimer: 'Respetamos su privacidad y no compartimos su información con terceros. ITDP utilizará la información que proporcione en este formulario para compartir información y actualizaciones sobre la campaña Ciclociudades25 y otras noticias de ITDP. Puede cancelar su subscripción en cualquier momento haciendo clic en el enlace al pie de página de cualquier correo electrónico que reciba, o comunicándose con nosotros en mobility@itdp.org. Al hacer clic a continuación, acepta que podamos procesar su información de acuerdo con estos términos.',
+    pfPublic: 'Marque si NO quiere que su organización o ciudad aparezca públicamente como miembro de la campaña Ciudades Ciclistas.',
+    pfSubmit: '¡Firme el compromiso!',
+    pledgeClosing: '¡Unete a nosotros!',
+    
+    
+    
 }

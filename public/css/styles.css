@@ -788,7 +788,7 @@ footer nav ul a:hover {
     }
 
     .pledgeGoals {
-        margin: 0 auto;
+        margin: 2em auto;
         font-size: 1.5rem;
         width: var(--maxContentSize);
         list-style: circle;
@@ -1543,10 +1543,9 @@ section[class*=dash] div img{
 }
 
 .modalShared article {
-    background-color: #FF8000;
     position: relative;
     z-index: 701;
-    width: 900px;
+    width: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1556,42 +1555,46 @@ section[class*=dash] div img{
     width: 100%;
 }
 
+/*
 .modalShared .lastBox div {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     width: 100%;
 }
+*/
 
 .modalShared .lastBox .sharedText {
     font-family: var(--txtNav);
-    margin-right: 2em;
     color: var(--cWhite);
+    margin-right: 1em;
     font-size: 2rem;
 }
 
 .modalShared .lastBox .sharedIcons {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    gap:1em;
+    position: absolute;
+    bottom: 2.5em;
 }
 
 .modalShared .lastBox .sharedIcons img {
-    width: 40px;
-    margin-right: 20px;
+    width: 2.5em;
     cursor: pointer;
 }
 
 .modalShared .lastBox {
     width: 100%;
-    padding: 1em 0;
+
+/*    background: #2179FF;*/
 }
 
 .modalShared img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .modalShared .iconClose {

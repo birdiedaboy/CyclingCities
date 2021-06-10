@@ -65,10 +65,10 @@
             </h3>
             <ul class="pledgeGoals">
                 <li id="pledgeLgoal1">
-                    Provide more safe, inclusive spaces on the street to cycle, so that using a bicycle is the most convenient option for most trips
+                    Provide more safe, inclusive spaces on the street to cycle, so that using a bicycle is the most convenient option for most trips.
                 </li>
                 <li id="pledgeLgoal2">
-                    Adopt policies, dedicate funding, and support educational campaigns that make cycling a reliable, convenient, cost-effective transport mode
+                    Adopt policies, dedicate funding, and support educational campaigns that make cycling a reliable, convenient, cost-effective transport mode.
                 </li>
             </ul>
             <details>
@@ -128,7 +128,7 @@
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="formCityONG">
-                    <label class="formLabels" for="name" id="pfCity">Your city or organization:</label>
+                    <label class="formLabels" for="name" id="pfCityORG">Your city or organization:</label>
                     <input type="text" id="cityOrganization" name="name" required onchange="changeCityInput()">
                 </div>
                 <div class="formYT">
@@ -148,7 +148,7 @@
 
                 </div>
                 <div class="formEmail">
-                    <label class="formLabels" for="email" id="pfEmail">Email:*</label>
+                    <label class="formLabels" for="email" id="pfEmail">*Email:</label>
                     <input type="email" id="email" size="30" required>
                 </div>
                 <div class="formDisclaimer">
@@ -217,7 +217,7 @@
     </footer>
     <section class="modalShared hideModalShared" id="modalShared">
         <div class="modalSharedBack"></div>
-        <article>
+        <article class="plePop">
             <div class="firstBox">
                 <img src="img/pledgePopup.png" alt="Pledge Signed">;
 
@@ -225,7 +225,7 @@
             <div class="iconClose" onclick="showModalShared()"></div>
             <div class="lastBox">
                 <div class="sharedIcons">
-                    <p class="sharedText">Share</p>
+                    <p class="sharedText">Share:</p>
                     <img onclick="sharedPost('whatsapp')" src="./img/whatsapp.svg" alt="icon whatsapp">
                     <img onclick="sharedPost('facebook')" src="./img/facebook.svg" alt="icon facebook">
                     <img onclick="sharedPost('twitter')" src="./img/twitter.svg" alt="icon twitter">
@@ -241,6 +241,10 @@
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/firebase.js"></script>
+    <script src="js/languages.js"></script>
+    <script src="js/languages/pledge_en.js"></script>
+    <script src="js/languages/pledge_es.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>
