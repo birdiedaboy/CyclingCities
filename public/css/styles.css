@@ -1111,10 +1111,12 @@ section[class*=dash] div img{
 
     .container {
         flex-direction: row;
+        margin: 0 auto;
         padding: 0em;
         gap: 0em;
+        max-width: 80vw;
     }
-    .container:nth-child(even){
+    .reverse{
         flex-direction: row-reverse;
     }
 
