@@ -1473,8 +1473,8 @@ section[class*=dash] div img{
 
 .ModalLanguage {
     position: absolute;
-    top: 58px;
-    right: 100px;
+    top: 20px;
+    right: 0px;
     background-color: white;
     border-radius: 5px;
     width: 60px;
@@ -1636,4 +1636,9 @@ section[class*=dash] div img{
 }
 .hIcon a{
     cursor: pointer;
+}
+
+#actionLanguage {
+    cursor: pointer;
+    color: white;
 }

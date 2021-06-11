@@ -44,6 +44,8 @@ async function nuevaFirma() {
   try {
     await ref.add(newFirma);
     document.getElementById("form").reset();
+    const cityOrganization = document.getElementById("cityOrganization");
+    cityOrganization.value = "";
     showModalShared();
   } catch (error) {
     alert("error: ", error);
@@ -55,7 +57,7 @@ const initExport = async () => {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   button.innerHTML = "Loading...";
-  button.classList.add('loading');
+  button.classList.add("loading");
   try {
     await auth.signInWithEmailAndPassword(email, password);
     let collection = await firestore.collection("firmas").orderBy("date").get();
@@ -68,7 +70,7 @@ const initExport = async () => {
     });
     if (firmas.length < 1) {
       button.innerHTML = "No hay informacion";
-      button.classList.remove('loading');
+      button.classList.remove("loading");
       return;
     }
     const keys = [
@@ -115,10 +117,10 @@ const initExport = async () => {
       document.body.removeChild(a);
     }
     button.innerHTML = "Export data";
-    button.classList.remove('loading');
+    button.classList.remove("loading");
   } catch (error) {
     button.innerHTML = "Volver a intentar";
-    button.classList.remove('loading');
+    button.classList.remove("loading");
     alert(error.message);
   }
 };

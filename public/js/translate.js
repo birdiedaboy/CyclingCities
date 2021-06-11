@@ -22,8 +22,6 @@ window.onload = () => {
 };
 
 function changeLenguage(lang, page) {
-  console.log(lang, page);
-  console.log(languages);
   let keys = Object.keys(languages[page][lang]);
   let element;
   let elementFlag;

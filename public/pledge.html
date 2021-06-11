@@ -23,7 +23,7 @@ Sign the Cycling Cities pledge!">
         <section class="hIcon">
             <a target="_blank" href="https://www.facebook.com/ITDP.org"><i class="fab fa-facebook-square"></i></a>
             <a target="_blank" href="https://twitter.com/ITDP_HQ/"><i class="fab fa-twitter"></i></a>
-            <a onclick="showLanguages()" class="position-relative" id="actionLanguage">
+            <div onclick="showLanguages()" class="position-relative" id="actionLanguage">
                 <p id=language_active>En</p>
                 <div id="languages" class="ModalLanguage hideModalLanguage">
                     <a href="?lang=es" id="lang_es">es</a>
@@ -32,7 +32,7 @@ Sign the Cycling Cities pledge!">
                     <a href="?lang=id" id="lang_id">id</a>
                     <a href="?lang=ch" id="lang_ch">ch</a>
                 </div>
-            </a>
+            </div>
         </section>
         <!--   Bottom part    -->
         <a href="index.html" class="logo"><img src="img/CyclingCities_logo.svg" class="" alt="CyclingCities Logo"></a>
@@ -101,7 +101,7 @@ Sign the Cycling Cities pledge!">
             <h3 class="pledgeIntroTxt" id="pledgeFormTitle">
                 As a signatory to the Cycling Cities campaign, </h3>
             <div class="ORGname">
-                <input type="text" placeholder="Your city or organization" id="cityLabel">
+                <input type="text" placeholder="Your city or organization" id="cityLabel" onkeyup="changeValueCity(cityLabel.value)">
             </div>
             <h3 class="pledgeIntroTxt" id="pledgeFormTitle2">
                 supports cycling as a critical public health, access, and climate solution, and stands with the coalition working to increase access for 25 million more people to safe and connected cycle lanes in their cities by 2025.
