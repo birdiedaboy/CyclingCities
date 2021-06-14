@@ -1,6 +1,6 @@
 languages.pledge.es = {
     pledgeTitle: 'Firme el compromiso',
-    pledgeHeder: 'La campaña de Ciclociudades25 del ITDP, ―una coalición global de ciudades, ONGs, organizaciones de la sociedad civil y personas socias del sector privado―,demanda: 25 millones de personas más cerca de infraestructura ciclista segura para el año 2025.',
+    pledgeHeder: 'La campaña de CicloCiudades del ITDP, ―una coalición global de ciudades, ONGs, organizaciones de la sociedad civil y personas socias del sector privado―,demanda: 25 millones de personas más cerca de infraestructura ciclista segura para el año 2025.',
     pledgeSectionTitle: 'Para lograr este objetivo, invitamos a las ciudades a:',
     pledgeLgoal1: 'Proporcionar espacios en la calle más seguros e inclusivos para andar en bicicleta, de modo que usar este modo de transporte sea la opción más conveniente para la mayoría de los viajes.',
     pledgeLgoal2: 'Adoptar políticas, dedicar recursos económicos y apoyar campañas educativas que hagan de la bicicleta un modo de transporte confiable, conveniente y rentable.',
