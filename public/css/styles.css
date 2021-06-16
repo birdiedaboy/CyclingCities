@@ -91,6 +91,27 @@ article {
     /*    max-width: 80rem;*/
 }
 
+.subTitlePL::selection{
+    color: white;
+    background-color: var(--accentOrange);
+}
+.subTitleWC::selection{
+    color: white;
+    background-color: var(--accentGreen);
+}
+.subTitleWCpink::selection{
+    color: white;
+    background-color: var(--accentPink);
+}
+.subTitleWCorange::selection{
+    color: white;
+    background-color: var(--accentOrange);
+}
+.subTitleWCblue::selection{
+    color: white;
+    background-color: var(--accentBlue);
+}
+
 /* ------------ TOP NAV BAR -------------- */
 
 .topnav {
