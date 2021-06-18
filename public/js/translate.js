@@ -1,20 +1,20 @@
 window.onload = () => {
   let lang = getParameterByName("lang");
   let url = window.location.href;
-  url = url.split('/'); 
-  let page = '';
+  url = url.split("/");
+  let page = "";
   for (const element of url) {
-    if(element.includes('.html')) {
+    if (element.includes(".html")) {
       url = element;
-      url = url.split('.html'); 
-      if(url.length > 0) {
+      url = url.split(".html");
+      if (url.length > 0) {
         page = url[0];
       }
     }
   }
   if (lang && page) {
     changeLenguage(lang, page);
-    const element = document.getElementById('language_active');
+    const element = document.getElementById("language_active");
     if (element) {
       element.innerHTML = lang;
     }
@@ -27,8 +27,13 @@ function changeLenguage(lang, page) {
   let elementFlag;
   for (const key of keys) {
     element = document.getElementById(key);
+    if (element.includes("placeholder")) {
+      element.setAttribute("placeholder", languages[page][lang][key]);
+      return;
+    }
     if (element) {
       element.innerHTML = languages[page][lang][key];
+      return;
     }
   }
   let keysLanguage = Object.keys(languages[page]);

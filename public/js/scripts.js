@@ -18,7 +18,7 @@ function changeValueCity(event) {
 
 function changeCityInput() {
   const cityOrganization = document.getElementById("cityOrganization").value;
-  const cityLabel = document.getElementById("cityLabel");
+  const cityLabel = document.getElementById("cityLabel_placeholder");
   cityLabel.innerHTML = cityOrganization;
 }
 

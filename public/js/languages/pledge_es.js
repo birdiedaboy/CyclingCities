@@ -26,7 +26,7 @@ languages.pledge.es = {
     pfPublic: 'Marque si NO quiere que su organización o ciudad aparezca públicamente como miembro de la campaña Ciudades Ciclistas.',
     pfSubmit: '¡Firme el compromiso!',
     pledgeClosing: '¡Unete a nosotros!',
-    
+    cityLabel_placeholder: 'Lugar de organizacion'
     
     
 }
