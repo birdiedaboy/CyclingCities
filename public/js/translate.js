@@ -27,13 +27,12 @@ function changeLenguage(lang, page) {
   let elementFlag;
   for (const key of keys) {
     element = document.getElementById(key);
-    if (element.includes("placeholder")) {
-      element.setAttribute("placeholder", languages[page][lang][key]);
-      return;
-    }
     if (element) {
-      element.innerHTML = languages[page][lang][key];
-      return;
+      if (key.includes("placeholder")) {
+        element.setAttribute("placeholder", languages[page][lang][key]);
+      } else {
+        element.innerHTML = languages[page][lang][key];
+      }
     }
   }
   let keysLanguage = Object.keys(languages[page]);
