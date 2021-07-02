@@ -1,239 +1,534 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>ITDP’s Cycling Cities</title>
-    <meta name="description" content="Join the ride with us.
-Sign the Cycling Cities pledge!">
-    <meta name="author" content="ITDP">
-    <meta property="og:image" content="https://cyclingcities.itdp.org/img/OGpledge.png" />
-    <meta property="og:description" content="Be part of a global coalition working to increase access for 25 million more people to safe and connected cycle lanes by 2025." />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="https://i2.wp.com/mexico.itdp.org/wp-content/uploads/favicon.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <meta
+      name="description"
+      content="Join the ride with us.
+Sign the Cycling Cities pledge!"
+    />
+    <meta name="author" content="ITDP" />
+    <meta
+      property="og:image"
+      content="https://cyclingcities.itdp.org/img/OGpledge.png"
+    />
+    <meta
+      property="og:description"
+      content="Be part of a global coalition working to increase access for 25 million more people to safe and connected cycle lanes by 2025."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://i2.wp.com/mexico.itdp.org/wp-content/uploads/favicon.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="topnav">
-        <!--  Upper part    -->
-        <a target="_blank" href="https://www.itdp.org/" class="itdpLogoH"><img src="img/ITDP_logoW.svg" alt="ITDP Logo" class=""></a>
-        <section class="hIcon">
-            <a target="_blank" href="https://www.facebook.com/ITDP.org"><i class="fab fa-facebook-square"></i></a>
-            <a target="_blank" href="https://twitter.com/ITDP_HQ/"><i class="fab fa-twitter"></i></a>
-            <div onclick="showLanguages()" class="position-relative" id="actionLanguage">
-                <p id=language_active>En</p>
-                <div id="languages" class="ModalLanguage hideModalLanguage">
-                    <a href="?lang=es" id="lang_es">es</a>
-                    <a href="?lang=en" id="lang_en">en</a>
-                    <a href="?lang=pt" id="lang_pt">pt</a>
-                    <a href="?lang=id" id="lang_id">id</a>
-                    <a href="?lang=ch" id="lang_ch">ch</a>
-                </div>
-            </div>
-        </section>
-        <!--   Bottom part    -->
-        <a href="index.html" class="logo"><img src="img/CyclingCities_logo.svg" class="" alt="CyclingCities Logo"></a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
-            <ul>
-                <li><a href="whycycling.html">Why Cycling?</a></li>
-                <li><a href="./pledge.html">Sign the pledge</a></li>
-                <li><a href="./dashboard.html">Dashboard</a></li>
-                <li><a href="https://growcycling.itdp.org/" target="_blank">Grow Cycling</a></li>
-                <!--                <li><a href="./faqs.html">FAQs</a></li>-->
-                <!--                <li><a href="./news.html">News</a></li>-->
-            </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
+      <!--  Upper part    -->
+      <a target="_blank" href="https://www.itdp.org/" class="itdpLogoH"
+        ><img src="img/ITDP_logoW.svg" alt="ITDP Logo" class=""
+      /></a>
+      <section class="hIcon">
+        <a target="_blank" href="https://www.facebook.com/ITDP.org"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a target="_blank" href="https://twitter.com/ITDP_HQ/"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <div
+          onclick="showLanguages()"
+          class="position-relative"
+          id="actionLanguage"
+        >
+          <p id="language_active">En</p>
+          <div id="languages" class="ModalLanguage hideModalLanguage">
+            <a href="?lang=es" id="lang_es">es</a>
+            <a href="?lang=en" id="lang_en">en</a>
+            <a href="?lang=pt" id="lang_pt">pt</a>
+            <a href="?lang=id" id="lang_id">id</a>
+            <a href="?lang=ch" id="lang_ch">ch</a>
+          </div>
+        </div>
+      </section>
+      <!--   Bottom part    -->
+      <a href="index.html" class="logo"
+        ><img
+          src="img/CyclingCities_logo.svg"
+          class=""
+          alt="CyclingCities Logo"
+      /></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="whycycling.html">Why Cycling?</a></li>
+          <li><a href="./pledge.html">Sign the pledge</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <li>
+            <a href="https://growcycling.itdp.org/" target="_blank"
+              >Grow Cycling</a
+            >
+          </li>
+          <!--                <li><a href="./faqs.html">FAQs</a></li>-->
+          <!--                <li><a href="./news.html">News</a></li>-->
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
     </header>
     <main class="mainBucketPledge">
-        <article class="articleContentPL">
-            <header class="introHeader">
-
-                <h2 id="pledgeTitle">Sign the pledge</h2>
-                <img src="img/WC_circleimg.png" class="wCimg" alt="">
-            </header>
-            <strong class="subTitlePL" id="pledgeHeder">
-                A global coalition of cities, NGOs, civil society organizations, and private sector partners, ITDP’s Cycling Cities campaign calls for: 25 million more people near safe cycle lanes by 2025.
-            </strong>
-            <h3 class="pledgeIntroTxt" id="pledgeSectionTitle">
-                To achieve this goal, we urge cities to:
-
-            </h3>
-            <ul class="pledgeGoals">
-                <li id="pledgeLgoal1">
-                    Provide more safe, inclusive spaces on the street to cycle, so that using a bicycle is the most convenient option for most trips.
-                </li>
-                <li id="pledgeLgoal2">
-                    Adopt policies, dedicate funding, and support educational campaigns that make cycling a reliable, convenient, cost-effective transport mode.
-                </li>
-            </ul>
-            <details>
-                <summary id="pledgeAcc01Title">
-                    Cycling is a tool for healthy, climate-friendly cities
-                </summary>
-                <p id="pledgeAcc01Content">
-                    The need for social distancing and changes to commuting and overall travel patterns as a result of the COVID-19 pandemic have caused cities to reshape, rethink, and renew their public spaces, streets, and public transit systems to focus more on people. The pandemic revealed inequities that have been present for decades. Shelter at home orders opened many peoples’ eyes to how few essential destinations—grocery stores or markets, hospitals, play spaces—they could actually reach by foot. Cycling effectively filled those gaps, and many cities quickly implemented temporary cycle lanes to support growing demand.
-                </p>
-            </details>
-            <details>
-                <summary id="pledgeAcc02Title">
-                    Momentum is growing
-                </summary>
-                <p id="pledgeAcc02Content">
-                    Cities around the world are on their way to becoming Cycling Cities by demonstrating how providing safe spaces to cycle generates more trips by bicycle. A Cycling City is one where everyone feels safe to cycle anywhere. That means cycling infrastructure is connected and safe. But it also means that supportive policies, like low speed limits and dedicated resources, are in place. In Cycling Cities, people choose to cycle because it is the most convenient option for most trips.
-                </p>
-
-            </details>
-            <details class="lastAccordion">
-                <summary id="pledgeAcc03Title">
-                    The benefits are clear
-                </summary>
-                <p id="pledgeAcc03Content">
-                    More people cycling means cleaner air; healthier communities; quieter streets; less traffic; more green space; and, above all, more freedom and connections to access people and destinations.
-                </p>
-            </details>
-            <h3 class="pledgeIntroTxt" id="pledgeFormTitle">
-                As a signatory to the Cycling Cities campaign, </h3>
-            <div class="ORGname">
-                <input type="text" placeholder="Your city or organization" id="cityLabel_placeholder" onkeyup="changeValueCity(cityLabel_placeholder.value)">
+      <article class="articleContentPL">
+        <header class="introHeader">
+          <h2 id="pledgeTitle">Sign the pledge</h2>
+          <img src="img/WC_circleimg.png" class="wCimg" alt="" />
+        </header>
+        <strong class="subTitlePL" id="pledgeHeder">
+          A global coalition of cities, NGOs, civil society organizations, and
+          private sector partners, ITDP’s Cycling Cities campaign calls for: 25
+          million more people near safe cycle lanes by 2025.
+        </strong>
+        <h3 class="pledgeIntroTxt" id="pledgeSectionTitle">
+          To achieve this goal, we urge cities to:
+        </h3>
+        <ul class="pledgeGoals">
+          <li id="pledgeLgoal1">
+            Provide more safe, inclusive spaces on the street to cycle, so that
+            using a bicycle is the most convenient option for most trips.
+          </li>
+          <li id="pledgeLgoal2">
+            Adopt policies, dedicate funding, and support educational campaigns
+            that make cycling a reliable, convenient, cost-effective transport
+            mode.
+          </li>
+        </ul>
+        <details>
+          <summary id="pledgeAcc01Title">
+            Cycling is a tool for healthy, climate-friendly cities
+          </summary>
+          <p id="pledgeAcc01Content">
+            The need for social distancing and changes to commuting and overall
+            travel patterns as a result of the COVID-19 pandemic have caused
+            cities to reshape, rethink, and renew their public spaces, streets,
+            and public transit systems to focus more on people. The pandemic
+            revealed inequities that have been present for decades. Shelter at
+            home orders opened many peoples’ eyes to how few essential
+            destinations—grocery stores or markets, hospitals, play spaces—they
+            could actually reach by foot. Cycling effectively filled those gaps,
+            and many cities quickly implemented temporary cycle lanes to support
+            growing demand.
+          </p>
+        </details>
+        <details>
+          <summary id="pledgeAcc02Title">Momentum is growing</summary>
+          <p id="pledgeAcc02Content">
+            Cities around the world are on their way to becoming Cycling Cities
+            by demonstrating how providing safe spaces to cycle generates more
+            trips by bicycle. A Cycling City is one where everyone feels safe to
+            cycle anywhere. That means cycling infrastructure is connected and
+            safe. But it also means that supportive policies, like low speed
+            limits and dedicated resources, are in place. In Cycling Cities,
+            people choose to cycle because it is the most convenient option for
+            most trips.
+          </p>
+        </details>
+        <details class="lastAccordion">
+          <summary id="pledgeAcc03Title">The benefits are clear</summary>
+          <p id="pledgeAcc03Content">
+            More people cycling means cleaner air; healthier communities;
+            quieter streets; less traffic; more green space; and, above all,
+            more freedom and connections to access people and destinations.
+          </p>
+        </details>
+        <h3 class="pledgeIntroTxt" id="pledgeFormTitle">
+          As a signatory to the Cycling Cities campaign,
+        </h3>
+        <div class="ORGname">
+          <input
+            type="text"
+            placeholder="Your city or organization"
+            id="cityLabel_placeholder"
+            onkeyup="changeValueCity(cityLabel_placeholder.value)"
+          />
+        </div>
+        <h3 class="pledgeIntroTxt" id="pledgeFormTitle2">
+          supports cycling as a critical public health, access, and climate
+          solution, and stands with the coalition working to increase access for
+          25 million more people to safe and connected cycle lanes in their
+          cities by 2025.
+        </h3>
+        <div id="mc_embed_signup">
+          <form
+            action="https://itdp.us7.list-manage.com/subscribe/post?u=0b5e10eda9e3afdb7eceb76f6&amp;id=f069000cf2"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate pledgeForm"
+            target="_blank"
+            novalidate
+          >
+          <div class="w-100">
+            <p class="formLabels" id="pfSector">Sector (Check only 1)</p>
+          </div>
+            <div class="w-50">
+              <div class="mc-field-group input-group">
+                <ul class="sectorCheckbox">
+                  <div class="form-checkbox">
+                    <input
+                      type="checkbox"
+                      value="1"
+                      name="group[6][1]"
+                      id="mce-group[6]-6-0"
+                    />
+                    <div><label for="mce-group[6]-6-0">Government</label></div>
+                  </div>
+                  <div class="form-checkbox">
+                    <input
+                      type="checkbox"
+                      value="2"
+                      name="group[6][2]"
+                      id="mce-group[6]-6-1"
+                    />
+                    <div>
+                      <label for="mce-group[6]-6-1">NGO / Civil Society</label>
+                    </div>
+                  </div>
+                  <div class="form-checkbox">
+                    <input
+                      type="checkbox"
+                      value="4"
+                      name="group[6][4]"
+                      id="mce-group[6]-6-2"
+                    />
+                    <div>
+                      <label for="mce-group[6]-6-2">Private Sector</label>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-MMERGE5"
+                  >City or Organization <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="text"
+                  value=""
+                  name="MMERGE5"
+                  class="required"
+                  id="mce-MMERGE5"
+                />
+              </div>
+              <div class="mc-field-group size1of2">
+                <label for="mce-CITY"
+                  >City <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="number"
+                  name="CITY"
+                  class="required"
+                  value=""
+                  id="mce-CITY"
+                />
+              </div>
+              <div class="mc-field-group size1of2">
+                <label for="mce-MMERGE2"
+                  >Country <span class="asterisk">*</span>
+                </label>
+                <input
+                  type="number"
+                  name="MMERGE2"
+                  class="required"
+                  value=""
+                  id="mce-MMERGE2"
+                />
+              </div>
             </div>
-            <h3 class="pledgeIntroTxt" id="pledgeFormTitle2">
-                supports cycling as a critical public health, access, and climate solution, and stands with the coalition working to increase access for 25 million more people to safe and connected cycle lanes in their cities by 2025.
-            </h3>
-            <form action="" class="pledgeForm" onsubmit="nuevaFirma(); return false" id="form">
-                <div class="formSector">
-                    <p class="formLabels" id="pfSector">Sector (Check only 1)</p>
-                    <div class="sectorCheckbox">
-                        <div>
-                            <input type="radio" id="huey" name="drone" value="Government" checked>
-                            <label for="huey" id="pfGov">Government</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="dewey" name="drone" value="NGO/Civil Society">
-                            <label for="dewey" id="pfNgo">NGO/Civil Society
-                            </label>
-                        </div>
-                        <div>
-                            <input type="radio" id="louie" name="drone" value="Private sector">
-                            <label for="louie" id="pfPrivateS">Private sector </label>
-                        </div>
-                    </div>
+            <div class="w-50">  <!-- id="mc_embed_signup_scroll"  -->
+                <div class="mc-field-group">
+                  <label for="mce-MMERGE8"
+                    >Full Name <span class="asterisk">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value=""
+                    name="MMERGE8"
+                    class="required"
+                    id="mce-MMERGE8"
+                  />
                 </div>
-                <div class="formName">
-                    <label class="formLabels" for="name" id="pfName">Your name:</label>
-                    <input type="text" id="name" name="name" required>
+                <div class="mc-field-group">
+                  <label for="mce-MMERGE6"
+                    >Position / Title <span class="asterisk">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value=""
+                    name="MMERGE6"
+                    class="required"
+                    id="mce-MMERGE6"
+                  />
                 </div>
-                <div class="formCityONG">
-                    <label class="formLabels" for="name" id="pfCityORG">Your city or organization:</label>
-                    <input type="text" id="cityOrganization" name="name" required onchange="changeCityInput()">
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL"
+                    >Email Address <span class="asterisk">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    value=""
+                    name="EMAIL"
+                    class="required email"
+                    id="mce-EMAIL"
+                  />
                 </div>
-                <div class="formYT">
-                    <label class="formLabels" for="name" id="pfTitle">Your title:</label>
-                    <input type="text" id="title" name="name">
+                <div id="mce-responses" class="clear">
+                  <div
+                    class="response"
+                    id="mce-error-response"
+                    style="display: none"
+                  ></div>
+                  <div
+                    class="response"
+                    id="mce-success-response"
+                    style="display: none"
+                  ></div>
                 </div>
-                <div class="formCityCountry">
-                    <div>
-                        <label class="formLabels" for="name" id="pfCity">City:</label>
-                        <input type="text" id="city" name="name" required>
-                    </div>
-                    <div>
-                        <label class="formLabels" for="name" id="pfCountry">Country:</label>
-                        <input type="text" id="country" name="name" required>
-                    </div>
-
-
+                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                  <input
+                    type="text"
+                    name="b_0b5e10eda9e3afdb7eceb76f6_f069000cf2"
+                    tabindex="-1"
+                    value=""
+                  />
                 </div>
-                <div class="formEmail">
-                    <label class="formLabels" for="email" id="pfEmail">*Email:</label>
-                    <input type="email" id="email" size="30" required>
-                </div>
+              </div>
+              <div class="w-100">
                 <div class="formDisclaimer">
                     <p id="pfDisclaimer">
-                        *We respect your privacy and do not share your information with third parties. ITDP will use the information you provide on this form to share information and updates about the Cycling Cities campaign and other news from ITDP. You can unsubscribe at any time by clicking the link in the footer of any email you receive, or by contacting us at mobility@itdp.org. By clicking below, you agree that we may process your information in accordance with these terms.
+                      *We respect your privacy and do not share your information with
+                      third parties. ITDP will use the information you provide on this
+                      form to share information and updates about the Cycling Cities
+                      campaign and other news from ITDP. You can unsubscribe at any time
+                      by clicking the link in the footer of any email you receive, or by
+                      contacting us at mobility@itdp.org. By clicking below, you agree
+                      that we may process your information in accordance with these
+                      terms.
                     </p>
-                </div>
-                <div class="formPrivacy">
-                    <input type="checkbox" id="scales" name="scales">
-                    <label for="scales" id="pfPublic">Check if you do NOT want your organization or city listed publicly as a member of the Cycling Cities campaign.
-                    </label>
-                </div>
+                  </div>
+              </div>
+              <div class="w-100">
                 <div class="formButton">
-                    <button class="buttonForm" type="submit" id="pfSubmit">Sign the pledge</button>
+                    <input
+                      type="submit"
+                      value="Subscribe"
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                      class="buttonForm"
+                    />
                 </div>
-            </form>
-            <figure class="pledgeClosing">
-                <img src="img/PLEDGE_footer.png" class="closingImg" alt="">
-                <figcaption class="closingTxt" id="pledgeClosing">
-                    Join us for<br>the ride!
-                </figcaption>
-            </figure>
-        </article>
-
+              </div>
+          </form>
+        </div>
+        <form
+          action=""
+          class="pledgeForm"
+          onsubmit="nuevaFirma(); return false"
+          id="form"
+        >
+          <div class="formSector">
+            <p class="formLabels" id="pfSector">Sector (Check only 1)</p>
+            <div class="sectorCheckbox">
+              <div>
+                <input
+                  type="radio"
+                  id="huey"
+                  name="drone"
+                  value="Government"
+                  checked
+                />
+                <label for="huey" id="pfGov">Government</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="dewey"
+                  name="drone"
+                  value="NGO/Civil Society"
+                />
+                <label for="dewey" id="pfNgo">NGO/Civil Society </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="louie"
+                  name="drone"
+                  value="Private sector"
+                />
+                <label for="louie" id="pfPrivateS">Private sector </label>
+              </div>
+            </div>
+          </div>
+          <div class="formName">
+            <label class="formLabels" for="name" id="pfName">Your name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="formCityONG">
+            <label class="formLabels" for="name" id="pfCityORG"
+              >Your city or organization:</label
+            >
+            <input
+              type="text"
+              id="cityOrganization"
+              name="name"
+              required
+              onchange="changeCityInput()"
+            />
+          </div>
+          <div class="formYT">
+            <label class="formLabels" for="name" id="pfTitle"
+              >Your title:</label
+            >
+            <input type="text" id="title" name="name" />
+          </div>
+          <div class="formCityCountry">
+            <div>
+              <label class="formLabels" for="name" id="pfCity">City:</label>
+              <input type="text" id="city" name="name" required />
+            </div>
+            <div>
+              <label class="formLabels" for="name" id="pfCountry"
+                >Country:</label
+              >
+              <input type="text" id="country" name="name" required />
+            </div>
+          </div>
+          <div class="formEmail">
+            <label class="formLabels" for="email" id="pfEmail">*Email:</label>
+            <input type="email" id="email" size="30" required />
+          </div>
+          <div class="formDisclaimer">
+            <p id="pfDisclaimer">
+              *We respect your privacy and do not share your information with
+              third parties. ITDP will use the information you provide on this
+              form to share information and updates about the Cycling Cities
+              campaign and other news from ITDP. You can unsubscribe at any time
+              by clicking the link in the footer of any email you receive, or by
+              contacting us at mobility@itdp.org. By clicking below, you agree
+              that we may process your information in accordance with these
+              terms.
+            </p>
+          </div>
+          <div class="formPrivacy">
+            <input type="checkbox" id="scales" name="scales" />
+            <label for="scales" id="pfPublic"
+              >Check if you do NOT want your organization or city listed
+              publicly as a member of the Cycling Cities campaign.
+            </label>
+          </div>
+          <div class="formButton">
+            <button class="buttonForm" type="submit" id="pfSubmit">
+              Sign the pledge
+            </button>
+          </div>
+        </form>
+        <figure class="pledgeClosing">
+          <img src="img/PLEDGE_footer.png" class="closingImg" alt="" />
+          <figcaption class="closingTxt" id="pledgeClosing">
+            Join us for<br />the ride!
+          </figcaption>
+        </figure>
+      </article>
     </main>
     <footer>
-        <figure class="logoFooter">
-            <img src="img/CyclingCities_logoVert.svg" alt="">
-            <img src="img/ITDP_logoW.svg" alt="">
-        </figure>
-        <adress>
-            9 East 19th Street, 7th Floor,<br>
-            New York, NY 10003<br>
-            phone +1-212-629-8001<br>
-            mobility@itdp.org<br>
-        </adress>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./whycycling.html">Why Cycling?</a>
-                </li>
-                <li>
-                    <a href="./whycycling.html">Sign the pledge</a>
-                </li>
-                <li>
-                    <a href="./dashboard.html">Dashboard</a>
-                </li>
-                <li>
-                    <a href="./growcycling">GrowCycling</a>
-                </li>
-                <li>
-                    <!--                    <a href="./faqs.html">FAQS</a>-->
-                </li>
-                <li>
-                    <!--                    <a href="./news.html">News</a>-->
-                </li>
-            </ul>
-        </nav>
-        <figure class="iconsFooter">
-            <a target="_blank" href="https://www.facebook.com/ITDP.org"><i class="fab fa-facebook-square"></i></a>
-            <a target="_blank" href="https://twitter.com/ITDP_HQ/"><i class="fab fa-twitter"></i></a>
-            <p>© 2021 ITDP</p>
-        </figure>
-
-
+      <figure class="logoFooter">
+        <img src="img/CyclingCities_logoVert.svg" alt="" />
+        <img src="img/ITDP_logoW.svg" alt="" />
+      </figure>
+      <adress>
+        9 East 19th Street, 7th Floor,<br />
+        New York, NY 10003<br />
+        phone +1-212-629-8001<br />
+        mobility@itdp.org<br />
+      </adress>
+      <nav>
+        <ul>
+          <li>
+            <a href="./whycycling.html">Why Cycling?</a>
+          </li>
+          <li>
+            <a href="./whycycling.html">Sign the pledge</a>
+          </li>
+          <li>
+            <a href="./dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <a href="./growcycling">GrowCycling</a>
+          </li>
+          <li>
+            <!--                    <a href="./faqs.html">FAQS</a>-->
+          </li>
+          <li>
+            <!--                    <a href="./news.html">News</a>-->
+          </li>
+        </ul>
+      </nav>
+      <figure class="iconsFooter">
+        <a target="_blank" href="https://www.facebook.com/ITDP.org"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a target="_blank" href="https://twitter.com/ITDP_HQ/"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <p>© 2021 ITDP</p>
+      </figure>
     </footer>
     <section class="modalShared hideModalShared" id="modalShared">
-        <div class="modalSharedBack"></div>
-        <article class="plePop">
-            <div class="firstBox">
-                <img src="img/pledgePopup.png" alt="Pledge Signed">;
-
-            </div>
-            <div class="iconClose" onclick="showModalShared()"></div>
-            <div class="lastBox">
-                <div class="sharedIcons">
-                    <p class="sharedText">Share:</p>
-                    <img onclick="sharedPost('whatsapp')" src="./img/whatsapp.svg" alt="icon whatsapp">
-                    <img onclick="sharedPost('facebook')" src="./img/facebook.svg" alt="icon facebook">
-                    <img onclick="sharedPost('twitter')" src="./img/twitter.svg" alt="icon twitter">
-                    <img onclick="sharedPost('email')" src="./img/email.svg" alt="icon email">
-                </div>
-            </div>
-        </article>
+      <div class="modalSharedBack"></div>
+      <article class="plePop">
+        <div class="firstBox">
+          <img src="img/pledgePopup.png" alt="Pledge Signed" />;
+        </div>
+        <div class="iconClose" onclick="showModalShared()"></div>
+        <div class="lastBox">
+          <div class="sharedIcons">
+            <p class="sharedText">Share:</p>
+            <img
+              onclick="sharedPost('whatsapp')"
+              src="./img/whatsapp.svg"
+              alt="icon whatsapp"
+            />
+            <img
+              onclick="sharedPost('facebook')"
+              src="./img/facebook.svg"
+              alt="icon facebook"
+            />
+            <img
+              onclick="sharedPost('twitter')"
+              src="./img/twitter.svg"
+              alt="icon twitter"
+            />
+            <img
+              onclick="sharedPost('email')"
+              src="./img/email.svg"
+              alt="icon email"
+            />
+          </div>
+        </div>
+      </article>
     </section>
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
@@ -248,6 +543,28 @@ Sign the Cycling Cities pledge!">
     <script src="js/languages/pledge_id.js"></script>
     <script src="js/languages/pledge_ch.js"></script>
     <script src="js/translate.js"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[8] = "MMERGE8";
+        ftypes[8] = "text";
+        fnames[6] = "MMERGE6";
+        ftypes[6] = "text";
+        fnames[5] = "MMERGE5";
+        ftypes[5] = "text";
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+        fnames[1] = "CITY";
+        ftypes[1] = "number";
+        fnames[2] = "MMERGE2";
+        ftypes[2] = "number";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
+  </body>
 </html>

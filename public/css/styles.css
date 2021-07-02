@@ -839,10 +839,6 @@ footer nav ul a:hover {
         background-color: var(--midGray);
         margin: 0 auto;
         padding: 4em 1.5em;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2em;
-
     }
 
     .pledgeForm input[type=text],
@@ -854,6 +850,8 @@ footer nav ul a:hover {
     .formLabels {
         font-family: var(--txtBody);
         font-size: 1.5rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     .formSector {
@@ -1664,4 +1662,35 @@ section[class*=dash] div img{
 #actionLanguage {
     cursor: pointer;
     color: white;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox div {
+    margin-left: 10px;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+#mc_embed_signup form {
+    padding: 16px !important;
+}
+
+.pledgeForm {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    text-align: unset !important;
+    position: unset !important;
+    align-items:flex-start;
+    align-content:flex-start;
 }
