@@ -15,7 +15,7 @@ li {
 
 iframe,
 svg,
-a,
+a
     {
     display: block;
 }
@@ -1693,4 +1693,20 @@ section[class*=dash] div img{
     position: unset !important;
     align-items:flex-start;
     align-content:flex-start;
+}
+
+.form-space {
+    margin-top: 30px;
+}
+
+@media (max-width: 990px) {
+    .pledgeForm .w-50 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+    #mc_embed_signup .size1of2 {
+        width: 96% !important;
+    }
 }

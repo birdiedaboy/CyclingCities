@@ -178,14 +178,13 @@ Sign the Cycling Cities pledge!"
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
-            class="validate pledgeForm"
+            class="pledgeForm"
             target="_blank"
-            novalidate
           >
           <div class="w-100">
             <p class="formLabels" id="pfSector">Sector (Check only 1)</p>
           </div>
-            <div class="w-50">
+            <div class="w-50 form-space">
               <div class="mc-field-group input-group">
                 <ul class="sectorCheckbox">
                   <div class="form-checkbox">
@@ -195,7 +194,7 @@ Sign the Cycling Cities pledge!"
                       name="group[6][1]"
                       id="mce-group[6]-6-0"
                     />
-                    <div><label for="mce-group[6]-6-0">Government</label></div>
+                    <div><label for="mce-group[6]-6-0" id="pfGov">Government</label></div>
                   </div>
                   <div class="form-checkbox">
                     <input
@@ -205,7 +204,7 @@ Sign the Cycling Cities pledge!"
                       id="mce-group[6]-6-1"
                     />
                     <div>
-                      <label for="mce-group[6]-6-1">NGO / Civil Society</label>
+                      <label for="mce-group[6]-6-1" id="pfNgo">NGO / Civil Society</label>
                     </div>
                   </div>
                   <div class="form-checkbox">
@@ -216,16 +215,17 @@ Sign the Cycling Cities pledge!"
                       id="mce-group[6]-6-2"
                     />
                     <div>
-                      <label for="mce-group[6]-6-2">Private Sector</label>
+                      <label for="mce-group[6]-6-2" id="pfPrivateS">Private Sector</label>
                     </div>
                   </div>
                 </ul>
               </div>
-              <div class="mc-field-group">
-                <label for="mce-MMERGE5"
+              <div class="mc-field-group form-space">
+                <label for="mce-MMERGE5" id="pfCityORG"
                   >City or Organization <span class="asterisk">*</span>
                 </label>
                 <input
+                  onkeyup="changeCityInput()"
                   type="text"
                   value=""
                   name="MMERGE5"
@@ -233,24 +233,24 @@ Sign the Cycling Cities pledge!"
                   id="mce-MMERGE5"
                 />
               </div>
-              <div class="mc-field-group size1of2">
-                <label for="mce-CITY"
+              <div class="mc-field-group size1of2 form-space">
+                <label for="mce-CITY" id="pfCity"
                   >City <span class="asterisk">*</span>
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   name="CITY"
                   class="required"
                   value=""
                   id="mce-CITY"
                 />
               </div>
-              <div class="mc-field-group size1of2">
-                <label for="mce-MMERGE2"
+              <div class="mc-field-group size1of2 form-space">
+                <label for="mce-MMERGE2" id="pfCountry"
                   >Country <span class="asterisk">*</span>
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   name="MMERGE2"
                   class="required"
                   value=""
@@ -259,8 +259,8 @@ Sign the Cycling Cities pledge!"
               </div>
             </div>
             <div class="w-50">  <!-- id="mc_embed_signup_scroll"  -->
-                <div class="mc-field-group">
-                  <label for="mce-MMERGE8"
+                <div class="mc-field-group form-space">
+                  <label for="mce-MMERGE8" id="pfName"
                     >Full Name <span class="asterisk">*</span>
                   </label>
                   <input
@@ -271,9 +271,8 @@ Sign the Cycling Cities pledge!"
                     id="mce-MMERGE8"
                   />
                 </div>
-                <div class="mc-field-group">
-                  <label for="mce-MMERGE6"
-                    >Position / Title <span class="asterisk">*</span>
+                <div class="mc-field-group form-space">
+                  <label for="mce-MMERGE6" id="pfTitle">Position / Title <span class="asterisk">*</span>
                   </label>
                   <input
                     type="text"
@@ -283,10 +282,8 @@ Sign the Cycling Cities pledge!"
                     id="mce-MMERGE6"
                   />
                 </div>
-                <div class="mc-field-group">
-                  <label for="mce-EMAIL"
-                    >Email Address <span class="asterisk">*</span>
-                  </label>
+                <div class="mc-field-group form-space">
+                  <label for="mce-EMAIL" id="pfEmail">Email Address <span class="asterisk">*</span></label>
                   <input
                     type="email"
                     value=""
@@ -317,7 +314,7 @@ Sign the Cycling Cities pledge!"
                 </div>
               </div>
               <div class="w-100">
-                <div class="formDisclaimer">
+                <div class="formDisclaimer form-space">
                     <p id="pfDisclaimer">
                       *We respect your privacy and do not share your information with
                       third parties. ITDP will use the information you provide on this
@@ -330,15 +327,14 @@ Sign the Cycling Cities pledge!"
                     </p>
                   </div>
               </div>
-              <div class="w-100">
+              <div class="w-100 form-space">
                 <div class="formButton">
-                    <input
-                      type="submit"
-                      value="Subscribe"
-                      name="subscribe"
-                      id="mc-embedded-subscribe"
-                      class="buttonForm"
-                    />
+                    <button id="pfSubmit" type="submit"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="buttonForm">
+                    Sign the pledge
+                </button>
                 </div>
               </div>
           </form>
@@ -458,9 +454,9 @@ Sign the Cycling Cities pledge!"
         fnames[0] = "EMAIL";
         ftypes[0] = "email";
         fnames[1] = "CITY";
-        ftypes[1] = "number";
+        ftypes[1] = "text";
         fnames[2] = "MMERGE2";
-        ftypes[2] = "number";
+        ftypes[2] = "text";
       })(jQuery);
       var $mcj = jQuery.noConflict(true);
     </script>

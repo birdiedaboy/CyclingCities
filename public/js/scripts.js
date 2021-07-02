@@ -11,15 +11,14 @@ window.addEventListener("click", function (e) {
 });
 
 function changeValueCity(event) {
-  console.log(event);
-  const cityOrganization = document.getElementById("cityOrganization");
+  const cityOrganization = document.getElementById("mce-MMERGE5");
   cityOrganization.value = event;
 }
 
 function changeCityInput() {
-  const cityOrganization = document.getElementById("cityOrganization").value;
+  const cityOrganization = document.getElementById("mce-MMERGE5").value;
   const cityLabel = document.getElementById("cityLabel_placeholder");
-  cityLabel.innerHTML = cityOrganization;
+  cityLabel.value = cityOrganization;
 }
 
 function showLanguages() {
