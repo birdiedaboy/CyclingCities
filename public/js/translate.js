@@ -19,6 +19,7 @@ window.onload = () => {
       element.innerHTML = lang;
     }
   }
+  hideVideo(lang);
 };
 
 function changeLenguage(lang, page) {
@@ -55,4 +56,44 @@ function getParameterByName(name, url = window.location.href) {
   if (!results) return null;
   if (!results[2]) return "";
   return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+
+function hideVideo(lang) {
+  let frame_en = document.getElementById('frame_en');
+  let frame_es = document.getElementById('frame_es');
+  let frame_ch = document.getElementById('frame_ch');
+  let frame_id = document.getElementById('frame_id');
+  let frame_pt = document.getElementById('frame_pt');
+  if (!lang) {
+    frame_es.remove();
+    frame_ch.remove();
+    frame_id.remove();
+    frame_pt.remove();
+  } else if(lang == 'en') {
+    frame_es.remove();
+    frame_ch.remove();
+    frame_id.remove();
+    frame_pt.remove();
+  } else  if (land == 'es') {
+    frame_en.remove();
+    frame_ch.remove();
+    frame_id.remove();
+    frame_pt.remove();
+  } else  if (land == 'ch') {
+    frame_en.remove();
+    frame_es.remove();
+    frame_id.remove();
+    frame_pt.remove();
+  } else  if (land == 'id') {
+    frame_en.remove();
+    frame_es.remove();
+    frame_ch.remove();
+    frame_pt.remove();
+  } else  if (land == 'pt') {
+    frame_en.remove();
+    frame_es.remove();
+    frame_ch.remove();
+    frame_id.remove();
+  }
 }
