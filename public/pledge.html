@@ -173,12 +173,11 @@ Sign the Cycling Cities pledge!"
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
-            class="pledgeForm"
-            target="_blank"
+            class="validate pledgeForm"
           >
-          <div class="w-100">
-            <p class="formLabels" id="pfSector">Sector (Check only 1)</p>
-          </div>
+            <div class="w-100">
+              <p class="formLabels" id="pfSector">Sector (Check only 1)</p>
+            </div>
             <div class="w-50 form-space">
               <div class="mc-field-group input-group">
                 <ul class="sectorCheckbox">
@@ -189,7 +188,11 @@ Sign the Cycling Cities pledge!"
                       name="group[6][1]"
                       id="mce-group[6]-6-0"
                     />
-                    <div><label for="mce-group[6]-6-0" id="pfGov">Government</label></div>
+                    <div>
+                      <label for="mce-group[6]-6-0" id="pfGov"
+                        >Government</label
+                      >
+                    </div>
                   </div>
                   <div class="form-checkbox">
                     <input
@@ -199,7 +202,9 @@ Sign the Cycling Cities pledge!"
                       id="mce-group[6]-6-1"
                     />
                     <div>
-                      <label for="mce-group[6]-6-1" id="pfNgo">NGO / Civil Society</label>
+                      <label for="mce-group[6]-6-1" id="pfNgo"
+                        >NGO / Civil Society</label
+                      >
                     </div>
                   </div>
                   <div class="form-checkbox">
@@ -210,7 +215,9 @@ Sign the Cycling Cities pledge!"
                       id="mce-group[6]-6-2"
                     />
                     <div>
-                      <label for="mce-group[6]-6-2" id="pfPrivateS">Private Sector</label>
+                      <label for="mce-group[6]-6-2" id="pfPrivateS"
+                        >Private Sector</label
+                      >
                     </div>
                   </div>
                 </ul>
@@ -241,99 +248,106 @@ Sign the Cycling Cities pledge!"
                 />
               </div>
               <div class="mc-field-group size1of2 form-space">
-                <label for="mce-MMERGE2" id="pfCountry"
-                  >Country <span class="asterisk">*</span>
-                </label>
+                <label for="mce-COUNTRY"
+                >Country <span class="asterisk">*</span>
+              </label>
+              <input
+                type="text"
+                value=""
+                name="COUNTRY"
+                class="required"
+                id="mce-COUNTRY"
+              />
+              </div>
+            </div>
+            <div class="w-50">
+              <!-- id="mc_embed_signup_scroll"  -->
+              <div class="mc-field-group form-space">
+                <label for="mce-NAME"
+                >Full Name <span class="asterisk">*</span>
+              </label>
+              <input
+                type="text"
+                value=""
+                name="NAME"
+                class="required"
+                id="mce-NAME"
+              />
+              </div>
+              <div class="mc-field-group form-space">
+                <label for="mce-TITLE"
+                >Position / Title <span class="asterisk">*</span>
+              </label>
+              <input
+                type="text"
+                value=""
+                name="TITLE"
+                class="required"
+                id="mce-TITLE"
+              />
+              </div>
+              <div class="mc-field-group form-space">
+                <label for="mce-EMAIL" id="pfEmail"
+                  >Email Address <span class="asterisk">*</span></label
+                >
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                />
+              </div>
+              <div id="mce-responses" class="clear">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
                 <input
                   type="text"
-                  name="MMERGE2"
-                  class="required"
+                  name="b_0b5e10eda9e3afdb7eceb76f6_f069000cf2"
+                  tabindex="-1"
                   value=""
-                  id="mce-MMERGE2"
                 />
               </div>
             </div>
-            <div class="w-50">  <!-- id="mc_embed_signup_scroll"  -->
-                <div class="mc-field-group form-space">
-                  <label for="mce-MMERGE8" id="pfName"
-                    >Full Name <span class="asterisk">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    value=""
-                    name="MMERGE8"
-                    class="required"
-                    id="mce-MMERGE8"
-                  />
-                </div>
-                <div class="mc-field-group form-space">
-                  <label for="mce-MMERGE6" id="pfTitle">Position / Title <span class="asterisk">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    value=""
-                    name="MMERGE6"
-                    class="required"
-                    id="mce-MMERGE6"
-                  />
-                </div>
-                <div class="mc-field-group form-space">
-                  <label for="mce-EMAIL" id="pfEmail">Email Address <span class="asterisk">*</span></label>
-                  <input
-                    type="email"
-                    value=""
-                    name="EMAIL"
-                    class="required email"
-                    id="mce-EMAIL"
-                  />
-                </div>
-                <div id="mce-responses" class="clear">
-                  <div
-                    class="response"
-                    id="mce-error-response"
-                    style="display: none"
-                  ></div>
-                  <div
-                    class="response"
-                    id="mce-success-response"
-                    style="display: none"
-                  ></div>
-                </div>
-                <div style="position: absolute; left: -5000px" aria-hidden="true">
-                  <input
-                    type="text"
-                    name="b_0b5e10eda9e3afdb7eceb76f6_f069000cf2"
-                    tabindex="-1"
-                    value=""
-                  />
-                </div>
+            <div class="w-100">
+              <div class="formDisclaimer form-space">
+                <p id="pfDisclaimer">
+                  *We respect your privacy and do not share your information
+                  with third parties. ITDP will use the information you provide
+                  on this form to share information and updates about the
+                  Cycling Cities campaign and other news from ITDP. You can
+                  unsubscribe at any time by clicking the link in the footer of
+                  any email you receive, or by contacting us at
+                  mobility@itdp.org. By clicking below, you agree that we may
+                  process your information in accordance with these terms.
+                </p>
               </div>
-              <div class="w-100">
-                <div class="formDisclaimer form-space">
-                    <p id="pfDisclaimer">
-                      *We respect your privacy and do not share your information with
-                      third parties. ITDP will use the information you provide on this
-                      form to share information and updates about the Cycling Cities
-                      campaign and other news from ITDP. You can unsubscribe at any time
-                      by clicking the link in the footer of any email you receive, or by
-                      contacting us at mobility@itdp.org. By clicking below, you agree
-                      that we may process your information in accordance with these
-                      terms.
-                    </p>
-                  </div>
-              </div>
-              <div class="w-100 form-space">
-                <div class="formButton">
-                    <button id="pfSubmit" type="submit"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    class="buttonForm">
-                    Sign the pledge
+            </div>
+            <div class="w-100 form-space">
+              <div class="formButton">
+                <button
+                  id="pfSubmit"
+                  type="submit"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="buttonForm"
+                >
+                  Sign the pledge
                 </button>
-                </div>
               </div>
+            </div>
           </form>
-        </div>        
+        </div>
         <figure class="pledgeClosing">
           <img src="img/PLEDGE_footer.png" class="closingImg" alt="" />
           <figcaption class="closingTxt" id="pledgeClosing">
@@ -419,7 +433,34 @@ Sign the Cycling Cities pledge!"
         </div>
       </article>
     </section>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[8] = "NAME";
+        ftypes[8] = "text";
+        fnames[6] = "TITLE";
+        ftypes[6] = "text";
+        fnames[5] = "MMERGE5";
+        ftypes[5] = "text";
+        fnames[3] = "CITY";
+        ftypes[3] = "text";
+        fnames[1] = "COUNTRY";
+        ftypes[1] = "text";
+        fnames[0] = "EMAIL";
+        ftypes[0] = "email";
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
@@ -433,28 +474,5 @@ Sign the Cycling Cities pledge!"
     <script src="js/languages/pledge_id.js"></script>
     <script src="js/languages/pledge_ch.js"></script>
     <script src="js/translate.js"></script>
-    <script
-      type="text/javascript"
-      src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-    ></script>
-    <script type="text/javascript">
-      (function ($) {
-        window.fnames = new Array();
-        window.ftypes = new Array();
-        fnames[8] = "MMERGE8";
-        ftypes[8] = "text";
-        fnames[6] = "MMERGE6";
-        ftypes[6] = "text";
-        fnames[5] = "MMERGE5";
-        ftypes[5] = "text";
-        fnames[0] = "EMAIL";
-        ftypes[0] = "email";
-        fnames[1] = "CITY";
-        ftypes[1] = "text";
-        fnames[2] = "MMERGE2";
-        ftypes[2] = "text";
-      })(jQuery);
-      var $mcj = jQuery.noConflict(true);
-    </script>
   </body>
 </html>
