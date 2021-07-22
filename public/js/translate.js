@@ -65,6 +65,9 @@ function hideVideo(lang) {
   let frame_ch = document.getElementById('frame_ch');
   let frame_id = document.getElementById('frame_id');
   let frame_pt = document.getElementById('frame_pt');
+  if(!frame_en) {
+    return;
+  }
   if (!lang) {
     frame_es.remove();
     frame_ch.remove();
