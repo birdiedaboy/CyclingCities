@@ -31,6 +31,7 @@ Sign the Cycling Cities pledge!"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/pledge.css" />
   </head>
 
   <body>
@@ -177,10 +178,8 @@ Sign the Cycling Cities pledge!"
             class="validate pledgeForm"
             target="_blank"
           >
-            <div class="w-100">
+            <div class="w-50">
               <p class="formLabels" id="pfSector">Sector (Check only 1)</p>
-            </div>
-            <div class="w-50 form-space">
               <div class="mc-field-group input-group">
                 <ul class="sectorCheckbox">
                   <div class="form-checkbox">
@@ -224,9 +223,25 @@ Sign the Cycling Cities pledge!"
                   </div>
                 </ul>
               </div>
+            </div>
+            <div class="w-50">
+              <div class="mc-field-group form-space">
+                <label for="mce-NAME" id="pfName"
+                  >Your name<span class="asterisk">*</span>
+                </label>
+                <input
+                  type="text"
+                  value=""
+                  name="NAME"
+                  class="required"
+                  id="mce-NAME"
+                />
+              </div>
+            </div>
+            <div class="w-50">
               <div class="mc-field-group form-space">
                 <label for="mce-MMERGE5" id="pfCityORG"
-                  >City or Organization <span class="asterisk">*</span>
+                  >Your city or organization<span class="asterisk">*</span>
                 </label>
                 <input
                   onkeyup="changeCityInput()"
@@ -237,60 +252,55 @@ Sign the Cycling Cities pledge!"
                   id="mce-MMERGE5"
                 />
               </div>
-              <div class="mc-field-group size1of2 form-space">
-                <label for="mce-CITY" id="pfCity"
-                  >City <span class="asterisk">*</span>
+            </div>
+            <div class="w-50">
+              <div class="mc-field-group form-space">
+                <label for="mce-TITLE" id="pfTitle"
+                  >Your title<span class="asterisk">*</span>
                 </label>
                 <input
                   type="text"
-                  name="CITY"
-                  class="required"
                   value=""
-                  id="mce-CITY"
+                  name="TITLE"
+                  class="required"
+                  id="mce-TITLE"
                 />
               </div>
-              <div class="mc-field-group size1of2 form-space">
-                <label for="mce-COUNTRY"
-                >Country <span class="asterisk">*</span>
-              </label>
-              <input
-                type="text"
-                value=""
-                name="COUNTRY"
-                class="required"
-                id="mce-COUNTRY"
-              />
+            </div>
+            <div class="w-50 form-row">
+              <div class="w-50">
+                <div class="mc-field-group size1of2 form-space">
+                  <label for="mce-CITY" id="pfCity"
+                    >City <span class="asterisk">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="CITY"
+                    class="required"
+                    value=""
+                    id="mce-CITY"
+                  />
+                </div>
+              </div>
+              <div class="w-50">
+                <div class="mc-field-group size1of2 form-space">
+                  <label for="mce-COUNTRY" id="pfCountry"
+                    >Country <span class="asterisk">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value=""
+                    name="COUNTRY"
+                    class="required"
+                    id="mce-COUNTRY"
+                  />
+                </div>
               </div>
             </div>
             <div class="w-50">
-              <!-- id="mc_embed_signup_scroll"  -->
-              <div class="mc-field-group form-space">
-                <label for="mce-NAME"
-                >Full Name <span class="asterisk">*</span>
-              </label>
-              <input
-                type="text"
-                value=""
-                name="NAME"
-                class="required"
-                id="mce-NAME"
-              />
-              </div>
-              <div class="mc-field-group form-space">
-                <label for="mce-TITLE"
-                >Position / Title <span class="asterisk">*</span>
-              </label>
-              <input
-                type="text"
-                value=""
-                name="TITLE"
-                class="required"
-                id="mce-TITLE"
-              />
-              </div>
               <div class="mc-field-group form-space">
                 <label for="mce-EMAIL" id="pfEmail"
-                  >Email Address <span class="asterisk">*</span></label
+                  >Email:<span class="asterisk">*</span></label
                 >
                 <input
                   type="email"
@@ -300,29 +310,34 @@ Sign the Cycling Cities pledge!"
                   id="mce-EMAIL"
                 />
               </div>
-              <div id="mce-responses" class="clear">
-                <div
-                  class="response"
-                  id="mce-error-response"
-                  style="display: none"
-                ></div>
-                <div
-                  class="response"
-                  id="mce-success-response"
-                  style="display: none"
-                ></div>
-              </div>
-              <div style="position: absolute; left: -5000px" aria-hidden="true">
-                <input
-                  type="text"
-                  name="b_0b5e10eda9e3afdb7eceb76f6_f069000cf2"
-                  tabindex="-1"
-                  value=""
-                />
-              </div>
             </div>
-            <div class="w-100">
-              <div class="formDisclaimer form-space">
+            <div>
+              <div class="w-100">
+                <div id="mce-responses" class="clear">
+                  <div
+                    class="response"
+                    id="mce-error-response"
+                    style="display: none"
+                  ></div>
+                  <div
+                    class="response"
+                    id="mce-success-response"
+                    style="display: none"
+                  ></div>
+                </div>
+                <div
+                  style="position: absolute; left: -5000px"
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_0b5e10eda9e3afdb7eceb76f6_f069000cf2"
+                    tabindex="-1"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="w-100">
                 <p id="pfDisclaimer">
                   *We respect your privacy and do not share your information
                   with third parties. ITDP will use the information you provide
@@ -334,18 +349,18 @@ Sign the Cycling Cities pledge!"
                   process your information in accordance with these terms.
                 </p>
               </div>
-            </div>
-            <div class="w-100 form-space">
-              <div class="formButton">
-                <button
-                  id="pfSubmit"
-                  type="submit"
-                  name="subscribe"
-                  id="mc-embedded-subscribe"
-                  class="buttonForm"
-                >
-                  Sign the pledge
-                </button>
+              <div class="w-100 form-space">
+                <div class="formButton">
+                  <button
+                    id="pfSubmit"
+                    type="submit"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="buttonForm"
+                  >
+                    Sign the pledge
+                  </button>
+                </div>
               </div>
             </div>
           </form>
@@ -470,11 +485,11 @@ Sign the Cycling Cities pledge!"
     <script src="js/scripts.js"></script>
     <script src="js/firebase.js"></script>
     <script src="js/languages.js"></script>
+    <script src="js/translate.js"></script>
     <script src="js/languages/pledge_en.js"></script>
     <script src="js/languages/pledge_es.js"></script>
     <script src="js/languages/pledge_pt.js"></script>
     <script src="js/languages/pledge_id.js"></script>
     <script src="js/languages/pledge_ch.js"></script>
-    <script src="js/translate.js"></script>
   </body>
 </html>
