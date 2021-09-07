@@ -19,6 +19,10 @@ a,
     {
     display: block;
 }
+img{
+    max-width: 100%;
+/*    display: block;*/
+}
 
 /* -------TYPOGRAPHY -------*/
 @font-face {
@@ -408,7 +412,18 @@ h2 {
 .growCycle {
     background-color: var(--accentPink);
 }
-
+.ccPartners{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: var(--maxContentSize);
+}
+.ccPartners h2{
+    color: black;
+    padding-bottom: 0;
+}
 /*-------------Why Cycling-------------*/
 
 
@@ -1137,7 +1152,7 @@ section[class*=dash] div img{
         margin: 0 auto;
         padding: 0em;
         gap: 0em;
-        max-width: 80vw;
+        max-width: var(--maxContentSize);
     }
     .reverse{
         flex-direction: row-reverse;
@@ -1152,7 +1167,10 @@ section[class*=dash] div img{
     }
 
     .containerIMG {
-        max-width: 100%;
+/*        justify-content: flex-start;*/
+    }
+    .containerIMG:last-of-type {
+/*        justify-content: flex-start;*/
     }
 
     .containerTxt div {
