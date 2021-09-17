@@ -1052,7 +1052,13 @@ section[class*=dash] div img{
    
     
 }
+/*-----------PARTNERS-------*/
 
+.cityPartners{
+    width: var(--maxWidth);
+    margin: 0 auto;
+    margin-block-end: 9rem;
+}
 
 /*-------|||||||||||----|| DESKTOP VERSION ||----||||||||||||--------*/
 
