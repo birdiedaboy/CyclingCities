@@ -60,7 +60,7 @@ const initExport = async () => {
   button.classList.add("loading");
   try {
     await auth.signInWithEmailAndPassword(email, password);
-    let collection = await firestore.collection("firmas").orderBy("date").get();
+    let collection = await firestore.collection("firmas").orderBy("date", 'desc').get();
     let firmas = collection.docs.map((doc) => {
       return {
         ...doc.data(),

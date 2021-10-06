@@ -11,12 +11,12 @@ window.addEventListener("click", function (e) {
 });
 
 function changeValueCity(event) {
-  const cityOrganization = document.getElementById("mce-MMERGE5");
+  const cityOrganization = document.getElementById("cityOrganization");
   cityOrganization.value = event;
 }
 
 function changeCityInput() {
-  const cityOrganization = document.getElementById("mce-MMERGE5").value;
+  const cityOrganization = document.getElementById("cityOrganization").value;
   const cityLabel = document.getElementById("cityLabel_placeholder");
   cityLabel.value = cityOrganization;
 }
